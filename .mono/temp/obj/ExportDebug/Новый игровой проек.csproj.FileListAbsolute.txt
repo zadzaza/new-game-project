@@ -1,0 +1,10 @@
+D:\Новый игровой проек\.mono\temp\bin\ExportDebug\Новый игровой проек.deps.json
+D:\Новый игровой проек\.mono\temp\bin\ExportDebug\Новый игровой проек.dll
+D:\Новый игровой проек\.mono\temp\bin\ExportDebug\Новый игровой проек.pdb
+D:\Новый игровой проек\.mono\temp\obj\ExportDebug\Новый игровой проек.csproj.AssemblyReference.cache
+D:\Новый игровой проек\.mono\temp\obj\ExportDebug\Новый игровой проек.GeneratedMSBuildEditorConfig.editorconfig
+D:\Новый игровой проек\.mono\temp\obj\ExportDebug\Новый игровой проек.AssemblyInfoInputs.cache
+D:\Новый игровой проек\.mono\temp\obj\ExportDebug\Новый игровой проек.AssemblyInfo.cs
+D:\Новый игровой проек\.mono\temp\obj\ExportDebug\Новый игровой проек.csproj.CoreCompileInputs.cache
+D:\Новый игровой проек\.mono\temp\obj\ExportDebug\Новый игровой проек.dll
+D:\Новый игровой проек\.mono\temp\obj\ExportDebug\Новый игровой проек.pdb

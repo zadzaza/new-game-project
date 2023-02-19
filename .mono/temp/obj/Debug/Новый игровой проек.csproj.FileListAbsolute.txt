@@ -1,0 +1,41 @@
+C:\Users\Админ\Documents\Новый игровой проект\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.csproj.AssemblyReference.cache
+C:\Users\Админ\Documents\Новый игровой проект\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Админ\Documents\Новый игровой проект\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfoInputs.cache
+C:\Users\Админ\Documents\Новый игровой проект\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfo.cs
+C:\Users\Админ\Documents\Новый игровой проект\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.csproj.CoreCompileInputs.cache
+C:\Users\Админ\Documents\Новый игровой проект\Новый игровой проек\.mono\temp\bin\Debug\Новый игровой проек.dll
+C:\Users\Админ\Documents\Новый игровой проект\Новый игровой проек\.mono\temp\bin\Debug\Новый игровой проек.pdb
+C:\Users\Админ\Documents\Новый игровой проект\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.dll
+C:\Users\Админ\Documents\Новый игровой проект\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.pdb
+E:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.csproj.AssemblyReference.cache
+E:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.GeneratedMSBuildEditorConfig.editorconfig
+E:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfoInputs.cache
+E:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfo.cs
+E:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.csproj.CoreCompileInputs.cache
+E:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.dll
+E:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.pdb
+E:\Новый игровой проек\.mono\temp\bin\Debug\Новый игровой проек.dll
+E:\Новый игровой проек\.mono\temp\bin\Debug\Новый игровой проек.pdb
+E:\Новый игровой проек\.mono\temp\bin\Debug\Новый игровой проек.deps.json
+C:\Users\Админ\Desktop\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.csproj.AssemblyReference.cache
+C:\Users\Админ\Desktop\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Админ\Desktop\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfoInputs.cache
+C:\Users\Админ\Desktop\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfo.cs
+C:\Users\Админ\Desktop\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.csproj.CoreCompileInputs.cache
+C:\Users\Админ\Desktop\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.dll
+C:\Users\Админ\Desktop\Новый игровой проек\.mono\temp\obj\Debug\refint\Новый игровой проек.dll
+C:\Users\Админ\Desktop\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.pdb
+C:\Users\Админ\Desktop\Новый игровой проек\.mono\temp\bin\Debug\Новый игровой проек.deps.json
+C:\Users\Админ\Desktop\Новый игровой проек\.mono\temp\bin\Debug\Новый игровой проек.dll
+C:\Users\Админ\Desktop\Новый игровой проек\.mono\temp\bin\Debug\Новый игровой проек.pdb
+C:\Users\Админ\Desktop\Новый игровой проек\.mono\temp\obj\Debug\ref\Новый игровой проек.dll
+D:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.dll
+D:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.pdb
+D:\Новый игровой проек\.mono\temp\bin\Debug\Новый игровой проек.deps.json
+D:\Новый игровой проек\.mono\temp\bin\Debug\Новый игровой проек.dll
+D:\Новый игровой проек\.mono\temp\bin\Debug\Новый игровой проек.pdb
+D:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.csproj.AssemblyReference.cache
+D:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.GeneratedMSBuildEditorConfig.editorconfig
+D:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfoInputs.cache
+D:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfo.cs
+D:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.csproj.CoreCompileInputs.cache

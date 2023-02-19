@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "ou6DN84MOSx9929jZrjqxO7qEsTO63JLOqIRUsc92B1hKULIA7f8RmJZkwuLYz85zDha8hjt8VIkLx27Da7/5Q==",
+  "success": true,
+  "projectFilePath": "E:\\Новый игровой проек\\Новый игровой проек.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Админ\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Админ\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Админ\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}
