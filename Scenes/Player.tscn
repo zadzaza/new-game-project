@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://gUePQREyr0s-transformed.png" type="Texture" id=2]
@@ -9,6 +9,8 @@
 [ext_resource path="res://Sprites/Player/move_up2.png" type="Texture" id=7]
 [ext_resource path="res://Sprites/Player/move_up.png" type="Texture" id=8]
 [ext_resource path="res://Sprites/Player/idle_up.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Player/move_side.png" type="Texture" id=10]
+[ext_resource path="res://Sprites/Player/move_side2.png" type="Texture" id=11]
 
 [sub_resource type="AtlasTexture" id=16]
 atlas = ExtResource( 2 )
@@ -17,30 +19,6 @@ region = Rect2( 48, 48, 48, 48 )
 [sub_resource type="AtlasTexture" id=15]
 atlas = ExtResource( 2 )
 region = Rect2( 48, 96, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=12]
-atlas = ExtResource( 2 )
-region = Rect2( 0, 48, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=13]
-atlas = ExtResource( 2 )
-region = Rect2( 48, 48, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=14]
-atlas = ExtResource( 2 )
-region = Rect2( 96, 48, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=6]
-atlas = ExtResource( 2 )
-region = Rect2( 0, 96, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=7]
-atlas = ExtResource( 2 )
-region = Rect2( 48, 96, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=8]
-atlas = ExtResource( 2 )
-region = Rect2( 96, 96, 48, 48 )
 
 [sub_resource type="SpriteFrames" id=11]
 animations = [ {
@@ -69,14 +47,9 @@ animations = [ {
 "name": "move_down",
 "speed": 3.0
 }, {
-"frames": [ SubResource( 12 ), SubResource( 13 ), SubResource( 14 ) ],
+"frames": [ ExtResource( 10 ), ExtResource( 11 ) ],
 "loop": true,
-"name": "move_left",
-"speed": 4.0
-}, {
-"frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ) ],
-"loop": true,
-"name": "move_right",
+"name": "move_side",
 "speed": 4.0
 }, {
 "frames": [ ExtResource( 8 ), ExtResource( 7 ) ],
@@ -100,7 +73,7 @@ script = ExtResource( 1 )
 position = Vector2( 8.5, -17 )
 scale = Vector2( 0.4, 0.4 )
 frames = SubResource( 11 )
-animation = "move_down"
+animation = "move_side"
 frame = 1
 playing = true
 

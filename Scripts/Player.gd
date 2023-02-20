@@ -11,13 +11,15 @@ func _physics_process(delta):
 	_velocity = Vector2()
 	
 	if Input.is_action_pressed("ui_right"):
-		animation = "move_right"
+		animation = "move_side"
 		_velocity.x += Speed
-		LastInput = "move_right"
+		LastInput = "move_side"
+		$AnimatedSprite.flip_h = false
 	if Input.is_action_pressed("ui_left"):
-		animation = "move_left"
+		animation = "move_side"
 		_velocity.x -= Speed
-		LastInput = "move_left"
+		LastInput = "move_side"
+		$AnimatedSprite.flip_h = true
 	if Input.is_action_pressed("ui_down"):
 		animation = "move_down"
 		_velocity.y += Speed
