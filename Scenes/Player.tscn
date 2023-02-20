@@ -1,7 +1,7 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
-[ext_resource path="res://gUePQREyr0s-transformed.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Player/idle_side.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/PickupZone.gd" type="Script" id=3]
 [ext_resource path="res://Sprites/Player/move_down2.png" type="Texture" id=4]
 [ext_resource path="res://Sprites/Player/move_down.png" type="Texture" id=5]
@@ -12,14 +12,6 @@
 [ext_resource path="res://Sprites/Player/move_side.png" type="Texture" id=10]
 [ext_resource path="res://Sprites/Player/move_side2.png" type="Texture" id=11]
 
-[sub_resource type="AtlasTexture" id=16]
-atlas = ExtResource( 2 )
-region = Rect2( 48, 48, 48, 48 )
-
-[sub_resource type="AtlasTexture" id=15]
-atlas = ExtResource( 2 )
-region = Rect2( 48, 96, 48, 48 )
-
 [sub_resource type="SpriteFrames" id=11]
 animations = [ {
 "frames": [ ExtResource( 6 ) ],
@@ -27,14 +19,9 @@ animations = [ {
 "name": "idle_down",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 16 ) ],
+"frames": [ ExtResource( 2 ) ],
 "loop": true,
-"name": "idle_left",
-"speed": 5.0
-}, {
-"frames": [ SubResource( 15 ) ],
-"loop": true,
-"name": "idle_right",
+"name": "idle_side",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 9 ) ],

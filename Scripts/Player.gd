@@ -29,10 +29,8 @@ func _physics_process(delta):
 		_velocity.y -= Speed
 		LastInput = "move_up"
 	
-	if LastInput == "move_left" && Input.is_action_just_released("ui_left"):
-		animation = "idle_left"
-	if LastInput == "move_right" && Input.is_action_just_released("ui_right"):
-		animation = "idle_right"
+	if LastInput == "move_side" && (Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right")):
+		animation = "idle_side"
 	if LastInput == "move_up" && Input.is_action_just_released("ui_up"):
 		animation = "idle_up"
 	if LastInput == "move_down" && Input.is_action_just_released("ui_down"):

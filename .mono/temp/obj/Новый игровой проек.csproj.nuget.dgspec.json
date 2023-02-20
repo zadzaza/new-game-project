@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Новый игровой проек\\Новый игровой проек.csproj": {}
+    "C:\\Users\\Админ\\Documents\\GitHub\\new-game-project\\Новый игровой проек.csproj": {}
   },
   "projects": {
-    "E:\\Новый игровой проек\\Новый игровой проек.csproj": {
+    "C:\\Users\\Админ\\Documents\\GitHub\\new-game-project\\Новый игровой проек.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Новый игровой проек\\Новый игровой проек.csproj",
+        "projectUniqueName": "C:\\Users\\Админ\\Documents\\GitHub\\new-game-project\\Новый игровой проек.csproj",
         "projectName": "Новый игровой проек",
-        "projectPath": "E:\\Новый игровой проек\\Новый игровой проек.csproj",
+        "projectPath": "C:\\Users\\Админ\\Documents\\GitHub\\new-game-project\\Новый игровой проек.csproj",
         "packagesPath": "C:\\Users\\Админ\\.nuget\\packages\\",
-        "outputPath": "E:\\Новый игровой проек\\.mono\\temp\\obj\\",
+        "outputPath": "C:\\Users\\Админ\\Documents\\GitHub\\new-game-project\\.mono\\temp\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Админ\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -69,7 +69,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
