@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=25 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Scripts/ToHouse.gd" type="Script" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Scenes/GoldenKey.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/IronKey.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scripts/MainScene.gd" type="Script" id=9]
+[ext_resource path="res://Scenes/MainMenuEscape.tscn" type="PackedScene" id=10]
 
 [sub_resource type="CapsuleShape2D" id=8]
 radius = 8.98082
@@ -1084,6 +1085,9 @@ shape = SubResource( 6 )
 script = ExtResource( 6 )
 
 [node name="Inventory" parent="CanvasLayer" instance=ExtResource( 5 )]
+
+[node name="MainMenuEscape" parent="CanvasLayer" instance=ExtResource( 10 )]
+visible = false
 
 [node name="IronKey" parent="." instance=ExtResource( 8 )]
 position = Vector2( 385, 373 )

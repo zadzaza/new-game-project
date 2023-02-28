@@ -7,6 +7,16 @@ var LastInput = ""
 var _velocity = Vector2()
 
 func _physics_process(delta):
+	get_input(delta)
+	
+func _input(event):
+	if event.is_action_pressed("pickup"):
+		if $PickupZone.items_in_range.size() > 0:
+			var pickup_item = $PickupZone.items_in_range.values()[0]
+			pickup_item.pick_up_item(self)
+			$PickupZone.items_in_range.erase(pickup_item)
+
+func get_input(delta):
 	var animatedSprite = get_node("AnimatedSprite")
 	_velocity = Vector2()
 	
@@ -35,12 +45,6 @@ func _physics_process(delta):
 		animation = "idle_up"
 	if LastInput == "move_down" && Input.is_action_just_released("ui_down"):
 		animation = "idle_down"
+		
 	move_and_slide(_velocity * delta)
 	animatedSprite.play(animation);
-
-func _input(event):
-	if event.is_action_pressed("pickup"):
-		if $PickupZone.items_in_range.size() > 0:
-			var pickup_item = $PickupZone.items_in_range.values()[0]
-			pickup_item.pick_up_item(self)
-			$PickupZone.items_in_range.erase(pickup_item)
