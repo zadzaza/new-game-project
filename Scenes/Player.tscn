@@ -34,7 +34,7 @@ animations = [ {
 "name": "move_down",
 "speed": 3.0
 }, {
-"frames": [ ExtResource( 10 ), ExtResource( 11 ) ],
+"frames": [ ExtResource( 10 ), ExtResource( 2 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "move_side",
 "speed": 4.0
@@ -63,6 +63,7 @@ animation = "move_side"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+visible = false
 position = Vector2( 0, 1 )
 shape = SubResource( 17 )
 
@@ -72,6 +73,7 @@ collision_mask = 2
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PickupZone"]
+visible = false
 position = Vector2( -0.5, 2 )
 shape = SubResource( 18 )
 
