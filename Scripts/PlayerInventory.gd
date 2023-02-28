@@ -6,7 +6,7 @@ const NUM_INVENTORY_SLOTS = 10
 
 
 var inventory = {
-	
+	0: ["Iron Key", 1]
 }
 
 func add_item(item_name, item_quantity):

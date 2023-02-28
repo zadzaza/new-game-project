@@ -9,7 +9,7 @@ func _ready():
 func set_item(nm, qt):
 	item_name = nm
 	item_quantity = qt
-	$TextureRect.texture = load("res://ui/items/" + item_name + ".png")
+	$TextureRect.texture = load("res://Sprites/ui/items/" + item_name + ".png")
 
 func add_item_quantity(amount_to_add):
 	item_quantity += amount_to_add
