@@ -13,6 +13,11 @@ func _ready():
 
 func _process(delta):
 	initialize_inventory()
+	
+	if GlobalScript.is_pause == false:
+		visible = true
+	if GlobalScript.is_pause == true:
+		visible = false
 
 func slot_gui_input(event: InputEvent, slot: SlotClass):
 	if event is InputEventMouseButton:
@@ -55,3 +60,5 @@ func initialize_inventory():
 func _input(event):
 	if holding_item:
 		holding_item.global_position = get_global_mouse_position()
+		
+	

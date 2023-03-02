@@ -39,3 +39,23 @@ D:\Новый игровой проек\.mono\temp\obj\Debug\Новый игро
 D:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfoInputs.cache
 D:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfo.cs
 D:\Новый игровой проек\.mono\temp\obj\Debug\Новый игровой проек.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\new-game-project-main\.mono\temp\bin\Debug\Новый игровой проек.deps.json
+C:\Users\Student\Desktop\new-game-project-main\.mono\temp\bin\Debug\Новый игровой проек.dll
+C:\Users\Student\Desktop\new-game-project-main\.mono\temp\bin\Debug\Новый игровой проек.pdb
+C:\Users\Student\Desktop\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.csproj.AssemblyReference.cache
+C:\Users\Student\Desktop\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Student\Desktop\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfoInputs.cache
+C:\Users\Student\Desktop\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfo.cs
+C:\Users\Student\Desktop\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.csproj.CoreCompileInputs.cache
+C:\Users\Student\Desktop\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.dll
+C:\Users\Student\Desktop\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.pdb
+D:\new-game-project-main\.mono\temp\bin\Debug\Новый игровой проек.deps.json
+D:\new-game-project-main\.mono\temp\bin\Debug\Новый игровой проек.dll
+D:\new-game-project-main\.mono\temp\bin\Debug\Новый игровой проек.pdb
+D:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.csproj.AssemblyReference.cache
+D:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.GeneratedMSBuildEditorConfig.editorconfig
+D:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfoInputs.cache
+D:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfo.cs
+D:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.csproj.CoreCompileInputs.cache
+D:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.dll
+D:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.pdb

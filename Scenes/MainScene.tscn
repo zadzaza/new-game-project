@@ -1031,6 +1031,15 @@ points = PoolVector2Array( 30, 32, 8, 32, 8, 10, 30, 10 )
 [node name="MainScene" type="Node2D"]
 script = ExtResource( 9 )
 
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource( 6 )
+
+[node name="Inventory" parent="CanvasLayer" instance=ExtResource( 5 )]
+
+[node name="MainMenuEscape" parent="CanvasLayer" instance=ExtResource( 10 )]
+pause_mode = 2
+visible = false
+
 [node name="Node2D" type="StaticBody2D" parent="."]
 position = Vector2( 0, -1 )
 
@@ -1080,14 +1089,6 @@ script = ExtResource( 2 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ToHouse"]
 position = Vector2( 497, 281 )
 shape = SubResource( 6 )
-
-[node name="CanvasLayer" type="CanvasLayer" parent="."]
-script = ExtResource( 6 )
-
-[node name="Inventory" parent="CanvasLayer" instance=ExtResource( 5 )]
-
-[node name="MainMenuEscape" parent="CanvasLayer" instance=ExtResource( 10 )]
-visible = false
 
 [node name="IronKey" parent="." instance=ExtResource( 8 )]
 position = Vector2( 385, 373 )
