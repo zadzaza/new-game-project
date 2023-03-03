@@ -30,19 +30,19 @@ func refresh_style():
 		set('custom_styles/panel', active_style)
 
 func pickFromSlot():
-	"""remove_child(item)
+	remove_child(item)
 	var inventoryNode = find_parent("Inventory")
 	inventoryNode.add_child(item)
 	item = null
-	refresh_style()"""
+	refresh_style()
 
 func putIntoSlot(new_item):
-	"""item = new_item
+	item = new_item
 	item.position = Vector2(0,0)
 	var inventoryNode = find_parent("Inventory")
 	inventoryNode.remove_child(item)
 	add_child(item)
-	refresh_style()"""
+	refresh_style()
 
 func initialize_item(item_name, item_quantity):
 	if item == null:

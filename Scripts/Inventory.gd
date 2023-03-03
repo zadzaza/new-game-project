@@ -4,6 +4,7 @@ const SlotClass = preload("res://Scripts/Slot.gd")
 onready var inventory_slots = $GridContainer
 var holding_item = null
 
+
 func _ready():
 	var slots = inventory_slots.get_children()
 	for i in range(slots.size()):

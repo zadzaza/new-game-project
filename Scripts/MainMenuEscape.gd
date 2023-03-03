@@ -1,8 +1,8 @@
 extends Node2D
 
-func _process(delta):
-	print(GlobalScript.is_pause)
-	
+func _ready():
+	visible = false
+
 func _input(event):
 	if event.is_action_pressed("escape") and GlobalScript.is_pause == false:
 		GlobalScript.is_pause = true
@@ -22,3 +22,5 @@ func _on_MainMenu_pressed():
 	get_tree().change_scene("res://Scenes/MainMenu.tscn")
 	GlobalScript.is_pause = false
 	GlobalScript.pause(0)
+
+

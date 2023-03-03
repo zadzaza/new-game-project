@@ -1,0 +1,110 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 8
+syntax_version = 2
+raw_text = "~ this_is_a_node_title
+
+Nathan: Это некий диалог.
+Nathan: Это выбор.
+- ААА
+	Nathan: Подожди... [wait=1.5] Спасибо что подождал.
+- Путин
+	Nathan: Ты выбрал второй вариант.
+- Путин => this_is_a_node_title
+- Путин => END
+Nathan: Вы живете в самой лучшей стране мира. А остальные страны испытывают одну лишь зависть."
+errors = [  ]
+titles = {
+"this_is_a_node_title": "2"
+}
+lines = {
+"0": {
+"next_id": "2",
+"text": "this_is_a_node_title",
+"type": "title"
+},
+"10": {
+"character": "Nathan",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "Вы живете в самой лучшей стране мира. А остальные страны испытывают одну лишь зависть.",
+"translation_key": "Вы живете в самой лучшей стране мира. А остальные страны испытывают одну лишь зависть.",
+"type": "dialogue"
+},
+"2": {
+"character": "Nathan",
+"character_replacements": [  ],
+"next_id": "3",
+"replacements": [  ],
+"text": "Это некий диалог.",
+"translation_key": "Это некий диалог.",
+"type": "dialogue"
+},
+"3": {
+"character": "Nathan",
+"character_replacements": [  ],
+"next_id": "4",
+"replacements": [  ],
+"text": "Это выбор.",
+"translation_key": "Это выбор.",
+"type": "dialogue"
+},
+"4": {
+"next_id": "5",
+"next_id_after": "10",
+"replacements": [  ],
+"responses": PoolStringArray( "4", "6", "8", "9" ),
+"text": "ААА",
+"translation_key": "ААА",
+"type": "response"
+},
+"5": {
+"character": "Nathan",
+"character_replacements": [  ],
+"next_id": "10",
+"parent_id": "4",
+"replacements": [  ],
+"text": "Подожди... [wait=1.5] Спасибо что подождал.",
+"translation_key": "Подожди... [wait=1.5] Спасибо что подождал.",
+"type": "dialogue"
+},
+"6": {
+"next_id": "7",
+"next_id_after": "10",
+"replacements": [  ],
+"text": "Путин",
+"translation_key": "Путин",
+"type": "response"
+},
+"7": {
+"character": "Nathan",
+"character_replacements": [  ],
+"next_id": "10",
+"parent_id": "6",
+"replacements": [  ],
+"text": "Ты выбрал второй вариант.",
+"translation_key": "Ты выбрал второй вариант.",
+"type": "dialogue"
+},
+"8": {
+"next_id": "2",
+"next_id_after": "10",
+"replacements": [  ],
+"text": "Путин",
+"translation_key": "Путин",
+"type": "response"
+},
+"9": {
+"next_id": "end",
+"next_id_after": "10",
+"replacements": [  ],
+"text": "Путин",
+"translation_key": "Путин",
+"type": "response"
+}
+}

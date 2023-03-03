@@ -1,4 +1,4 @@
-extends KinematicBody2D
+		extends KinematicBody2D
 
 const max_speed = 1000
 const acceleration = 500

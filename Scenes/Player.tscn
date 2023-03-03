@@ -55,6 +55,7 @@ extents = Vector2( 21.5, 27 )
 [node name="Player" type="KinematicBody2D"]
 collision_mask = 0
 script = ExtResource( 1 )
+Speed = 4200
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 0, 1 )
@@ -64,17 +65,16 @@ animation = "idle_down"
 playing = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2( 0, 1 )
 shape = SubResource( 17 )
 
 [node name="PickupZone" type="Area2D" parent="."]
+visible = false
 collision_layer = 0
 collision_mask = 2
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="PickupZone"]
-visible = false
 position = Vector2( -0.5, 2 )
 shape = SubResource( 18 )
 

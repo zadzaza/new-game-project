@@ -59,3 +59,13 @@ D:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой прое
 D:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.csproj.CoreCompileInputs.cache
 D:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.dll
 D:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.pdb
+F:\new-game-project-main\.mono\temp\bin\Debug\Новый игровой проек.deps.json
+F:\new-game-project-main\.mono\temp\bin\Debug\Новый игровой проек.dll
+F:\new-game-project-main\.mono\temp\bin\Debug\Новый игровой проек.pdb
+F:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.csproj.AssemblyReference.cache
+F:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.GeneratedMSBuildEditorConfig.editorconfig
+F:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfoInputs.cache
+F:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfo.cs
+F:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.csproj.CoreCompileInputs.cache
+F:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.dll
+F:\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.pdb

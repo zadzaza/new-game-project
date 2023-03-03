@@ -20,8 +20,8 @@ radius = 18.0
 height = 4.0
 
 [sub_resource type="CapsuleShape2D" id=11]
-radius = 12.3845
-height = 48.4844
+radius = 22.0001
+height = 61.124
 
 [sub_resource type="CapsuleShape2D" id=12]
 radius = 12.7099
@@ -1038,7 +1038,6 @@ script = ExtResource( 6 )
 
 [node name="MainMenuEscape" parent="CanvasLayer" instance=ExtResource( 10 )]
 pause_mode = 2
-visible = false
 
 [node name="Node2D" type="StaticBody2D" parent="."]
 position = Vector2( 0, -1 )
@@ -1055,7 +1054,7 @@ z_index = 1
 shape = SubResource( 9 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="Node2D"]
-position = Vector2( 824, 354 )
+position = Vector2( 824, 355 )
 rotation = 1.02899
 z_index = 1
 shape = SubResource( 11 )
@@ -1065,6 +1064,17 @@ position = Vector2( 797, 371 )
 rotation = 0.986826
 z_index = 1
 shape = SubResource( 12 )
+
+[node name="CollisionShape2D5" type="CollisionShape2D" parent="Node2D"]
+position = Vector2( 547, 277 )
+rotation = 3.14159
+z_index = 1
+shape = SubResource( 11 )
+
+[node name="CollisionShape2D6" type="CollisionShape2D" parent="Node2D"]
+position = Vector2( 449, 275 )
+z_index = 1
+shape = SubResource( 11 )
 
 [node name="TileMapGround" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
@@ -1087,7 +1097,7 @@ tile_data = PoolIntArray( 65549, 1, 0, 65550, 1, 1, 65551, 1, 1, 65552, 1, 1, 65
 script = ExtResource( 2 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ToHouse"]
-position = Vector2( 497, 281 )
+position = Vector2( 497, 292 )
 shape = SubResource( 6 )
 
 [node name="IronKey" parent="." instance=ExtResource( 8 )]
@@ -1100,6 +1110,7 @@ position = Vector2( 368, 373 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 498, 326 )
+Speed = 4200
 
 [node name="Camera2D" type="Camera2D" parent="YSort/Player"]
 current = true

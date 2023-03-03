@@ -12,6 +12,7 @@ scale = Vector2( 1.92133, 2.09912 )
 texture = ExtResource( 2 )
 
 [node name="Continue" type="Button" parent="."]
+pause_mode = 2
 margin_left = 389.5
 margin_top = 185.0
 margin_right = 652.5
@@ -19,6 +20,7 @@ margin_bottom = 255.0
 text = "CONTINUE"
 
 [node name="MainMenu" type="Button" parent="."]
+pause_mode = 2
 margin_left = 392.5
 margin_top = 310.0
 margin_right = 653.5
