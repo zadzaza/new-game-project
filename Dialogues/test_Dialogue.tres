@@ -4,18 +4,18 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 8
+resource_version = 10
 syntax_version = 2
 raw_text = "~ this_is_a_node_title
 
 Nathan: Это некий диалог.
 Nathan: Это выбор.
-- ААА
+- С ожиданием
 	Nathan: Подожди... [wait=1.5] Спасибо что подождал.
+- В начало => this_is_a_node_title
+- В конец => END
 - Путин
-	Nathan: Ты выбрал второй вариант.
-- Путин => this_is_a_node_title
-- Путин => END
+	Nathan: Ты выбрал Путина.
 Nathan: Вы живете в самой лучшей стране мира. А остальные страны испытывают одну лишь зависть."
 errors = [  ]
 titles = {
@@ -58,9 +58,9 @@ lines = {
 "next_id": "5",
 "next_id_after": "10",
 "replacements": [  ],
-"responses": PoolStringArray( "4", "6", "8", "9" ),
-"text": "ААА",
-"translation_key": "ААА",
+"responses": PoolStringArray( "4", "6", "7", "8" ),
+"text": "С ожиданием",
+"translation_key": "С ожиданием",
 "type": "response"
 },
 "5": {
@@ -74,25 +74,23 @@ lines = {
 "type": "dialogue"
 },
 "6": {
-"next_id": "7",
+"next_id": "2",
 "next_id_after": "10",
 "replacements": [  ],
-"text": "Путин",
-"translation_key": "Путин",
+"text": "В начало",
+"translation_key": "В начало",
 "type": "response"
 },
 "7": {
-"character": "Nathan",
-"character_replacements": [  ],
-"next_id": "10",
-"parent_id": "6",
+"next_id": "end",
+"next_id_after": "10",
 "replacements": [  ],
-"text": "Ты выбрал второй вариант.",
-"translation_key": "Ты выбрал второй вариант.",
-"type": "dialogue"
+"text": "В конец",
+"translation_key": "В конец",
+"type": "response"
 },
 "8": {
-"next_id": "2",
+"next_id": "9",
 "next_id_after": "10",
 "replacements": [  ],
 "text": "Путин",
@@ -100,11 +98,13 @@ lines = {
 "type": "response"
 },
 "9": {
-"next_id": "end",
-"next_id_after": "10",
+"character": "Nathan",
+"character_replacements": [  ],
+"next_id": "10",
+"parent_id": "8",
 "replacements": [  ],
-"text": "Путин",
-"translation_key": "Путин",
-"type": "response"
+"text": "Ты выбрал Путина.",
+"translation_key": "Ты выбрал Путина.",
+"type": "dialogue"
 }
 }
