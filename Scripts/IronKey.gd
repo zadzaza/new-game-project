@@ -1,4 +1,4 @@
-		extends KinematicBody2D
+extends KinematicBody2D
 
 const max_speed = 1000
 const acceleration = 500
@@ -7,7 +7,7 @@ var item_quantity
 var velocity = Vector2()
 
 var player = null
-var being_picked_up = false
+export var being_picked_up = false
 
 func _ready():
 	item_name = "Iron Key"

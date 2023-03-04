@@ -4,19 +4,20 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 10
+resource_version = 30
 syntax_version = 2
 raw_text = "~ this_is_a_node_title
 
-Nathan: Это некий диалог.
-Nathan: Это выбор.
-- С ожиданием
-	Nathan: Подожди... [wait=1.5] Спасибо что подождал.
-- В начало => this_is_a_node_title
-- В конец => END
-- Путин
-	Nathan: Ты выбрал Путина.
-Nathan: Вы живете в самой лучшей стране мира. А остальные страны испытывают одну лишь зависть."
+if has_key == true
+	Колодец: Привет! Так-так, ключик с тобой?
+	- Вот он...
+	Godot: Уго, ты нашел его, молодец! Дай сюда.
+	- Ну, пока... => END
+else
+	Колодец: Привет! Так-так, ключик с тобой?
+	- Нет...
+	Колодец: Ты все еще не нашел его?! Ищи, я буду ждать!
+	- Ладно... => END"
 errors = [  ]
 titles = {
 "this_is_a_node_title": "2"
@@ -28,83 +29,107 @@ lines = {
 "type": "title"
 },
 "10": {
-"character": "Nathan",
+"character": "Колодец",
 "character_replacements": [  ],
-"next_id": "",
+"next_id": "11",
+"parent_id": "7",
 "replacements": [  ],
-"text": "Вы живете в самой лучшей стране мира. А остальные страны испытывают одну лишь зависть.",
-"translation_key": "Вы живете в самой лучшей стране мира. А остальные страны испытывают одну лишь зависть.",
+"text": "Ты все еще не нашел его?! Ищи, я буду ждать!",
+"translation_key": "Ты все еще не нашел его?! Ищи, я буду ждать!",
 "type": "dialogue"
+},
+"11": {
+"next_id": "end",
+"next_id_after": "end!",
+"parent_id": "7",
+"replacements": [  ],
+"responses": PoolStringArray( "11" ),
+"text": "Ладно...",
+"translation_key": "Ладно...",
+"type": "response"
 },
 "2": {
-"character": "Nathan",
-"character_replacements": [  ],
+"condition": {
+"expression": [ {
+"type": "variable",
+"value": "has_key"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "bool",
+"value": true
+} ]
+},
+"next_conditional_id": "7",
 "next_id": "3",
-"replacements": [  ],
-"text": "Это некий диалог.",
-"translation_key": "Это некий диалог.",
-"type": "dialogue"
+"next_id_after": "end!",
+"type": "condition"
 },
 "3": {
-"character": "Nathan",
+"character": "Колодец",
 "character_replacements": [  ],
 "next_id": "4",
+"parent_id": "2",
 "replacements": [  ],
-"text": "Это выбор.",
-"translation_key": "Это выбор.",
+"text": "Привет! Так-так, ключик с тобой?",
+"translation_key": "Привет! Так-так, ключик с тобой?",
 "type": "dialogue"
 },
 "4": {
 "next_id": "5",
-"next_id_after": "10",
+"next_id_after": "5",
+"parent_id": "2",
 "replacements": [  ],
-"responses": PoolStringArray( "4", "6", "7", "8" ),
-"text": "С ожиданием",
-"translation_key": "С ожиданием",
+"responses": PoolStringArray( "4" ),
+"text": "Вот он...",
+"translation_key": "Вот он...",
 "type": "response"
 },
 "5": {
-"character": "Nathan",
+"character": "Godot",
 "character_replacements": [  ],
-"next_id": "10",
-"parent_id": "4",
+"next_id": "6",
+"parent_id": "2",
 "replacements": [  ],
-"text": "Подожди... [wait=1.5] Спасибо что подождал.",
-"translation_key": "Подожди... [wait=1.5] Спасибо что подождал.",
+"text": "Уго, ты нашел его, молодец! Дай сюда.",
+"translation_key": "Уго, ты нашел его, молодец! Дай сюда.",
 "type": "dialogue"
 },
 "6": {
-"next_id": "2",
-"next_id_after": "10",
+"next_id": "end",
+"next_id_after": "end!",
+"parent_id": "2",
 "replacements": [  ],
-"text": "В начало",
-"translation_key": "В начало",
+"responses": PoolStringArray( "6" ),
+"text": "Ну, пока...",
+"translation_key": "Ну, пока...",
 "type": "response"
 },
 "7": {
-"next_id": "end",
-"next_id_after": "10",
-"replacements": [  ],
-"text": "В конец",
-"translation_key": "В конец",
-"type": "response"
+"next_conditional_id": "end!",
+"next_id": "8",
+"next_id_after": "end!",
+"type": "condition"
 },
 "8": {
+"character": "Колодец",
+"character_replacements": [  ],
 "next_id": "9",
-"next_id_after": "10",
+"parent_id": "7",
 "replacements": [  ],
-"text": "Путин",
-"translation_key": "Путин",
-"type": "response"
+"text": "Привет! Так-так, ключик с тобой?",
+"translation_key": "Привет! Так-так, ключик с тобой?",
+"type": "dialogue"
 },
 "9": {
-"character": "Nathan",
-"character_replacements": [  ],
 "next_id": "10",
-"parent_id": "8",
+"next_id_after": "10",
+"parent_id": "7",
 "replacements": [  ],
-"text": "Ты выбрал Путина.",
-"translation_key": "Ты выбрал Путина.",
-"type": "dialogue"
+"responses": PoolStringArray( "9" ),
+"text": "Нет...",
+"translation_key": "Нет...",
+"type": "response"
 }
 }
