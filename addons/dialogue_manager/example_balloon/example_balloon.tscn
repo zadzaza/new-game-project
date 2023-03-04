@@ -117,3 +117,4 @@ text = "test"
 scroll_active = false
 
 [connection signal="gui_input" from="Balloon" to="." method="_on_Balloon_gui_input"]
+[connection signal="finished" from="Balloon/Margin/VBox/Dialogue" to="." method="_on_Dialogue_finished"]

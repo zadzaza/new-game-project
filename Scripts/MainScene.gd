@@ -7,7 +7,10 @@ func _ready():
 		print("da")
 
 func _process(delta):
-	pass
+	if DialogueManager.is_dialogue_running == true:
+		GlobalScript.pause(1)
+	else:
+		GlobalScript.pause(0)
 
 func _on_Area2D_body_entered(body):
 	GlobalScript.pause(1)
