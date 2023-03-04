@@ -4,51 +4,227 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 30
+resource_version = 45
 syntax_version = 2
-raw_text = "~ this_is_a_node_title
+raw_text = "~ test_Dialogue
+if meet == false
+	Колодец: НАЙДИ МНЕ СЕРЕБРЯННЫЙ КЛЮЧ!
+	Колодец: БЕЗ КЛЮЧА НЕ ПРИХОДИ!!!
+	- Хорошо... 
+	set meet = true 
+	=> END
 
+set meet = true 
 if has_key == true
-	Колодец: Привет! Так-так, ключик с тобой?
+	Колодец: Так-так, ключик с тобой?
 	- Вот он...
-	Godot: Уго, ты нашел его, молодец! Дай сюда.
+	Колодец: Уго, ты нашел его, молодец! Дай сюда.
 	- Ну, пока... => END
 else
-	Колодец: Привет! Так-так, ключик с тобой?
+	Колодец: Так-так, ключик с тобой?
 	- Нет...
-	Колодец: Ты все еще не нашел его?! Ищи, я буду ждать!
-	- Ладно... => END"
+	Колодец: ТЫ ВСЕ ЕЩЕ НЕ НАШЕЛ ЕГО?!
+	Колодец: Ищи, я буду ждать!
+	- Ладно... 
+	=> END"
 errors = [  ]
 titles = {
-"this_is_a_node_title": "2"
+"test_Dialogue": "1"
 }
 lines = {
 "0": {
-"next_id": "2",
-"text": "this_is_a_node_title",
+"next_id": "1",
+"text": "test_Dialogue",
 "type": "title"
+},
+"1": {
+"condition": {
+"expression": [ {
+"type": "variable",
+"value": "meet"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "bool",
+"value": false
+} ]
+},
+"next_conditional_id": "8",
+"next_id": "2",
+"next_id_after": "8",
+"type": "condition"
 },
 "10": {
 "character": "Колодец",
 "character_replacements": [  ],
 "next_id": "11",
-"parent_id": "7",
+"parent_id": "9",
 "replacements": [  ],
-"text": "Ты все еще не нашел его?! Ищи, я буду ждать!",
-"translation_key": "Ты все еще не нашел его?! Ищи, я буду ждать!",
+"text": "Так-так, ключик с тобой?",
+"translation_key": "Так-так, ключик с тобой?",
 "type": "dialogue"
 },
 "11": {
-"next_id": "end",
-"next_id_after": "end!",
-"parent_id": "7",
+"next_id": "12",
+"next_id_after": "12",
+"parent_id": "9",
 "replacements": [  ],
 "responses": PoolStringArray( "11" ),
+"text": "Вот он...",
+"translation_key": "Вот он...",
+"type": "response"
+},
+"12": {
+"character": "Колодец",
+"character_replacements": [  ],
+"next_id": "13",
+"parent_id": "9",
+"replacements": [  ],
+"text": "Уго, ты нашел его, молодец! Дай сюда.",
+"translation_key": "Уго, ты нашел его, молодец! Дай сюда.",
+"type": "dialogue"
+},
+"13": {
+"next_id": "end",
+"next_id_after": "end!",
+"parent_id": "9",
+"replacements": [  ],
+"responses": PoolStringArray( "13" ),
+"text": "Ну, пока...",
+"translation_key": "Ну, пока...",
+"type": "response"
+},
+"14": {
+"next_conditional_id": "end!",
+"next_id": "15",
+"next_id_after": "end!",
+"type": "condition"
+},
+"15": {
+"character": "Колодец",
+"character_replacements": [  ],
+"next_id": "16",
+"parent_id": "14",
+"replacements": [  ],
+"text": "Так-так, ключик с тобой?",
+"translation_key": "Так-так, ключик с тобой?",
+"type": "dialogue"
+},
+"16": {
+"next_id": "17",
+"next_id_after": "17",
+"parent_id": "14",
+"replacements": [  ],
+"responses": PoolStringArray( "16" ),
+"text": "Нет...",
+"translation_key": "Нет...",
+"type": "response"
+},
+"17": {
+"character": "Колодец",
+"character_replacements": [  ],
+"next_id": "18",
+"parent_id": "14",
+"replacements": [  ],
+"text": "ТЫ ВСЕ ЕЩЕ НЕ НАШЕЛ ЕГО?!",
+"translation_key": "ТЫ ВСЕ ЕЩЕ НЕ НАШЕЛ ЕГО?!",
+"type": "dialogue"
+},
+"18": {
+"character": "Колодец",
+"character_replacements": [  ],
+"next_id": "19",
+"parent_id": "14",
+"replacements": [  ],
+"text": "Ищи, я буду ждать!",
+"translation_key": "Ищи, я буду ждать!",
+"type": "dialogue"
+},
+"19": {
+"next_id": "20",
+"next_id_after": "20",
+"parent_id": "14",
+"replacements": [  ],
+"responses": PoolStringArray( "19" ),
 "text": "Ладно...",
 "translation_key": "Ладно...",
 "type": "response"
 },
 "2": {
+"character": "Колодец",
+"character_replacements": [  ],
+"next_id": "3",
+"parent_id": "1",
+"replacements": [  ],
+"text": "НАЙДИ МНЕ СЕРЕБРЯННЫЙ КЛЮЧ!",
+"translation_key": "НАЙДИ МНЕ СЕРЕБРЯННЫЙ КЛЮЧ!",
+"type": "dialogue"
+},
+"20": {
+"next_id": "end",
+"parent_id": "14",
+"type": "goto"
+},
+"3": {
+"character": "Колодец",
+"character_replacements": [  ],
+"next_id": "4",
+"parent_id": "1",
+"replacements": [  ],
+"text": "БЕЗ КЛЮЧА НЕ ПРИХОДИ!!!",
+"translation_key": "БЕЗ КЛЮЧА НЕ ПРИХОДИ!!!",
+"type": "dialogue"
+},
+"4": {
+"next_id": "5",
+"next_id_after": "5",
+"parent_id": "1",
+"replacements": [  ],
+"responses": PoolStringArray( "4" ),
+"text": "Хорошо...",
+"translation_key": "Хорошо...",
+"type": "response"
+},
+"5": {
+"mutation": {
+"expression": [ {
+"type": "variable",
+"value": "meet"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": true
+} ]
+},
+"next_id": "6",
+"parent_id": "1",
+"type": "mutation"
+},
+"6": {
+"next_id": "end",
+"parent_id": "1",
+"type": "goto"
+},
+"8": {
+"mutation": {
+"expression": [ {
+"type": "variable",
+"value": "meet"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": true
+} ]
+},
+"next_id": "9",
+"type": "mutation"
+},
+"9": {
 "condition": {
 "expression": [ {
 "type": "variable",
@@ -61,75 +237,9 @@ lines = {
 "value": true
 } ]
 },
-"next_conditional_id": "7",
-"next_id": "3",
-"next_id_after": "end!",
-"type": "condition"
-},
-"3": {
-"character": "Колодец",
-"character_replacements": [  ],
-"next_id": "4",
-"parent_id": "2",
-"replacements": [  ],
-"text": "Привет! Так-так, ключик с тобой?",
-"translation_key": "Привет! Так-так, ключик с тобой?",
-"type": "dialogue"
-},
-"4": {
-"next_id": "5",
-"next_id_after": "5",
-"parent_id": "2",
-"replacements": [  ],
-"responses": PoolStringArray( "4" ),
-"text": "Вот он...",
-"translation_key": "Вот он...",
-"type": "response"
-},
-"5": {
-"character": "Godot",
-"character_replacements": [  ],
-"next_id": "6",
-"parent_id": "2",
-"replacements": [  ],
-"text": "Уго, ты нашел его, молодец! Дай сюда.",
-"translation_key": "Уго, ты нашел его, молодец! Дай сюда.",
-"type": "dialogue"
-},
-"6": {
-"next_id": "end",
-"next_id_after": "end!",
-"parent_id": "2",
-"replacements": [  ],
-"responses": PoolStringArray( "6" ),
-"text": "Ну, пока...",
-"translation_key": "Ну, пока...",
-"type": "response"
-},
-"7": {
-"next_conditional_id": "end!",
-"next_id": "8",
-"next_id_after": "end!",
-"type": "condition"
-},
-"8": {
-"character": "Колодец",
-"character_replacements": [  ],
-"next_id": "9",
-"parent_id": "7",
-"replacements": [  ],
-"text": "Привет! Так-так, ключик с тобой?",
-"translation_key": "Привет! Так-так, ключик с тобой?",
-"type": "dialogue"
-},
-"9": {
+"next_conditional_id": "14",
 "next_id": "10",
-"next_id_after": "10",
-"parent_id": "7",
-"replacements": [  ],
-"responses": PoolStringArray( "9" ),
-"text": "Нет...",
-"translation_key": "Нет...",
-"type": "response"
+"next_id_after": "end!",
+"type": "condition"
 }
 }

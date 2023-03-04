@@ -2,6 +2,7 @@ extends Node
 
 var has_key = false
 var IronKey = "Iron Key"
+var meet = false
 
 func _process(delta):
 	has_key()

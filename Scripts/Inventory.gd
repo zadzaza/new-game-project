@@ -61,5 +61,3 @@ func initialize_inventory():
 func _input(event):
 	if holding_item:
 		holding_item.global_position = get_global_mouse_position()
-		
-	
