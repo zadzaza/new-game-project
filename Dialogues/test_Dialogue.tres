@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 46
+resource_version = 47
 syntax_version = 2
 raw_text = "~ test_Dialogue
 if meet == false
@@ -14,7 +14,7 @@ if meet == false
 	- Не хорошо...
 		Колодец: Что значит не хорошо?
 		- То и значит...
-	set meet = true 
+	set meet = true
 	=> END
 
 set meet = true 
@@ -22,7 +22,9 @@ if has_key == true
 	Колодец: Так-так, ключик с тобой?
 	- Вот он...
 	Колодец: Уго, ты нашел его, молодец! Дай сюда.
-	- Ну, пока... => END
+	- Ну, пока... 
+	print(\"fds\")
+	=> END
 else
 	Колодец: Так-так, ключик с тобой?
 	- Нет...
@@ -87,7 +89,7 @@ lines = {
 "value": true
 } ]
 },
-"next_conditional_id": "17",
+"next_conditional_id": "19",
 "next_id": "13",
 "next_id_after": "end!",
 "type": "condition"
@@ -123,8 +125,8 @@ lines = {
 "type": "dialogue"
 },
 "16": {
-"next_id": "end",
-"next_id_after": "end!",
+"next_id": "17",
+"next_id_after": "17",
 "parent_id": "12",
 "replacements": [  ],
 "responses": PoolStringArray( "16" ),
@@ -133,30 +135,24 @@ lines = {
 "type": "response"
 },
 "17": {
-"next_conditional_id": "end!",
+"character": "",
 "next_id": "18",
-"next_id_after": "end!",
-"type": "condition"
-},
-"18": {
-"character": "Колодец",
-"character_replacements": [  ],
-"next_id": "19",
-"parent_id": "17",
+"parent_id": "12",
 "replacements": [  ],
-"text": "Так-так, ключик с тобой?",
-"translation_key": "Так-так, ключик с тобой?",
+"text": "print(\"fds\")",
+"translation_key": "print(\"fds\")",
 "type": "dialogue"
 },
+"18": {
+"next_id": "end",
+"parent_id": "12",
+"type": "goto"
+},
 "19": {
+"next_conditional_id": "end!",
 "next_id": "20",
-"next_id_after": "20",
-"parent_id": "17",
-"replacements": [  ],
-"responses": PoolStringArray( "19" ),
-"text": "Нет...",
-"translation_key": "Нет...",
-"type": "response"
+"next_id_after": "end!",
+"type": "condition"
 },
 "2": {
 "character": "Колодец",
@@ -172,35 +168,55 @@ lines = {
 "character": "Колодец",
 "character_replacements": [  ],
 "next_id": "21",
-"parent_id": "17",
+"parent_id": "19",
+"replacements": [  ],
+"text": "Так-так, ключик с тобой?",
+"translation_key": "Так-так, ключик с тобой?",
+"type": "dialogue"
+},
+"21": {
+"next_id": "22",
+"next_id_after": "22",
+"parent_id": "19",
+"replacements": [  ],
+"responses": PoolStringArray( "21" ),
+"text": "Нет...",
+"translation_key": "Нет...",
+"type": "response"
+},
+"22": {
+"character": "Колодец",
+"character_replacements": [  ],
+"next_id": "23",
+"parent_id": "19",
 "replacements": [  ],
 "text": "ТЫ ВСЕ ЕЩЕ НЕ НАШЕЛ ЕГО?!",
 "translation_key": "ТЫ ВСЕ ЕЩЕ НЕ НАШЕЛ ЕГО?!",
 "type": "dialogue"
 },
-"21": {
+"23": {
 "character": "Колодец",
 "character_replacements": [  ],
-"next_id": "22",
-"parent_id": "17",
+"next_id": "24",
+"parent_id": "19",
 "replacements": [  ],
 "text": "Ищи, я буду ждать!",
 "translation_key": "Ищи, я буду ждать!",
 "type": "dialogue"
 },
-"22": {
-"next_id": "23",
-"next_id_after": "23",
-"parent_id": "17",
+"24": {
+"next_id": "25",
+"next_id_after": "25",
+"parent_id": "19",
 "replacements": [  ],
-"responses": PoolStringArray( "22" ),
+"responses": PoolStringArray( "24" ),
 "text": "Ладно...",
 "translation_key": "Ладно...",
 "type": "response"
 },
-"23": {
+"25": {
 "next_id": "end",
-"parent_id": "17",
+"parent_id": "19",
 "type": "goto"
 },
 "3": {
