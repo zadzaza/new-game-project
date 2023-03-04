@@ -4,13 +4,16 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 45
+resource_version = 46
 syntax_version = 2
 raw_text = "~ test_Dialogue
 if meet == false
 	Колодец: НАЙДИ МНЕ СЕРЕБРЯННЫЙ КЛЮЧ!
 	Колодец: БЕЗ КЛЮЧА НЕ ПРИХОДИ!!!
 	- Хорошо... 
+	- Не хорошо...
+		Колодец: Что значит не хорошо?
+		- То и значит...
 	set meet = true 
 	=> END
 
@@ -50,105 +53,109 @@ lines = {
 "value": false
 } ]
 },
-"next_conditional_id": "8",
+"next_conditional_id": "11",
 "next_id": "2",
-"next_id_after": "8",
+"next_id_after": "11",
 "type": "condition"
 },
-"10": {
+"11": {
+"mutation": {
+"expression": [ {
+"type": "variable",
+"value": "meet"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": true
+} ]
+},
+"next_id": "12",
+"type": "mutation"
+},
+"12": {
+"condition": {
+"expression": [ {
+"type": "variable",
+"value": "has_key"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "bool",
+"value": true
+} ]
+},
+"next_conditional_id": "17",
+"next_id": "13",
+"next_id_after": "end!",
+"type": "condition"
+},
+"13": {
 "character": "Колодец",
 "character_replacements": [  ],
-"next_id": "11",
-"parent_id": "9",
+"next_id": "14",
+"parent_id": "12",
 "replacements": [  ],
 "text": "Так-так, ключик с тобой?",
 "translation_key": "Так-так, ключик с тобой?",
 "type": "dialogue"
 },
-"11": {
-"next_id": "12",
-"next_id_after": "12",
-"parent_id": "9",
+"14": {
+"next_id": "15",
+"next_id_after": "15",
+"parent_id": "12",
 "replacements": [  ],
-"responses": PoolStringArray( "11" ),
+"responses": PoolStringArray( "14" ),
 "text": "Вот он...",
 "translation_key": "Вот он...",
 "type": "response"
-},
-"12": {
-"character": "Колодец",
-"character_replacements": [  ],
-"next_id": "13",
-"parent_id": "9",
-"replacements": [  ],
-"text": "Уго, ты нашел его, молодец! Дай сюда.",
-"translation_key": "Уго, ты нашел его, молодец! Дай сюда.",
-"type": "dialogue"
-},
-"13": {
-"next_id": "end",
-"next_id_after": "end!",
-"parent_id": "9",
-"replacements": [  ],
-"responses": PoolStringArray( "13" ),
-"text": "Ну, пока...",
-"translation_key": "Ну, пока...",
-"type": "response"
-},
-"14": {
-"next_conditional_id": "end!",
-"next_id": "15",
-"next_id_after": "end!",
-"type": "condition"
 },
 "15": {
 "character": "Колодец",
 "character_replacements": [  ],
 "next_id": "16",
-"parent_id": "14",
+"parent_id": "12",
 "replacements": [  ],
-"text": "Так-так, ключик с тобой?",
-"translation_key": "Так-так, ключик с тобой?",
+"text": "Уго, ты нашел его, молодец! Дай сюда.",
+"translation_key": "Уго, ты нашел его, молодец! Дай сюда.",
 "type": "dialogue"
 },
 "16": {
-"next_id": "17",
-"next_id_after": "17",
-"parent_id": "14",
+"next_id": "end",
+"next_id_after": "end!",
+"parent_id": "12",
 "replacements": [  ],
 "responses": PoolStringArray( "16" ),
-"text": "Нет...",
-"translation_key": "Нет...",
+"text": "Ну, пока...",
+"translation_key": "Ну, пока...",
 "type": "response"
 },
 "17": {
-"character": "Колодец",
-"character_replacements": [  ],
+"next_conditional_id": "end!",
 "next_id": "18",
-"parent_id": "14",
-"replacements": [  ],
-"text": "ТЫ ВСЕ ЕЩЕ НЕ НАШЕЛ ЕГО?!",
-"translation_key": "ТЫ ВСЕ ЕЩЕ НЕ НАШЕЛ ЕГО?!",
-"type": "dialogue"
+"next_id_after": "end!",
+"type": "condition"
 },
 "18": {
 "character": "Колодец",
 "character_replacements": [  ],
 "next_id": "19",
-"parent_id": "14",
+"parent_id": "17",
 "replacements": [  ],
-"text": "Ищи, я буду ждать!",
-"translation_key": "Ищи, я буду ждать!",
+"text": "Так-так, ключик с тобой?",
+"translation_key": "Так-так, ключик с тобой?",
 "type": "dialogue"
 },
 "19": {
 "next_id": "20",
 "next_id_after": "20",
-"parent_id": "14",
+"parent_id": "17",
 "replacements": [  ],
 "responses": PoolStringArray( "19" ),
-"text": "Ладно...",
-"translation_key": "Ладно...",
+"text": "Нет...",
+"translation_key": "Нет...",
 "type": "response"
 },
 "2": {
@@ -162,8 +169,38 @@ lines = {
 "type": "dialogue"
 },
 "20": {
+"character": "Колодец",
+"character_replacements": [  ],
+"next_id": "21",
+"parent_id": "17",
+"replacements": [  ],
+"text": "ТЫ ВСЕ ЕЩЕ НЕ НАШЕЛ ЕГО?!",
+"translation_key": "ТЫ ВСЕ ЕЩЕ НЕ НАШЕЛ ЕГО?!",
+"type": "dialogue"
+},
+"21": {
+"character": "Колодец",
+"character_replacements": [  ],
+"next_id": "22",
+"parent_id": "17",
+"replacements": [  ],
+"text": "Ищи, я буду ждать!",
+"translation_key": "Ищи, я буду ждать!",
+"type": "dialogue"
+},
+"22": {
+"next_id": "23",
+"next_id_after": "23",
+"parent_id": "17",
+"replacements": [  ],
+"responses": PoolStringArray( "22" ),
+"text": "Ладно...",
+"translation_key": "Ладно...",
+"type": "response"
+},
+"23": {
 "next_id": "end",
-"parent_id": "14",
+"parent_id": "17",
 "type": "goto"
 },
 "3": {
@@ -177,36 +214,43 @@ lines = {
 "type": "dialogue"
 },
 "4": {
-"next_id": "5",
-"next_id_after": "5",
+"next_id": "8",
+"next_id_after": "8",
 "parent_id": "1",
 "replacements": [  ],
-"responses": PoolStringArray( "4" ),
+"responses": PoolStringArray( "4", "5" ),
 "text": "Хорошо...",
 "translation_key": "Хорошо...",
 "type": "response"
 },
 "5": {
-"mutation": {
-"expression": [ {
-"type": "variable",
-"value": "meet"
-}, {
-"type": "assignment",
-"value": "="
-}, {
-"type": "bool",
-"value": true
-} ]
-},
 "next_id": "6",
+"next_id_after": "8",
 "parent_id": "1",
-"type": "mutation"
+"replacements": [  ],
+"text": "Не хорошо...",
+"translation_key": "Не хорошо...",
+"type": "response"
 },
 "6": {
-"next_id": "end",
-"parent_id": "1",
-"type": "goto"
+"character": "Колодец",
+"character_replacements": [  ],
+"next_id": "7",
+"parent_id": "5",
+"replacements": [  ],
+"text": "Что значит не хорошо?",
+"translation_key": "Что значит не хорошо?",
+"type": "dialogue"
+},
+"7": {
+"next_id": "8",
+"next_id_after": "8",
+"parent_id": "5",
+"replacements": [  ],
+"responses": PoolStringArray( "7" ),
+"text": "То и значит...",
+"translation_key": "То и значит...",
+"type": "response"
 },
 "8": {
 "mutation": {
@@ -222,24 +266,12 @@ lines = {
 } ]
 },
 "next_id": "9",
+"parent_id": "1",
 "type": "mutation"
 },
 "9": {
-"condition": {
-"expression": [ {
-"type": "variable",
-"value": "has_key"
-}, {
-"type": "comparison",
-"value": "=="
-}, {
-"type": "bool",
-"value": true
-} ]
-},
-"next_conditional_id": "14",
-"next_id": "10",
-"next_id_after": "end!",
-"type": "condition"
+"next_id": "end",
+"parent_id": "1",
+"type": "goto"
 }
 }
