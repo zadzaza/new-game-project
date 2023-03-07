@@ -1,6 +1,6 @@
 [gd_scene load_steps=7 format=2]
 
-[ext_resource path="res://Sprites/Tiles/bg_inv.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/bg_inv.png" type="Texture" id=1]
 [ext_resource path="res://ui/inventory/cell_empty.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Slot.gd" type="Script" id=3]
 [ext_resource path="res://Scripts/Inventory.gd" type="Script" id=4]

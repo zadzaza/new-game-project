@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 47
+resource_version = 48
 syntax_version = 2
 raw_text = "~ test_Dialogue
 if meet == false
@@ -23,7 +23,6 @@ if has_key == true
 	- Вот он...
 	Колодец: Уго, ты нашел его, молодец! Дай сюда.
 	- Ну, пока... 
-	print(\"fds\")
 	=> END
 else
 	Колодец: Так-так, ключик с тобой?
@@ -89,7 +88,7 @@ lines = {
 "value": true
 } ]
 },
-"next_conditional_id": "19",
+"next_conditional_id": "18",
 "next_id": "13",
 "next_id_after": "end!",
 "type": "condition"
@@ -135,24 +134,25 @@ lines = {
 "type": "response"
 },
 "17": {
-"character": "",
-"next_id": "18",
-"parent_id": "12",
-"replacements": [  ],
-"text": "print(\"fds\")",
-"translation_key": "print(\"fds\")",
-"type": "dialogue"
-},
-"18": {
 "next_id": "end",
 "parent_id": "12",
 "type": "goto"
 },
-"19": {
+"18": {
 "next_conditional_id": "end!",
-"next_id": "20",
+"next_id": "19",
 "next_id_after": "end!",
 "type": "condition"
+},
+"19": {
+"character": "Колодец",
+"character_replacements": [  ],
+"next_id": "20",
+"parent_id": "18",
+"replacements": [  ],
+"text": "Так-так, ключик с тобой?",
+"translation_key": "Так-так, ключик с тобой?",
+"type": "dialogue"
 },
 "2": {
 "character": "Колодец",
@@ -165,58 +165,48 @@ lines = {
 "type": "dialogue"
 },
 "20": {
-"character": "Колодец",
-"character_replacements": [  ],
 "next_id": "21",
-"parent_id": "19",
+"next_id_after": "21",
+"parent_id": "18",
 "replacements": [  ],
-"text": "Так-так, ключик с тобой?",
-"translation_key": "Так-так, ключик с тобой?",
-"type": "dialogue"
-},
-"21": {
-"next_id": "22",
-"next_id_after": "22",
-"parent_id": "19",
-"replacements": [  ],
-"responses": PoolStringArray( "21" ),
+"responses": PoolStringArray( "20" ),
 "text": "Нет...",
 "translation_key": "Нет...",
 "type": "response"
 },
-"22": {
+"21": {
 "character": "Колодец",
 "character_replacements": [  ],
-"next_id": "23",
-"parent_id": "19",
+"next_id": "22",
+"parent_id": "18",
 "replacements": [  ],
 "text": "ТЫ ВСЕ ЕЩЕ НЕ НАШЕЛ ЕГО?!",
 "translation_key": "ТЫ ВСЕ ЕЩЕ НЕ НАШЕЛ ЕГО?!",
 "type": "dialogue"
 },
-"23": {
+"22": {
 "character": "Колодец",
 "character_replacements": [  ],
-"next_id": "24",
-"parent_id": "19",
+"next_id": "23",
+"parent_id": "18",
 "replacements": [  ],
 "text": "Ищи, я буду ждать!",
 "translation_key": "Ищи, я буду ждать!",
 "type": "dialogue"
 },
-"24": {
-"next_id": "25",
-"next_id_after": "25",
-"parent_id": "19",
+"23": {
+"next_id": "24",
+"next_id_after": "24",
+"parent_id": "18",
 "replacements": [  ],
-"responses": PoolStringArray( "24" ),
+"responses": PoolStringArray( "23" ),
 "text": "Ладно...",
 "translation_key": "Ладно...",
 "type": "response"
 },
-"25": {
+"24": {
 "next_id": "end",
-"parent_id": "19",
+"parent_id": "18",
 "type": "goto"
 },
 "3": {

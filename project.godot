@@ -29,6 +29,7 @@ PlayerInventory="*res://Scripts/PlayerInventory.gd"
 GlobalScript="*res://Scripts/global_script.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 GameState="*res://Scripts/game_state.gd"
+GlobalAudioStreamPlayer="*res://AudioStreamPlayer.tscn"
 
 [debug]
 

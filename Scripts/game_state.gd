@@ -5,10 +5,10 @@ var IronKey = "Iron Key"
 var meet = false
 
 func _process(delta):
-	check_key()
+	has_key()
 	print(has_key)
 
-func check_key():
-	for IronKey in PlayerInventory.inventory:
+func has_key():
+	for IronKey in range(10):
 		if PlayerInventory.inventory.has(IronKey) == true:
 			has_key = true
