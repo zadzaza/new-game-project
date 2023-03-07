@@ -137,7 +137,7 @@ func get_pause(at_index: int) -> float:
 
 # Get the speed for the current typing position
 func get_speed(at_index: int) -> float:
-	var speed: float = 0.5
+	var speed: float = 0.6
 	for index in dialogue_line.speeds:
 		if index > at_index:
 			return speed

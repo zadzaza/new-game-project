@@ -6,8 +6,14 @@ export var animation = ""
 var LastInput = ""
 var _velocity = Vector2()
 
+export var flip_h = false setget set_flip_h
+
+func set_flip_h(value):
+	$AnimatedSprite.flip_h = value
+
 func _physics_process(delta):
 	get_input(delta)
+	
 	
 func _input(event):
 	if event.is_action_pressed("pickup"):
