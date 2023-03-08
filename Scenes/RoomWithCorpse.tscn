@@ -250,6 +250,13 @@ cell_custom_transform = Transform2D( 64, 0, 0, 32, 0, 0 )
 format = 1
 tile_data = PoolIntArray( 8585819, 3, 0, 13500868, 0, 0, 14942840, 0, 0 )
 
+[node name="TileMap6" type="TileMap" parent="."]
+tile_set = SubResource( 4 )
+cell_size = Vector2( 32, 32 )
+cell_quadrant_size = 1
+format = 1
+tile_data = PoolIntArray( 65551, 0, 0, 131087, 0, 0, 196627, 1, 0, 393229, 2, 0, 393234, 3, 0, 5832962, 1, 0, 6815973, 0, 0, 9961740, 3, 0, 10158417, 0, 0, 10289312, 0, 0 )
+
 [node name="Player" parent="." instance=ExtResource( 6 )]
 position = Vector2( 467, 212 )
 animation = "idle_down"
@@ -281,10 +288,3 @@ __meta__ = {
 [node name="Door(Opened)" type="Sprite" parent="."]
 position = Vector2( 462, 112 )
 texture = ExtResource( 9 )
-
-[node name="TileMap6" type="TileMap" parent="."]
-tile_set = SubResource( 4 )
-cell_size = Vector2( 32, 32 )
-cell_quadrant_size = 1
-format = 1
-tile_data = PoolIntArray( 65551, 0, 0, 196627, 1, 0, 393234, 3, 0, 5832962, 1, 0, 6815973, 0, 0, 9961740, 3, 0, 10158417, 0, 0, 10289312, 0, 0 )
