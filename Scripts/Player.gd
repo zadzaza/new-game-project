@@ -5,6 +5,7 @@ export var Speed = 4700
 export var animation = ""
 var LastInput = ""
 var _velocity = Vector2()
+onready var animatedSprite = get_node("AnimatedSprite")
 
 export var flip_h = false setget set_flip_h
 
@@ -12,7 +13,8 @@ func set_flip_h(value):
 	$AnimatedSprite.flip_h = value
 
 func _physics_process(delta):
-	get_input(delta)
+	move_and_slide(_velocity * delta)
+	animatedSprite.play(animation);
 	
 	
 func _input(event):
@@ -21,9 +23,11 @@ func _input(event):
 			var pickup_item = $PickupZone.items_in_range.values()[0]
 			pickup_item.pick_up_item(self)
 			$PickupZone.items_in_range.erase(pickup_item)
-
-func get_input(delta):
-	var animatedSprite = get_node("AnimatedSprite")
+			
+	if event.is_action_pressed("tab"):
+		var main_things = preload("res://Dialogues/main_things.tres")
+		DialogueManager.show_example_dialogue_balloon("main_things", main_things)
+	
 	_velocity = Vector2()
 	
 	if Input.is_action_pressed("ui_right"):
@@ -51,6 +55,3 @@ func get_input(delta):
 		animation = "idle_up"
 	if LastInput == "move_down" && Input.is_action_just_released("ui_down"):
 		animation = "idle_down"
-		
-	move_and_slide(_velocity * delta)
-	animatedSprite.play(animation);
