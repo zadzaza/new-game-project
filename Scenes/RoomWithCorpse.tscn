@@ -193,6 +193,7 @@ tile_data = PoolIntArray( 720914, 2, 0 )
 tile_set = SubResource( 2 )
 cell_size = Vector2( 8, 8 )
 format = 1
+tile_data = PoolIntArray( 2162733, 0, 0 )
 
 [node name="TileMap4" type="TileMap" parent="."]
 tile_set = SubResource( 1 )
