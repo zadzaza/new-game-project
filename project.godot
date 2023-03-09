@@ -22,6 +22,7 @@ _global_script_class_icons={
 
 config/name="Новый игровой проек"
 run/main_scene="res://Scenes/MainMenu.tscn"
+boot_splash/use_filter=false
 
 [autoload]
 

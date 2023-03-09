@@ -59,7 +59,6 @@ script = ExtResource( 1 )
 Speed = 4200
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 0, 1 )
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 11 )
 animation = "idle_down"
