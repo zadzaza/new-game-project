@@ -1,0 +1,62 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 2
+syntax_version = 2
+raw_text = "~ prologue5
+#5
+Но в Дориане вспыхнула неукротимая злоба против художника, словно внушенная портретом.
+Раздался глухой стон и ужасный хрип человека, захлебывающегося кровью.
+...
+Холлуорд больше не шевелился.
+=> END"
+errors = [  ]
+titles = {
+"prologue5": "2"
+}
+lines = {
+"0": {
+"next_id": "2",
+"text": "prologue5",
+"type": "title"
+},
+"2": {
+"character": "",
+"next_id": "3",
+"replacements": [  ],
+"text": "Но в Дориане вспыхнула неукротимая злоба против художника, словно внушенная портретом.",
+"translation_key": "Но в Дориане вспыхнула неукротимая злоба против художника, словно внушенная портретом.",
+"type": "dialogue"
+},
+"3": {
+"character": "",
+"next_id": "4",
+"replacements": [  ],
+"text": "Раздался глухой стон и ужасный хрип человека, захлебывающегося кровью.",
+"translation_key": "Раздался глухой стон и ужасный хрип человека, захлебывающегося кровью.",
+"type": "dialogue"
+},
+"4": {
+"character": "",
+"next_id": "5",
+"replacements": [  ],
+"text": "...",
+"translation_key": "...",
+"type": "dialogue"
+},
+"5": {
+"character": "",
+"next_id": "6",
+"replacements": [  ],
+"text": "Холлуорд больше не шевелился.",
+"translation_key": "Холлуорд больше не шевелился.",
+"type": "dialogue"
+},
+"6": {
+"next_id": "end",
+"type": "goto"
+}
+}

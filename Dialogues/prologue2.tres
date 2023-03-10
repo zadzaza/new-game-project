@@ -1,0 +1,46 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 3
+syntax_version = 2
+raw_text = "~ prologue2
+#2
+Бэзил: Дориан! [wait=1]Какая удача! [wait=1]Я искал вас потому, что сегодня в 0:00 уезжаю в Париж и пробуду за границей месяцев шесть.
+Бэзил: Мне нужно перед отъездом с вами потолковать. Позвольте мне войти на минуту.
+=> END"
+errors = [  ]
+titles = {
+"prologue2": "2"
+}
+lines = {
+"0": {
+"next_id": "2",
+"text": "prologue2",
+"type": "title"
+},
+"2": {
+"character": "Бэзил",
+"character_replacements": [  ],
+"next_id": "3",
+"replacements": [  ],
+"text": "Дориан! [wait=1]Какая удача! [wait=1]Я искал вас потому, что сегодня в 0:00 уезжаю в Париж и пробуду за границей месяцев шесть.",
+"translation_key": "Дориан! [wait=1]Какая удача! [wait=1]Я искал вас потому, что сегодня в 0:00 уезжаю в Париж и пробуду за границей месяцев шесть.",
+"type": "dialogue"
+},
+"3": {
+"character": "Бэзил",
+"character_replacements": [  ],
+"next_id": "4",
+"replacements": [  ],
+"text": "Мне нужно перед отъездом с вами потолковать. Позвольте мне войти на минуту.",
+"translation_key": "Мне нужно перед отъездом с вами потолковать. Позвольте мне войти на минуту.",
+"type": "dialogue"
+},
+"4": {
+"next_id": "end",
+"type": "goto"
+}
+}

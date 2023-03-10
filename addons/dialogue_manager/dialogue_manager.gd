@@ -4,6 +4,7 @@ extends Node
 signal dialogue_started
 signal dialogue_finished
 
+var dialogue_finished = false
 
 const DialogueResource = preload("res://addons/dialogue_manager/dialogue_resource.gd")
 const DialogueConstants = preload("res://addons/dialogue_manager/constants.gd")
@@ -303,10 +304,12 @@ func create_empty_dialogue_line() -> Dictionary:
 func set_is_dialogue_running(is_running: bool) -> void:
 	if is_dialogue_running != is_running:
 		if is_running:
+			dialogue_finished = false
 			emit_signal("dialogue_started")
 			GlobalScript.is_pause = true
 			GlobalScript.pause(1)
 		else:
+			dialogue_finished = true
 			GlobalScript.is_pause = false
 			GlobalScript.pause(0)
 			emit_signal("dialogue_finished")

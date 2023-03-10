@@ -1,0 +1,44 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 4
+syntax_version = 2
+raw_text = "~ prologue1
+#1
+Это было девятого ноября.
+Часов в одиннадцать вечера Дориан Грей возвращался домой. Мимо него во мгле промелькнул человек с саквояжем в руке. [wait=0.5]Он узнал своего друга Бэзила Холлуорда.
+=> END"
+errors = [  ]
+titles = {
+"prologue1": "2"
+}
+lines = {
+"0": {
+"next_id": "2",
+"text": "prologue1",
+"type": "title"
+},
+"2": {
+"character": "",
+"next_id": "3",
+"replacements": [  ],
+"text": "Это было девятого ноября.",
+"translation_key": "Это было девятого ноября.",
+"type": "dialogue"
+},
+"3": {
+"character": "",
+"next_id": "4",
+"replacements": [  ],
+"text": "Часов в одиннадцать вечера Дориан Грей возвращался домой. Мимо него во мгле промелькнул человек с саквояжем в руке. [wait=0.5]Он узнал своего друга Бэзила Холлуорда.",
+"translation_key": "Часов в одиннадцать вечера Дориан Грей возвращался домой. Мимо него во мгле промелькнул человек с саквояжем в руке. [wait=0.5]Он узнал своего друга Бэзила Холлуорда.",
+"type": "dialogue"
+},
+"4": {
+"next_id": "end",
+"type": "goto"
+}
+}

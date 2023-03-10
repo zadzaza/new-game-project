@@ -1,0 +1,74 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 2
+syntax_version = 2
+raw_text = "~ prologue4
+#4
+Крик ужаса вырвался у художника, когда он в полумраке увидел жуткое лицо, ухмылявшееся ему с полотна.
+Бэзил Холлуорд не узнал свою работу.
+Бэзил: Этот портрет - мерзкая карикатура, бессовестное издевательство!
+Дориан: Это - лицо моей души.
+Бэзил: Станем на колени и помолимся…[wait=1] Вы достаточно нагрешили в жизни.
+=> END"
+errors = [  ]
+titles = {
+"prologue4": "2"
+}
+lines = {
+"0": {
+"next_id": "2",
+"text": "prologue4",
+"type": "title"
+},
+"2": {
+"character": "",
+"next_id": "3",
+"replacements": [  ],
+"text": "Крик ужаса вырвался у художника, когда он в полумраке увидел жуткое лицо, ухмылявшееся ему с полотна.",
+"translation_key": "Крик ужаса вырвался у художника, когда он в полумраке увидел жуткое лицо, ухмылявшееся ему с полотна.",
+"type": "dialogue"
+},
+"3": {
+"character": "",
+"next_id": "4",
+"replacements": [  ],
+"text": "Бэзил Холлуорд не узнал свою работу.",
+"translation_key": "Бэзил Холлуорд не узнал свою работу.",
+"type": "dialogue"
+},
+"4": {
+"character": "Бэзил",
+"character_replacements": [  ],
+"next_id": "5",
+"replacements": [  ],
+"text": "Этот портрет - мерзкая карикатура, бессовестное издевательство!",
+"translation_key": "Этот портрет - мерзкая карикатура, бессовестное издевательство!",
+"type": "dialogue"
+},
+"5": {
+"character": "Дориан",
+"character_replacements": [  ],
+"next_id": "6",
+"replacements": [  ],
+"text": "Это - лицо моей души.",
+"translation_key": "Это - лицо моей души.",
+"type": "dialogue"
+},
+"6": {
+"character": "Бэзил",
+"character_replacements": [  ],
+"next_id": "7",
+"replacements": [  ],
+"text": "Станем на колени и помолимся…[wait=1] Вы достаточно нагрешили в жизни.",
+"translation_key": "Станем на колени и помолимся…[wait=1] Вы достаточно нагрешили в жизни.",
+"type": "dialogue"
+},
+"7": {
+"next_id": "end",
+"type": "goto"
+}
+}

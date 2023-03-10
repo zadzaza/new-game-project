@@ -4,9 +4,9 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 5
+resource_version = 7
 syntax_version = 2
-raw_text = "~ this_is_a_node_title
+raw_text = "~ prologue
 #1
 Это было девятого ноября.
 Часов в одиннадцать вечера Дориан Грей возвращался домой. Мимо него во мгле промелькнул человек с саквояжем в руке. [wait=0.5]Он узнал своего друга Бэзила Холлуорда.
@@ -27,15 +27,16 @@ raw_text = "~ this_is_a_node_title
 Но в Дориане вспыхнула неукротимая злоба против художника, словно внушенная портретом.
 Раздался глухой стон и ужасный хрип человека, захлебывающегося кровью.
 ...
-Холлуорд больше не шевелился."
+Холлуорд больше не шевелился. 
+=> END"
 errors = [  ]
 titles = {
-"this_is_a_node_title": "2"
+"prologue": "2"
 }
 lines = {
 "0": {
 "next_id": "2",
-"text": "this_is_a_node_title",
+"text": "prologue",
 "type": "title"
 },
 "10": {
@@ -124,11 +125,15 @@ lines = {
 },
 "21": {
 "character": "",
-"next_id": "",
+"next_id": "22",
 "replacements": [  ],
 "text": "Холлуорд больше не шевелился.",
 "translation_key": "Холлуорд больше не шевелился.",
 "type": "dialogue"
+},
+"22": {
+"next_id": "end",
+"type": "goto"
 },
 "3": {
 "character": "",
