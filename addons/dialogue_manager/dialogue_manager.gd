@@ -304,8 +304,10 @@ func set_is_dialogue_running(is_running: bool) -> void:
 	if is_dialogue_running != is_running:
 		if is_running:
 			emit_signal("dialogue_started")
+			GlobalScript.is_pause = true
 			GlobalScript.pause(1)
 		else:
+			GlobalScript.is_pause = false
 			GlobalScript.pause(0)
 			emit_signal("dialogue_finished")
 			

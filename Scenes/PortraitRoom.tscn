@@ -98,8 +98,8 @@ shape = SubResource( 3 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="MainMenuEscape" parent="CanvasLayer" instance=ExtResource( 8 )]
-visible = false
 
 [node name="Inventory" parent="CanvasLayer" instance=ExtResource( 9 )]
+position = Vector2( 1, 0 )
 
 [connection signal="body_entered" from="YSort/Door/Area2D2" to="." method="_on_Door_entered"]
