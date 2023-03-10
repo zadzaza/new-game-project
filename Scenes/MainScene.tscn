@@ -1108,6 +1108,7 @@ position = Vector2( 368, 373 )
 [node name="Player" parent="YSort" instance=ExtResource( 1 )]
 position = Vector2( 499, 326 )
 collision_mask = 8
+speed = 80
 
 [node name="Camera2D" type="Camera2D" parent="YSort/Player"]
 current = true

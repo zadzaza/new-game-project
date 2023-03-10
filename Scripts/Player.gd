@@ -13,7 +13,8 @@ func set_flip_h(value):
 	$AnimatedSprite.flip_h = value
 
 func _physics_process(delta):
-	move_and_slide(_velocity * delta)
+	_velocity = _velocity.normalized() * speed
+	move_and_slide(_velocity)
 	animatedSprite.play(animation);
 	
 	
@@ -32,21 +33,21 @@ func _input(event):
 	
 	if Input.is_action_pressed("ui_right"):
 		animation = "move_side"
-		_velocity.x += speed
+		_velocity.x += 1
 		last_input = "move_side"
 		$AnimatedSprite.flip_h = false
 	if Input.is_action_pressed("ui_left"):
 		animation = "move_side"
-		_velocity.x -= speed
+		_velocity.x -= 1
 		last_input = "move_side"
 		$AnimatedSprite.flip_h = true
 	if Input.is_action_pressed("ui_down"):
 		animation = "move_down"
-		_velocity.y += speed
+		_velocity.y += 1
 		last_input = "move_down"
 	if Input.is_action_pressed("ui_up"):
 		animation = "move_up"
-		_velocity.y -= speed
+		_velocity.y -= 1
 		last_input = "move_up"
 	
 	if last_input == "move_side" && (Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right")):

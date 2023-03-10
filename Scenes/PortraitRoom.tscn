@@ -51,7 +51,7 @@ tile_data = PoolIntArray( -24379417, 23, 0, -24379392, 3, 0, -24379197, 3, 0, -2
 position = Vector2( 958, 76 )
 scale = Vector2( 3, 3 )
 z_index = 2
-speed = 12500
+speed = 250
 
 [node name="Camera2D" type="Camera2D" parent="YSort/Player"]
 current = true
