@@ -2,6 +2,7 @@ extends Node
 
 var Animation = ""
 var is_pause = false
+var last_location = ""
 
 func pause(s=1):
 	get_tree().paused = bool(s)
