@@ -6,7 +6,7 @@ signal paused(duration)
 signal finished()
 
 
-export var skip_action: String = "ui_cancel"
+export var skip_action: String = "skip"
 export var seconds_per_step: float = 0.02
 
 
