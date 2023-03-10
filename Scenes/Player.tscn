@@ -54,18 +54,16 @@ extents = Vector2( 21.5, 27 )
 
 [node name="Player" type="KinematicBody2D"]
 scale = Vector2( 0.9, 0.9 )
-collision_mask = 0
+collision_mask = 15
 script = ExtResource( 1 )
 Speed = 4200
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 11 )
-animation = "idle_down"
-playing = true
+animation = "move_side"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2( 0, 1 )
 shape = SubResource( 17 )
 

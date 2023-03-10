@@ -1,0 +1,38 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://Sprites/Tiles/Hanger_Dressed_Bab.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Tiles/Hanger_Dressed.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Tiles/Hanger.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Tiles/Hanger_Bag.png" type="Texture" id=4]
+[ext_resource path="res://Scripts/Hanger.gd" type="Script" id=5]
+
+[sub_resource type="SpriteFrames" id=1]
+animations = [ {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "Hanger",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "Hanger_Bag",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "Hanger_Dressed",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ) ],
+"loop": true,
+"name": "Hanger_Dressed_Bag",
+"speed": 1.0
+} ]
+
+[node name="Hanger" type="Node2D"]
+script = ExtResource( 5 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 1 )
+animation = "Hanger_Dressed_Bag"
+playing = true
