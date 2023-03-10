@@ -36,7 +36,7 @@ position = Vector2( 57.0001, 554 )
 scale = Vector2( 3, 3 )
 z_index = 2
 collision_mask = 3
-speed = 300
+speed = 250
 animation = "idle_side"
 
 [node name="Camera2D" type="Camera2D" parent="YSort/Player"]
