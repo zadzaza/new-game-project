@@ -3,4 +3,4 @@ extends Node2D
 
 
 func _on_Door_entered(body):
-	pass
+	get_tree().change_scene("res://Scenes/Library.tscn")
