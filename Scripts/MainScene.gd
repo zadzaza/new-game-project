@@ -1,7 +1,6 @@
 extends Node2D
 
 func _ready():
-	GlobalScript.pause(0)
 	if $IronKey.being_picked_up == true:
 		$IronKey.queue_free()
 		print("da")

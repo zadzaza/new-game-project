@@ -2,6 +2,7 @@ extends Node2D
 
 func _ready():
 	visible = false
+	GlobalScript.pause(0)
 
 func _input(event):
 	if event.is_action_pressed("escape") and GlobalScript.is_pause == false:
