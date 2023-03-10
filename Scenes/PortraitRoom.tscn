@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://DOM2.tres" type="TileSet" id=1]
 [ext_resource path="res://Scripts/MainRoom.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://Scenes/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/MainMenuEscape.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Inventory.tscn" type="PackedScene" id=9]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 13, 65.5 )
@@ -76,7 +77,7 @@ z_index = 10
 texture = ExtResource( 4 )
 
 [node name="КомнатаСПортретом" type="Sprite" parent="."]
-position = Vector2( -435, -69 )
+position = Vector2( -1581, 321 )
 texture = ExtResource( 3 )
 
 [node name="1920X1080-black-solid-color-background2" type="Sprite" parent="."]
@@ -100,5 +101,8 @@ shape = SubResource( 3 )
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="MainMenuEscape" parent="CanvasLayer" instance=ExtResource( 8 )]
+visible = false
+
+[node name="Inventory" parent="CanvasLayer" instance=ExtResource( 9 )]
 
 [connection signal="body_entered" from="YSort/Door/Area2D2" to="." method="_on_Door_entered"]
