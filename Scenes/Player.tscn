@@ -56,12 +56,11 @@ extents = Vector2( 21.5, 27 )
 scale = Vector2( 0.9, 0.9 )
 collision_mask = 15
 script = ExtResource( 1 )
-Speed = 4200
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 scale = Vector2( 0.2, 0.2 )
 frames = SubResource( 11 )
-animation = "move_side"
+animation = "idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0, 1 )
