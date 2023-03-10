@@ -1,9 +1,7 @@
 extends Node2D
 
 func _ready():
-	if $IronKey.being_picked_up == true:
-		$IronKey.queue_free()
-		print("da")
+	pass
 
 func _process(delta):
 	pass
