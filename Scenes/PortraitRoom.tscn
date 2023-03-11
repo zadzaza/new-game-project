@@ -46,11 +46,6 @@ scale = Vector2( 3, 3 )
 z_index = 2
 speed = 250
 
-[node name="Camera2D" type="Camera2D" parent="YSort/Player"]
-current = true
-zoom = Vector2( 1.7, 1.7 )
-smoothing_enabled = true
-
 [node name="Door" parent="YSort" instance=ExtResource( 6 )]
 position = Vector2( 1132, 316 )
 z_index = 2

@@ -1,7 +1,9 @@
 extends Node2D
 
+var transition = preload("res://Scenes/Transition.tscn").instance()
+
 func _ready():
-	pass
+	transition.fade_out(0.5)
 
 func _process(delta):
 	pass

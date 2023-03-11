@@ -7,7 +7,7 @@
 [ext_resource path="res://Scenes/Inventory.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scripts/_CanvasLayer.gd" type="Script" id=6]
 [ext_resource path="res://Scenes/GoldenKey.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Scenes/IronKey.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/Coat.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scripts/MainScene.gd" type="Script" id=9]
 [ext_resource path="res://Scenes/MainMenuEscape.tscn" type="PackedScene" id=10]
 
@@ -1109,11 +1109,8 @@ position = Vector2( 368, 373 )
 position = Vector2( 499, 326 )
 collision_mask = 8
 speed = 80
-
-[node name="Camera2D" type="Camera2D" parent="YSort/Player"]
-current = true
-zoom = Vector2( 0.7, 0.7 )
-smoothing_enabled = true
+zoom_x = 0.6
+zoom_y = 0.6
 
 [node name="TileMapPlants" type="TileMap" parent="YSort"]
 position = Vector2( 0, -1 )

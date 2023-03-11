@@ -7,7 +7,6 @@ var have_vc = false
 
 func _process(delta):
 	has_key()
-	print(has_key)
 
 func has_key():
 	for IronKey in range(10):

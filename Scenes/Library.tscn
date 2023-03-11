@@ -41,11 +41,8 @@ z_index = 2
 collision_mask = 11
 speed = 250
 animation = "idle_side"
-
-[node name="Camera2D" type="Camera2D" parent="YSort/Player"]
-current = true
-zoom = Vector2( 1.7, 1.7 )
-smoothing_enabled = true
+zoom_x = 1.7
+zoom_y = 1.7
 
 [node name="TileMap" type="TileMap" parent="YSort"]
 tile_set = ExtResource( 1 )

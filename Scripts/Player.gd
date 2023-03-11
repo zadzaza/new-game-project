@@ -1,13 +1,21 @@
 extends KinematicBody2D
 
 
-export var speed = 4700
+export var speed = 200
 export var animation = ""
 var last_input = ""
 var _velocity = Vector2()
 onready var animatedSprite = get_node("AnimatedSprite")
+export var zoom_x = 1.0 setget set_zoom_x
+export var zoom_y = 1.0 setget set_zoom_y
 
 export var flip_h = false setget set_flip_h
+
+func set_zoom_x(value):
+	$Camera2D.zoom.x = value
+
+func set_zoom_y(value):
+	$Camera2D.zoom.y = value
 
 func set_flip_h(value):
 	$AnimatedSprite.flip_h = value
@@ -16,6 +24,7 @@ func _physics_process(delta):
 	_velocity = _velocity.normalized() * speed
 	move_and_slide(_velocity)
 	animatedSprite.play(animation);
+	stop_cam()
 	
 	
 func _input(event):
@@ -56,3 +65,7 @@ func _input(event):
 		animation = "idle_up"
 	if last_input == "move_down" && Input.is_action_just_released("ui_down"):
 		animation = "idle_down"
+
+
+func stop_cam():
+	pass
