@@ -56,4 +56,3 @@ func _on_AnimatedSprite_animation_finished():
 		animated_sprite.play("5_lightening")
 	elif animated_sprite.animation == "5_lightening":
 		animated_sprite.play("5_darkening")
-	
