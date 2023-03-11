@@ -75,7 +75,7 @@ animations = [ {
 "name": "4_lightening",
 "speed": 7.0
 }, {
-"frames": [ null, ExtResource( 24 ), ExtResource( 30 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 32 ), ExtResource( 6 ) ],
+"frames": [ null, ExtResource( 24 ), ExtResource( 30 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 32 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ), ExtResource( 6 ) ],
 "loop": false,
 "name": "5_darkening",
 "speed": 7.0
@@ -90,10 +90,10 @@ animations = [ {
 script = ExtResource( 5 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
-position = Vector2( 514.5, 299 )
-scale = Vector2( 0.821774, 0.836111 )
+position = Vector2( 512, 300 )
+scale = Vector2( 0.825806, 0.833333 )
 frames = SubResource( 1 )
 animation = "1_lightening"
-speed_scale = 2.0
+speed_scale = 2.2
 
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
