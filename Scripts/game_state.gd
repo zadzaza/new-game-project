@@ -3,6 +3,7 @@ extends Node
 var has_key = false
 var IronKey = "Iron Key"
 var meet = false
+var have_vc = false
 
 func _process(delta):
 	has_key()

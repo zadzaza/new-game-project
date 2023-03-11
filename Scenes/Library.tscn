@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://DOM2.tres" type="TileSet" id=1]
 [ext_resource path="res://Планировка/Главная комната.png" type="Texture" id=2]
@@ -8,6 +8,9 @@
 [ext_resource path="res://Scripts/Library.gd" type="Script" id=6]
 [ext_resource path="res://Scenes/Inventory.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/MainMenuEscape.tscn" type="PackedScene" id=8]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 55.2977, 66.512 )
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9, 65.5 )
@@ -35,7 +38,7 @@ tile_data = PoolIntArray( 720922, 27, 0 )
 position = Vector2( 57.0001, 554 )
 scale = Vector2( 3, 3 )
 z_index = 2
-collision_mask = 3
+collision_mask = 11
 speed = 250
 animation = "idle_side"
 
@@ -55,6 +58,15 @@ tile_data = PoolIntArray( -24379417, 23, 0, -24379392, 3, 0, -24379197, 3, 0, -2
 position = Vector2( 679, 835 )
 scale = Vector2( 1.293, 1.293 )
 z_index = 2
+
+[node name="Area2D" type="Area2D" parent="YSort/Hanger"]
+collision_layer = 8
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="YSort/Hanger/Area2D"]
+position = Vector2( -4.25366, 1.54675 )
+scale = Vector2( 1, 1 )
+shape = SubResource( 3 )
 
 [node name="Door" parent="YSort" instance=ExtResource( 5 )]
 position = Vector2( 38, 517 )
@@ -80,5 +92,6 @@ visible = false
 
 [node name="Inventory" parent="CanvasLayer" instance=ExtResource( 7 )]
 
+[connection signal="body_entered" from="YSort/Hanger/Area2D" to="." method="_on_Hanger_entered"]
 [connection signal="body_entered" from="YSort/Door/Area2D2" to="." method="_on_Door_entered"]
 [connection signal="body_entered" from="ToStreet" to="." method="_on_ToStreet_body_entered"]
