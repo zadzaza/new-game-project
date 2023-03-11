@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "D00UDu5Q6lwYZw9YrSWfa/2HAsxE9DucoAZLPpkuvYTCMiL39ZdyC5aXWqsjXDykvhkYoKsc6O8NAzZwovBa0A==",
+  "dgSpecHash": "4ox+q4A6nWKFBLnFyqLcoXrjRAVpiWFi6U1DfTKWI+KvmoelsGsGapW4Dte3Nza+zKOunq01wegnVB6gy2pL3w==",
   "success": true,
-  "projectFilePath": "D:\\DoriantWithOst\\new-game-project-main\\Новый игровой проек.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "E:\\Github\\Doriant\\fff\\new-game-project\\Новый игровой проек.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Vladik\\.nuget\\packages\\microsoft.netcore.app.ref\\3.1.0\\microsoft.netcore.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Vladik\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\3.1.0\\microsoft.windowsdesktop.app.ref.3.1.0.nupkg.sha512",
+    "C:\\Users\\Vladik\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
   "logs": []
 }
