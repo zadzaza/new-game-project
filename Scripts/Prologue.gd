@@ -49,6 +49,11 @@ func _on_AnimatedSprite_animation_finished():
 	elif animated_sprite.animation == "3_lightening":
 		animated_sprite.play("3_darkening")
 	elif animated_sprite.animation == "3_darkening":
+		animated_sprite.play("4_lightening")
+	elif animated_sprite.animation == "4_lightening":
+		animated_sprite.play("4_darkening")
+	elif animated_sprite.animation == "4_darkening":
 		animated_sprite.play("5_lightening")
 	elif animated_sprite.animation == "5_lightening":
 		animated_sprite.play("5_darkening")
+	
