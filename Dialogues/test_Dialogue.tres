@@ -4,12 +4,12 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 51
+resource_version = 52
 syntax_version = 2
 raw_text = "~ test_Dialogue
 if meet == false
-	Колодец: НАЙДИ МНЕ СЕРЕБРЯННЫЙ КЛЮЧ!
-	Колодец: БЕЗ КЛЮЧА НЕ ПРИХОДИ!!!
+	Колодец: НАЙДИ МНЕ ПАЛЬТО!
+	Колодец: БЕЗ ПАЛЬТО НЕ ПРИХОДИ!!!
 	- Хорошо... 
 	- Не хорошо...
 		Колодец: Что значит не хорошо?
@@ -18,14 +18,14 @@ if meet == false
 	=> END
 
 set meet = true 
-if has_key == true
-	Колодец: Так-так, ключик с тобой?
+if has_coat == true
+	Колодец: Так-так, ПАЛЬТО с тобой?
 	- Вот он...
 	Колодец: Уго, ты нашел его, молодец! Дай сюда.
 	- Ну, пока... 
 	=> END
 else
-	Колодец: Так-так, ключик с тобой?
+	Колодец: Так-так, ПАЛЬТО с тобой?
 	- Нет...
 	Колодец: ТЫ ВСЕ ЕЩЕ НЕ НАШЕЛ ЕГО?!
 	Колодец: Ищи, я буду ждать!
@@ -79,7 +79,7 @@ lines = {
 "condition": {
 "expression": [ {
 "type": "variable",
-"value": "has_key"
+"value": "has_coat"
 }, {
 "type": "comparison",
 "value": "=="
@@ -99,8 +99,8 @@ lines = {
 "next_id": "14",
 "parent_id": "12",
 "replacements": [  ],
-"text": "Так-так, ключик с тобой?",
-"translation_key": "Так-так, ключик с тобой?",
+"text": "Так-так, ПАЛЬТО с тобой?",
+"translation_key": "Так-так, ПАЛЬТО с тобой?",
 "type": "dialogue"
 },
 "14": {
@@ -150,8 +150,8 @@ lines = {
 "next_id": "20",
 "parent_id": "18",
 "replacements": [  ],
-"text": "Так-так, ключик с тобой?",
-"translation_key": "Так-так, ключик с тобой?",
+"text": "Так-так, ПАЛЬТО с тобой?",
+"translation_key": "Так-так, ПАЛЬТО с тобой?",
 "type": "dialogue"
 },
 "2": {
@@ -160,8 +160,8 @@ lines = {
 "next_id": "3",
 "parent_id": "1",
 "replacements": [  ],
-"text": "НАЙДИ МНЕ СЕРЕБРЯННЫЙ КЛЮЧ!",
-"translation_key": "НАЙДИ МНЕ СЕРЕБРЯННЫЙ КЛЮЧ!",
+"text": "НАЙДИ МНЕ ПАЛЬТО!",
+"translation_key": "НАЙДИ МНЕ ПАЛЬТО!",
 "type": "dialogue"
 },
 "20": {
@@ -215,8 +215,8 @@ lines = {
 "next_id": "4",
 "parent_id": "1",
 "replacements": [  ],
-"text": "БЕЗ КЛЮЧА НЕ ПРИХОДИ!!!",
-"translation_key": "БЕЗ КЛЮЧА НЕ ПРИХОДИ!!!",
+"text": "БЕЗ ПАЛЬТО НЕ ПРИХОДИ!!!",
+"translation_key": "БЕЗ ПАЛЬТО НЕ ПРИХОДИ!!!",
 "type": "dialogue"
 },
 "4": {

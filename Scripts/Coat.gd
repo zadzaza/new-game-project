@@ -10,7 +10,7 @@ var player = null
 export var being_picked_up = false
 
 func _ready():
-	item_name = "coat"
+	item_name = "Coat"
 
 func _physics_process(delta):
 	if being_picked_up == false:

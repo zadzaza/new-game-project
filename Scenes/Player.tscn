@@ -17,32 +17,32 @@ animations = [ {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "idle_down",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "idle_side",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [ ExtResource( 9 ) ],
 "loop": true,
 "name": "idle_up",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [ ExtResource( 5 ), ExtResource( 6 ), ExtResource( 4 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "move_down",
-"speed": 4.0
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 10 ), ExtResource( 2 ), ExtResource( 11 ) ],
 "loop": true,
 "name": "move_side",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "move_up",
-"speed": 4.0
+"speed": 5.0
 } ]
 
 [sub_resource type="CapsuleShape2D" id=17]
@@ -63,7 +63,6 @@ frames = SubResource( 11 )
 animation = "idle_down"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-visible = false
 position = Vector2( 0, 1 )
 shape = SubResource( 17 )
 

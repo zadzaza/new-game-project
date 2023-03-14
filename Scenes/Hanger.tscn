@@ -1,9 +1,9 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
-[ext_resource path="res://Sprites/Tiles/Hanger_Dressed_Bab.png" type="Texture" id=1]
-[ext_resource path="res://Sprites/Tiles/Hanger_Dressed.png" type="Texture" id=2]
-[ext_resource path="res://Sprites/Tiles/Hanger.png" type="Texture" id=3]
-[ext_resource path="res://Sprites/Tiles/Hanger_Bag.png" type="Texture" id=4]
+[ext_resource path="res://Sprites/Tiles/Hanger/Hanger_Dressed_Bab.png" type="Texture" id=1]
+[ext_resource path="res://Sprites/Tiles/Hanger/Hanger_Dressed.png" type="Texture" id=2]
+[ext_resource path="res://Sprites/Tiles/Hanger/Hanger.png" type="Texture" id=3]
+[ext_resource path="res://Sprites/Tiles/Hanger/Hanger_Bag.png" type="Texture" id=4]
 [ext_resource path="res://Scripts/Hanger.gd" type="Script" id=5]
 
 [sub_resource type="SpriteFrames" id=1]
@@ -29,6 +29,9 @@ animations = [ {
 "speed": 1.0
 } ]
 
+[sub_resource type="RectangleShape2D" id=2]
+extents = Vector2( 60, 76.5 )
+
 [node name="Hanger" type="Node2D"]
 script = ExtResource( 5 )
 
@@ -36,3 +39,11 @@ script = ExtResource( 5 )
 frames = SubResource( 1 )
 animation = "Hanger_Dressed_Bag"
 playing = true
+
+[node name="Area2D" type="Area2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -5, -1.5 )
+shape = SubResource( 2 )
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Hanger_entered"]

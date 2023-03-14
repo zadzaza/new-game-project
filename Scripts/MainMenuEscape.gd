@@ -4,6 +4,12 @@ func _ready():
 	visible = false
 	GlobalScript.pause(0)
 
+func _process(delta):
+	if !DialogueManager.dialogue_finished:
+		pause_mode = Node.PAUSE_MODE_INHERIT
+	else:
+		pause_mode = Node.PAUSE_MODE_PROCESS
+
 func _input(event):
 	if event.is_action_pressed("escape") and GlobalScript.is_pause == false:
 		GlobalScript.is_pause = true

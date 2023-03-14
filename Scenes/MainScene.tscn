@@ -1040,7 +1040,6 @@ script = ExtResource( 6 )
 [node name="Inventory" parent="CanvasLayer" instance=ExtResource( 5 )]
 
 [node name="MainMenuEscape" parent="CanvasLayer" instance=ExtResource( 10 )]
-pause_mode = 2
 visible = false
 
 [node name="Node2D" type="StaticBody2D" parent="."]

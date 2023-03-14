@@ -1,14 +1,19 @@
 extends Node
 
-var has_key = false
-var IronKey = "Iron Key"
+var has_coat = false
+
+var Coat = "Coat"
+var GoldenKey = "GoldenKey"
+
 var meet = false
 var have_vc = false
 
-func _process(delta):
-	has_key()
+var oborvano = false
 
-func has_key():
-	for IronKey in range(10):
-		if PlayerInventory.inventory.has(IronKey) == true:
-			has_key = true
+func _process(delta):
+	has_coat()
+
+func has_coat():
+	for Coat in range(10):
+		if PlayerInventory.inventory.has(Coat) == true:
+			has_coat = true
