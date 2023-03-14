@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Player/idle_side.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://Sprites/Player/idle_up.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/Player/move_side.png" type="Texture" id=10]
 [ext_resource path="res://Sprites/Player/move_side2.png" type="Texture" id=11]
+[ext_resource path="res://16x16_FX_4.png" type="Texture" id=12]
 
 [sub_resource type="SpriteFrames" id=11]
 animations = [ {
@@ -52,6 +53,9 @@ height = 8.0
 [sub_resource type="RectangleShape2D" id=18]
 extents = Vector2( 21.5, 27 )
 
+[sub_resource type="OccluderPolygon2D" id=19]
+polygon = PoolVector2Array( -7.77778, 21.1111, 6.66667, 21.1111, 6.66667, 24.4444, -7.77778, 24.4444 )
+
 [node name="Player" type="KinematicBody2D"]
 scale = Vector2( 0.9, 0.9 )
 collision_mask = 15
@@ -81,6 +85,18 @@ shape = SubResource( 18 )
 current = true
 zoom = Vector2( 1.7, 1.7 )
 smoothing_enabled = true
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( -1.07288e-06, 1.25 )
+scale = Vector2( 1.25, 2.89931 )
+texture = ExtResource( 12 )
+energy = 0.0
+mode = 1
+shadow_enabled = true
+
+[node name="LightOccluder2D" type="LightOccluder2D" parent="."]
+scale = Vector2( 1.01604, 1.01881 )
+occluder = SubResource( 19 )
 
 [connection signal="body_entered" from="PickupZone" to="PickupZone" method="_on_PickupZone_body_entered"]
 [connection signal="body_exited" from="PickupZone" to="PickupZone" method="_on_PickupZone_body_exited"]

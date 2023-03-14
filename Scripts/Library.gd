@@ -20,4 +20,3 @@ func _on_ToStreet_body_entered(body):
 	get_tree().get_root().add_child(transition)
 	transition.fade_in(0.5)
 	transition.tween.connect("tween_completed", transition, "change_scene_on_complete", [ "res://Scenes/MainScene.tscn" ])
-

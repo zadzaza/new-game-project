@@ -20,5 +20,5 @@ func _input(event):
 		if overlapping_bodies.size() > 0:
 			for Coat in range(10):
 				if PlayerInventory.inventory.has(Coat):
-					print("working")
 					PlayerInventory.inventory.erase("Coat")
+					print("working")

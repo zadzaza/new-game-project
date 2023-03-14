@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=22 format=2]
+[gd_resource type="TileSet" load_steps=24 format=2]
 
 [ext_resource path="res://Sprites/Tilemaps/Scenes/O_o.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Tilemaps/Scenes/N-n.png" type="Texture" id=2]
@@ -39,6 +39,9 @@ points = PoolVector2Array( 0, 0, 25, 0, 25, 165, 0, 165 )
 [sub_resource type="ConvexPolygonShape2D" id=11]
 points = PoolVector2Array( 0, 2, 25, 2, 25, 200, 0, 200 )
 
+[sub_resource type="OccluderPolygon2D" id=15]
+polygon = PoolVector2Array( 20.1254, 219.174, 168.478, 218.243, 168.118, 158.428, 138.757, 158.338, 137.885, 9.03564, 53.7758, 8.57521, 54.8374, 158.521, 20.1254, 158.335 )
+
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 1, 114, 201, 116, 201, 202, 1, 202 )
 
@@ -47,6 +50,9 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 216, 0, 216 )
 
 [sub_resource type="ConvexPolygonShape2D" id=12]
 points = PoolVector2Array( 2, 44, 58, 44, 58, 172, 2, 172 )
+
+[sub_resource type="OccluderPolygon2D" id=14]
+polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9375, 4.9375, 5.0625, 1.07764, 5.1109, 1.23346, 92.9669, 225, 93.0449, 225, 5.0625, 222.938, 5.0625, 223, 1.125, 195.938, 1.0625, 196, 5.0625, 192, 5, 192.063, 51.1875, 36, 51.125 )
 
 [resource]
 0/name = "O_o.png 0"
@@ -175,6 +181,7 @@ points = PoolVector2Array( 2, 44, 58, 44, 58, 172, 2, 172 )
 8/region = Rect2( 530, 510, 225, 95 )
 8/tile_mode = 0
 8/occluder_offset = Vector2( 0, 0 )
+8/occluder = SubResource( 14 )
 8/navigation_offset = Vector2( 0, 0 )
 8/shape_offset = Vector2( 0, 0 )
 8/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -195,7 +202,7 @@ points = PoolVector2Array( 2, 44, 58, 44, 58, 172, 2, 172 )
 9/shape_one_way = false
 9/shape_one_way_margin = 0.0
 9/shapes = [  ]
-9/z_index = 1
+9/z_index = 0
 10/name = "O_o.png 10"
 10/texture = ExtResource( 1 )
 10/tex_offset = Vector2( 0, 0 )
@@ -490,6 +497,7 @@ points = PoolVector2Array( 2, 44, 58, 44, 58, 172, 2, 172 )
 26/region = Rect2( 63, 0, 201, 325 )
 26/tile_mode = 0
 26/occluder_offset = Vector2( 0, 0 )
+26/occluder = SubResource( 15 )
 26/navigation_offset = Vector2( 0, 0 )
 26/shape_offset = Vector2( 0, 0 )
 26/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -714,3 +722,31 @@ points = PoolVector2Array( 2, 44, 58, 44, 58, 172, 2, 172 )
 40/shape_one_way_margin = 0.0
 40/shapes = [  ]
 40/z_index = 0
+41/name = "O_o.png 41"
+41/texture = ExtResource( 1 )
+41/tex_offset = Vector2( 0, 0 )
+41/modulate = Color( 1, 1, 1, 1 )
+41/region = Rect2( 1056, 208, 96, 208 )
+41/tile_mode = 0
+41/occluder_offset = Vector2( 0, 0 )
+41/navigation_offset = Vector2( 0, 0 )
+41/shape_offset = Vector2( 0, 0 )
+41/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+41/shape_one_way = false
+41/shape_one_way_margin = 0.0
+41/shapes = [  ]
+41/z_index = 0
+42/name = "O_o.png 42"
+42/texture = ExtResource( 1 )
+42/tex_offset = Vector2( 0, 0 )
+42/modulate = Color( 1, 1, 1, 1 )
+42/region = Rect2( 688, 864, 304, 32 )
+42/tile_mode = 0
+42/occluder_offset = Vector2( 0, 0 )
+42/navigation_offset = Vector2( 0, 0 )
+42/shape_offset = Vector2( 0, 0 )
+42/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+42/shape_one_way = false
+42/shape_one_way_margin = 0.0
+42/shapes = [  ]
+42/z_index = 0
