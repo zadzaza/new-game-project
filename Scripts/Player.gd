@@ -26,10 +26,6 @@ func _physics_process(delta):
 	animatedSprite.play(animation);
 	stop_cam()
 	
-	if !DialogueManager.dialogue_finished:
-		pause_mode = Node.PAUSE_MODE_INHERIT
-	else:
-		pause_mode = Node.PAUSE_MODE_PROCESS
 	
 	
 func _input(event):

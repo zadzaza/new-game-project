@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://DOM2.tres" type="TileSet" id=1]
 [ext_resource path="res://Scripts/MainRoom.gd" type="Script" id=2]
@@ -25,7 +25,8 @@
 [ext_resource path="res://мемы/Xdm12oVwnJg.jpg" type="Texture" id=23]
 [ext_resource path="res://мемы/M2nN-8_JPwE.jpg" type="Texture" id=24]
 [ext_resource path="res://мемы/sOjCXH-51Hs.jpg" type="Texture" id=25]
-[ext_resource path="res://16x16_FX_3.png" type="Texture" id=26]
+[ext_resource path="res://Light/16x16_FX_3.png" type="Texture" id=26]
+[ext_resource path="res://Light/32x32_Arcane_7.png" type="Texture" id=27]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 13, 65.5 )
@@ -128,14 +129,14 @@ pause_mode = 2
 position = Vector2( 775, -35 )
 
 [node name="Light2D" type="Light2D" parent="Fire"]
-position = Vector2( -6, 152 )
+position = Vector2( 1, 37 )
 rotation = -3.14119
 scale = Vector2( 43.2158, 19.9251 )
 texture = ExtResource( 26 )
 color = Color( 1, 0.47451, 0.215686, 1 )
 energy = 0.8
 shadow_enabled = true
-shadow_filter = 3
+shadow_filter = 5
 shadow_filter_smooth = 11.1
 
 [node name="эуэуэаэывэаы" type="Node" parent="."]
@@ -207,5 +208,25 @@ flip_v = true
 position = Vector2( -1976, -95474 )
 scale = Vector2( 96.9428, 60.4183 )
 texture = ExtResource( 24 )
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Light2D" type="Light2D" parent="Node"]
+position = Vector2( 990, -143.5 )
+scale = Vector2( 11.0625, 10.5938 )
+texture = ExtResource( 27 )
+color = Color( 0.12549, 0.341176, 0.541176, 1 )
+shadow_enabled = true
+shadow_filter = 5
+shadow_filter_smooth = 11.1
+
+[node name="Light2D2" type="Light2D" parent="Node"]
+position = Vector2( 162, -152.938 )
+scale = Vector2( 12.1875, 10.4336 )
+texture = ExtResource( 27 )
+color = Color( 0.12549, 0.341176, 0.541176, 1 )
+shadow_enabled = true
+shadow_filter = 5
+shadow_filter_smooth = 11.1
 
 [connection signal="body_entered" from="YSort/Door/Area2D2" to="." method="_on_Door_entered"]

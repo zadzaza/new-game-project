@@ -10,7 +10,7 @@
 [ext_resource path="res://Scenes/Coat.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scripts/MainScene.gd" type="Script" id=9]
 [ext_resource path="res://Scenes/MainMenuEscape.tscn" type="PackedScene" id=10]
-[ext_resource path="res://32x32_Arcane_5.png" type="Texture" id=11]
+[ext_resource path="res://Light/32x32_Arcane_5.png" type="Texture" id=11]
 
 [sub_resource type="CapsuleShape2D" id=8]
 radius = 8.98082
@@ -1148,6 +1148,7 @@ color = Color( 0.403922, 0.517647, 0.854902, 1 )
 position = Vector2( 568, 251 )
 scale = Vector2( 12.1211, 9.77734 )
 texture = ExtResource( 11 )
+color = Color( 0.992157, 0.819608, 0.466667, 1 )
 energy = 0.8
 shadow_enabled = true
 shadow_filter = 3
@@ -1157,9 +1158,10 @@ shadow_filter_smooth = 11.1
 position = Vector2( 585, 250 )
 scale = Vector2( 11.1035, 10.9922 )
 texture = ExtResource( 11 )
+color = Color( 0.992157, 0.819608, 0.466667, 1 )
 energy = 0.6
 shadow_enabled = true
-shadow_filter = 3
+shadow_filter = 5
 shadow_filter_smooth = 11.1
 
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://DOM2.tres" type="TileSet" id=1]
 [ext_resource path="res://Планировка/Главная комната.png" type="Texture" id=2]
@@ -12,7 +12,8 @@
 [ext_resource path="res://Scenes/Chest.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Sprites/Tiles/1920x1080-black-solid-color-background.jpg" type="Texture" id=11]
 [ext_resource path="res://Scenes/Fire.tscn" type="PackedScene" id=12]
-[ext_resource path="res://16x16_FX_3.png" type="Texture" id=13]
+[ext_resource path="res://Light/16x16_FX_3.png" type="Texture" id=13]
+[ext_resource path="res://Light/32x32_Arcane_7.png" type="Texture" id=14]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9, 65.5 )
@@ -391,7 +392,7 @@ format = 1
 tile_data = PoolIntArray( -458696, 13, 0, -393155, 1, 0, -393147, 1, 0, -393139, 1, 0, -393131, 1, 0, -327680, 2, 0, -262050, 4, 0, -65426, 2, 0, 0, 2, 0, 65597, 1, 0, 65605, 1, 0, 65613, 1, 0, 65621, 1, 0, 196643, 4, 0, 327680, 2, 0, 327710, 7, 0, 327774, 3, 0, 393277, 1, 0, 393285, 1, 0, 393293, 1, 0, 393301, 1, 0, 458862, 2, 0, 786432, 1, 0, 786439, 1, 0, 786446, 1, 0, 786453, 1, 0, 786460, 1, 0, 1507390, 9, 0, 1507419, 13, 0, 1769525, 13, 0, 1835118, 2, 0, 1900583, 2, 0, 1900640, 11, 0, 2293760, 3, 0, 2293767, 3, 0, 2293774, 3, 0, 2293781, 3, 0, 2293788, 3, 0, 2359366, 13, 0, 2359392, 13, 0, 2359406, 2, 0, 2818098, 3, 0, 2818106, 3, 0, 2818114, 3, 0, 2818122, 3, 0, 2818130, 3, 0, 2818138, 3, 0, 2818146, 3, 0 )
 
 [node name="1920X1080-black-solid-color-background2" type="Sprite" parent="."]
-position = Vector2( 1541.5, -205.25 )
+position = Vector2( 1452, -61 )
 scale = Vector2( 6.49323, 7.31806 )
 z_index = -9
 texture = ExtResource( 11 )
@@ -408,15 +409,104 @@ position = Vector2( 852, 144 )
 scale = Vector2( 0.937261, 0.900804 )
 
 [node name="Light2D" type="Light2D" parent="Fire"]
-position = Vector2( 8.53473, 38.8539 )
+position = Vector2( 2.13391, 35.5236 )
 rotation = -3.14119
 scale = Vector2( 48.4069, 28.6954 )
 texture = ExtResource( 13 )
 color = Color( 1, 0.47451, 0.215686, 1 )
 energy = 0.8
 shadow_enabled = true
-shadow_filter = 3
+shadow_filter = 5
 shadow_filter_smooth = 11.1
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Light2D" type="Light2D" parent="Node"]
+position = Vector2( 197, -87 )
+scale = Vector2( 11.7852, 13.2363 )
+texture = ExtResource( 14 )
+color = Color( 0.129412, 0.341176, 0.564706, 1 )
+energy = 0.6
+
+[node name="Light2D2" type="Light2D" parent="Node"]
+position = Vector2( 263, -139 )
+scale = Vector2( 11.7852, 13.2363 )
+texture = ExtResource( 14 )
+color = Color( 0.12549, 0.341176, 0.541176, 1 )
+energy = 0.6
+
+[node name="Light2D3" type="Light2D" parent="Node"]
+position = Vector2( 189, -140 )
+scale = Vector2( 11.7852, 13.2363 )
+texture = ExtResource( 14 )
+color = Color( 0.133333, 0.34902, 0.545098, 1 )
+energy = 0.6
+
+[node name="Light2D4" type="Light2D" parent="Node"]
+position = Vector2( 261, -82 )
+scale = Vector2( 11.7852, 13.2363 )
+texture = ExtResource( 14 )
+color = Color( 0.133333, 0.341176, 0.52549, 1 )
+energy = 0.6
+
+[node name="Light2D5" type="Light2D" parent="Node"]
+position = Vector2( 1045.56, -97.2187 )
+scale = Vector2( 11.7852, 13.2363 )
+texture = ExtResource( 14 )
+color = Color( 0.129412, 0.341176, 0.564706, 1 )
+energy = 0.6
+
+[node name="Light2D6" type="Light2D" parent="Node"]
+position = Vector2( 1111.56, -149.219 )
+scale = Vector2( 11.7852, 13.2363 )
+texture = ExtResource( 14 )
+color = Color( 0.12549, 0.341176, 0.541176, 1 )
+energy = 0.6
+
+[node name="Light2D7" type="Light2D" parent="Node"]
+position = Vector2( 1037.56, -150.219 )
+scale = Vector2( 11.7852, 13.2363 )
+texture = ExtResource( 14 )
+color = Color( 0.133333, 0.34902, 0.545098, 1 )
+energy = 0.6
+
+[node name="Light2D8" type="Light2D" parent="Node"]
+position = Vector2( 1109.56, -92.2187 )
+scale = Vector2( 11.7852, 13.2363 )
+texture = ExtResource( 14 )
+color = Color( 0.133333, 0.341176, 0.52549, 1 )
+energy = 0.6
+
+[node name="Light2D9" type="Light2D" parent="Node"]
+position = Vector2( 1460.56, -90.2187 )
+scale = Vector2( 11.7852, 13.2363 )
+texture = ExtResource( 14 )
+color = Color( 0.129412, 0.341176, 0.564706, 1 )
+energy = 0.6
+
+[node name="Light2D10" type="Light2D" parent="Node"]
+position = Vector2( 1526.56, -142.219 )
+scale = Vector2( 11.7852, 13.2363 )
+texture = ExtResource( 14 )
+color = Color( 0.12549, 0.341176, 0.541176, 1 )
+energy = 0.6
+
+[node name="Light2D11" type="Light2D" parent="Node"]
+position = Vector2( 1452.56, -143.219 )
+scale = Vector2( 11.7852, 13.2363 )
+texture = ExtResource( 14 )
+color = Color( 0.133333, 0.34902, 0.545098, 1 )
+energy = 0.6
+
+[node name="Light2D12" type="Light2D" parent="Node"]
+position = Vector2( 1524.56, -85.2187 )
+scale = Vector2( 11.7852, 13.2363 )
+texture = ExtResource( 14 )
+color = Color( 0.133333, 0.341176, 0.52549, 1 )
+energy = 0.6
+
+[node name="Chest" parent="." instance=ExtResource( 10 )]
+position = Vector2( 360, 140 )
 
 [connection signal="body_entered" from="YSort/Door/Area2D2" to="." method="_on_Door_entered"]
 [connection signal="body_entered" from="ToStreet" to="." method="_on_ToStreet_body_entered"]

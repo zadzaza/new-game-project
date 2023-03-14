@@ -11,7 +11,7 @@
 [ext_resource path="res://Sprites/Player/idle_up.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/Player/move_side.png" type="Texture" id=10]
 [ext_resource path="res://Sprites/Player/move_side2.png" type="Texture" id=11]
-[ext_resource path="res://16x16_FX_4.png" type="Texture" id=12]
+[ext_resource path="res://Light/16x16_FX_4.png" type="Texture" id=12]
 
 [sub_resource type="SpriteFrames" id=11]
 animations = [ {
@@ -95,7 +95,8 @@ mode = 1
 shadow_enabled = true
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
-scale = Vector2( 1.01604, 1.01881 )
+position = Vector2( -0.2, 7.778 )
+scale = Vector2( 0.7, 0.7 )
 occluder = SubResource( 19 )
 
 [connection signal="body_entered" from="PickupZone" to="PickupZone" method="_on_PickupZone_body_entered"]
