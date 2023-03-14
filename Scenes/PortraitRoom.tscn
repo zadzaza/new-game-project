@@ -1,4 +1,4 @@
-[gd_scene load_steps=24 format=2]
+[gd_scene load_steps=29 format=2]
 
 [ext_resource path="res://DOM2.tres" type="TileSet" id=1]
 [ext_resource path="res://Scripts/MainRoom.gd" type="Script" id=2]
@@ -20,15 +20,20 @@
 [ext_resource path="res://мемы/3FYPzC5BWds.jpg" type="Texture" id=18]
 [ext_resource path="res://мемы/UsSau3h4894.jpg" type="Texture" id=19]
 [ext_resource path="res://Scenes/Window.tscn" type="PackedScene" id=20]
+[ext_resource path="res://мемы/mXR4GIzX_JQ.jpg" type="Texture" id=21]
+[ext_resource path="res://мемы/IbvwZpdrqMg.jpg" type="Texture" id=22]
+[ext_resource path="res://мемы/Xdm12oVwnJg.jpg" type="Texture" id=23]
+[ext_resource path="res://мемы/M2nN-8_JPwE.jpg" type="Texture" id=24]
+[ext_resource path="res://мемы/sOjCXH-51Hs.jpg" type="Texture" id=25]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 13, 65.5 )
 
 [sub_resource type="RectangleShape2D" id=2]
-extents = Vector2( 18.5534, 15.7317 )
+extents = Vector2( 18.5534, 11.2193 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 30.6845, 14.7561 )
+extents = Vector2( 30.6845, 7.9268 )
 
 [node name="PortraitRoom" type="Node2D"]
 script = ExtResource( 2 )
@@ -97,16 +102,15 @@ z_index = -3
 texture = ExtResource( 4 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-visible = false
 scale = Vector2( 1.40136, 1.64 )
 z_index = 21
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 750.699, 103.659 )
+position = Vector2( 750.699, 99.1466 )
 shape = SubResource( 2 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 678.627, 100.122 )
+position = Vector2( 678.627, 93.2927 )
 shape = SubResource( 3 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
@@ -129,13 +133,13 @@ scale = Vector2( 34.6204, 25.9988 )
 texture = ExtResource( 16 )
 
 [node name="0W78Utpe-ls" type="Sprite" parent="эуэуэаэывэаы"]
-position = Vector2( -37909.1, -13808.9 )
-scale = Vector2( 126.194, 136.159 )
+position = Vector2( -39125, -16625 )
+scale = Vector2( 158.622, 190.773 )
 texture = ExtResource( 13 )
 
 [node name="3fypzC5bWds" type="Sprite" parent="эуэуэаэывэаы"]
-position = Vector2( 2501, 25848 )
-scale = Vector2( 127.897, 45.6792 )
+position = Vector2( 2181, 25144 )
+scale = Vector2( 144.724, 47.3396 )
 texture = ExtResource( 18 )
 
 [node name="TSBkmmVxufw" type="Sprite" parent="эуэуэаэывэаы/3fypzC5bWds"]
@@ -162,5 +166,33 @@ texture = ExtResource( 17 )
 position = Vector2( -35256, -50981 )
 scale = Vector2( 74.4815, 51.9401 )
 texture = ExtResource( 19 )
+
+[node name="Xdm12oVwnJg" type="Sprite" parent="эуэуэаэывэаы"]
+position = Vector2( -5216, -35905 )
+scale = Vector2( 31.5778, 28.7129 )
+texture = ExtResource( 23 )
+
+[node name="MXr4gizXJq" type="Sprite" parent="эуэуэаэывэаы"]
+position = Vector2( 60117, 47039 )
+scale = Vector2( 38.8, 28.5592 )
+texture = ExtResource( 21 )
+
+[node name="IbvwZpdrqMg" type="Sprite" parent="эуэуэаэывэаы"]
+position = Vector2( -47649.5, -84185 )
+scale = Vector2( 31.0684, 29.75 )
+texture = ExtResource( 22 )
+
+[node name="SOjCxh-51Hs" type="Sprite" parent="эуэуэаэывэаы"]
+position = Vector2( -139450, 19203 )
+rotation = -3.14159
+scale = Vector2( 280.467, 193.996 )
+texture = ExtResource( 25 )
+flip_h = true
+flip_v = true
+
+[node name="M2nN-8JpwE" type="Sprite" parent="."]
+position = Vector2( -1976, -95474 )
+scale = Vector2( 96.9428, 60.4183 )
+texture = ExtResource( 24 )
 
 [connection signal="body_entered" from="YSort/Door/Area2D2" to="." method="_on_Door_entered"]
