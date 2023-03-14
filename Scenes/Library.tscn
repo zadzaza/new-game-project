@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://DOM2.tres" type="TileSet" id=1]
 [ext_resource path="res://Планировка/Главная комната.png" type="Texture" id=2]
@@ -9,14 +9,7 @@
 [ext_resource path="res://Scenes/Inventory.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/MainMenuEscape.tscn" type="PackedScene" id=8]
 [ext_resource path="res://librarySpritesUpscaled.png" type="Texture" id=9]
-<<<<<<< HEAD
 [ext_resource path="res://Scenes/Chest.tscn" type="PackedScene" id=10]
-=======
-[ext_resource path="res://collis.tres" type="Shape2D" id=10]
-
-[sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 55.2977, 66.512 )
->>>>>>> 2761f578d3fc3b9575b91af14c2087cc1ae66801
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 9, 65.5 )
@@ -294,10 +287,6 @@ extents = Vector2( 80.25, 45.5 )
 3/shapes = [  ]
 3/z_index = 0
 
-[sub_resource type="CapsuleShape2D" id=6]
-radius = 22.0001
-height = 61.124
-
 [node name="Library" type="Node2D"]
 script = ExtResource( 6 )
 
@@ -368,11 +357,7 @@ visible = false
 visible = false
 
 [node name="LibraryInterier" type="TileMap" parent="."]
-<<<<<<< HEAD
 visible = false
-=======
-z_index = 1
->>>>>>> 2761f578d3fc3b9575b91af14c2087cc1ae66801
 mode = 2
 tile_set = SubResource( 4 )
 cell_size = Vector2( 12, 12 )
@@ -380,7 +365,7 @@ cell_quadrant_size = 8
 cell_custom_transform = Transform2D( 18, 0, 0, 18, 0, 0 )
 compatibility_mode = true
 format = 1
-tile_data = PoolIntArray( -589769, 12, 0, -524200, 14, 0, -327677, 0, 0, -327669, 1, 0, -327661, 1, 0, -327653, 1, 0, 196643, 4, 0, 786432, 1, 0, 786439, 1, 0, 786446, 1, 0, 786460, 1, 0, 1900583, 2, 0, 2293760, 3, 0, 2293767, 3, 0, 2293774, 3, 0, 2293781, 3, 0, 2293788, 3, 0 )
+tile_data = PoolIntArray( -589769, 12, 0, -524200, 14, 0, -327677, 0, 0, -327669, 1, 0, -327661, 1, 0, -327653, 1, 0, 196643, 4, 0, 458757, 1, 0, 786432, 1, 0, 786439, 1, 0, 786446, 1, 0, 786453, 1, 0, 786460, 1, 0, 1900583, 2, 0, 2293760, 3, 0, 2293767, 3, 0, 2293774, 3, 0, 2293781, 3, 0, 2293788, 3, 0 )
 
 [node name="TileMap" type="TileMap" parent="."]
 visible = false
@@ -390,11 +375,7 @@ format = 1
 tile_data = PoolIntArray( 262155, 1, 0, 327693, 2, 0, 589829, 3, 0 )
 
 [node name="LibraryInterier2" type="TileMap" parent="."]
-<<<<<<< HEAD
 visible = false
-=======
-z_index = 2
->>>>>>> 2761f578d3fc3b9575b91af14c2087cc1ae66801
 mode = 2
 tile_set = SubResource( 4 )
 cell_size = Vector2( 12, 12 )
@@ -404,17 +385,5 @@ compatibility_mode = true
 format = 1
 tile_data = PoolIntArray( -458696, 13, 0, -393155, 1, 0, -393147, 1, 0, -393139, 1, 0, -393131, 1, 0, -327680, 2, 0, -262050, 4, 0, -65426, 2, 0, 0, 2, 0, 65597, 1, 0, 65605, 1, 0, 65613, 1, 0, 65621, 1, 0, 196643, 4, 0, 327680, 2, 0, 327710, 7, 0, 327774, 3, 0, 393277, 1, 0, 393285, 1, 0, 393293, 1, 0, 393301, 1, 0, 458862, 2, 0, 786432, 1, 0, 786439, 1, 0, 786446, 1, 0, 786453, 1, 0, 786460, 1, 0, 1507390, 9, 0, 1507419, 13, 0, 1769525, 13, 0, 1835118, 2, 0, 1900583, 2, 0, 1900640, 11, 0, 2293760, 3, 0, 2293767, 3, 0, 2293774, 3, 0, 2293781, 3, 0, 2293788, 3, 0, 2359366, 13, 0, 2359392, 13, 0, 2359406, 2, 0, 2818098, 3, 0, 2818106, 3, 0, 2818114, 3, 0, 2818122, 3, 0, 2818130, 3, 0, 2818138, 3, 0, 2818146, 3, 0 )
 
-<<<<<<< HEAD
-=======
-[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = ExtResource( 10 )
-
-[node name="CollisionShape2D6" type="CollisionShape2D" parent="."]
-position = Vector2( 449, 275 )
-z_index = 1
-shape = SubResource( 6 )
-
-[connection signal="body_entered" from="YSort/Hanger/Area2D" to="." method="_on_Hanger_entered"]
->>>>>>> 2761f578d3fc3b9575b91af14c2087cc1ae66801
 [connection signal="body_entered" from="YSort/Door/Area2D2" to="." method="_on_Door_entered"]
 [connection signal="body_entered" from="ToStreet" to="." method="_on_ToStreet_body_entered"]
