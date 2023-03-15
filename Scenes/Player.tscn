@@ -68,7 +68,7 @@ animation = "idle_down"
 speed_scale = 1.2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2( 0, 1 )
+position = Vector2( 0, 11.1111 )
 shape = SubResource( 17 )
 
 [node name="PickupZone" type="Area2D" parent="."]
@@ -95,7 +95,7 @@ mode = 1
 shadow_enabled = true
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
-position = Vector2( -0.2, 7.778 )
+position = Vector2( -0.2, 7 )
 scale = Vector2( 0.7, 0.7 )
 occluder = SubResource( 19 )
 

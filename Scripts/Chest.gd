@@ -9,7 +9,7 @@ var my_dict = {"Бонифаций": 15,
 
 func _process(delta):
 	animatedSprite.play(animation)
-	print(PlayerInventory.inventory.keys())
+	print(my_dict.keys())
 
 func _on_Chest_entered(body):
 	animation = "open"
@@ -24,4 +24,4 @@ func _input(event):
 			for Coat in range(PlayerInventory.NUM_INVENTORY_SLOTS):
 				if PlayerInventory.inventory.has(Coat):
 					print("working")
-					PlayerInventory.inventory.erase(PlayerInventory.inventory.find("Coat"))
+					PlayerInventory.inventory.erase(Coat)
