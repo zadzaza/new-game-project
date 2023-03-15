@@ -15,3 +15,4 @@ func _ready():
 func _on_Door_entered(body):
 	get_tree().change_scene("res://Scenes/Library.tscn")
 	GlobalScript.last_location = "PortraitRoom"
+

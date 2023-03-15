@@ -1,0 +1,6 @@
+<Project Sdk="Godot.NET.Sdk/3.3.0">
+  <PropertyGroup>
+    <TargetFramework>net90</TargetFramework>
+    <RootNamespace>Новыйигровойпроек</RootNamespace>
+  </PropertyGroup>
+</Project>

@@ -3,6 +3,10 @@ extends Node2D
 var hanger = preload("res://Dialogues/hanger.tres")
 var _body
 
+
+func _process(delta):
+	print(GlobalScript.is_pause)
+
 func _ready():
 	if GlobalScript.last_location == "MainScene":
 		$YSort/Player.position = Vector2(815, 815)

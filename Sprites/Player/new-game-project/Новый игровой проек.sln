@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Новый игровой проек", "Новый игровой проек.csproj", "{56B947BF-748E-4CA6-9CF4-38909EC1F8CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56B947BF-748E-4CA6-9CF4-38909EC1F8CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56B947BF-748E-4CA6-9CF4-38909EC1F8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56B947BF-748E-4CA6-9CF4-38909EC1F8CD}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{56B947BF-748E-4CA6-9CF4-38909EC1F8CD}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{56B947BF-748E-4CA6-9CF4-38909EC1F8CD}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{56B947BF-748E-4CA6-9CF4-38909EC1F8CD}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal

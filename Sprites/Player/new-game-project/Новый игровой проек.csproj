@@ -1,0 +1,6 @@
+<Project Sdk="Godot.NET.Sdk/3.3.0">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>Новыйигровойпроек</RootNamespace>
+  </PropertyGroup>
+</Project>

@@ -6,14 +6,10 @@ var Coat = "Coat"
 var GoldenKey = "GoldenKey"
 
 var meet = false
-var have_vc = false
 
+#вешалка
+var has_vc = "not have"
+
+#окно и портрет
 var oborvano = false
-
-func _process(delta):
-	has_coat()
-
-func has_coat():
-	for Coat in range(10):
-		if PlayerInventory.inventory.has(Coat) == true:
-			has_coat = true
+var visit_na_portrete = false
