@@ -1,10 +1,11 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Sprites/Tilemaps/Fire/burning_start_1.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Tilemaps/Fire/burning_end_1.png" type="Texture" id=2]
 [ext_resource path="res://Sprites/Tilemaps/Fire/burning_loop_1.png" type="Texture" id=3]
 [ext_resource path="res://Light/16x16_FX_3.png" type="Texture" id=4]
 [ext_resource path="res://Scripts/Fire.gd" type="Script" id=5]
+[ext_resource path="res://Scenes/Button.tscn" type="PackedScene" id=6]
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 2 )
@@ -127,5 +128,8 @@ shadow_enabled = true
 shadow_filter = 5
 shadow_filter_smooth = 11.1
 
+[node name="Button" parent="." instance=ExtResource( 6 )]
+
 [connection signal="animation_finished" from="AnimatedSprite" to="." method="_on_AnimatedSprite_animation_finished"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

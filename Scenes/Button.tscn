@@ -16,7 +16,7 @@ animations = [ {
 "frames": [ SubResource( 1 ), SubResource( 2 ) ],
 "loop": true,
 "name": "e",
-"speed": 1.0
+"speed": 2.0
 } ]
 
 [node name="Button" type="CanvasLayer"]
@@ -26,5 +26,4 @@ script = ExtResource( 2 )
 position = Vector2( 937, 520 )
 frames = SubResource( 3 )
 animation = "e"
-frame = 1
 playing = true

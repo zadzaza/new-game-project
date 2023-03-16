@@ -54,7 +54,7 @@ script = ExtResource( 9 )
 pause_mode = 2
 scale = Vector2( 1.2, 1.2 )
 frames = SubResource( 1 )
-frame = 7
+frame = 5
 playing = true
 
 [node name="Area2D" type="Area2D" parent="."]
