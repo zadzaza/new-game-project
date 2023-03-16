@@ -109,3 +109,13 @@ C:\Users\Администратор\Desktop\new-game-project-main\.mono\temp\obj
 C:\Users\Администратор\Desktop\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.csproj.CoreCompileInputs.cache
 C:\Users\Администратор\Desktop\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.dll
 C:\Users\Администратор\Desktop\new-game-project-main\.mono\temp\obj\Debug\Новый игровой проек.pdb
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\bin\Debug\Новый игровой проек.deps.json
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\bin\Debug\Новый игровой проек.dll
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\bin\Debug\Новый игровой проек.pdb
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\Debug\Новый игровой проек.csproj.AssemblyReference.cache
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\Debug\Новый игровой проек.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfoInputs.cache
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfo.cs
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\Debug\Новый игровой проек.csproj.CoreCompileInputs.cache
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\Debug\Новый игровой проек.dll
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\Debug\Новый игровой проек.pdb
