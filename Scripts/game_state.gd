@@ -33,7 +33,8 @@ var click_table = 0
 #камин
 var flame = false
 
+#тряпка
+var has_rag = false
+
 func _process(delta):
-	print(count_zanaveska)
-	print(click_window)
-	print(okno)
+	print(click_table)

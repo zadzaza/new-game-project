@@ -20,7 +20,6 @@ extents = Vector2( 9, 65.5 )
 extents = Vector2( 80.25, 45.5 )
 
 [sub_resource type="StreamTexture" id=6]
-load_path = "res://.import/librarySpritesUpscaled.png-5ad8e774cb08d5e84758c8689ff7e1a1.stex"
 
 [sub_resource type="TileSet" id=4]
 0/name = "librarySpritesUpscaled.png 0"
@@ -300,8 +299,8 @@ position = Vector2( -548, 458 )
 texture = ExtResource( 2 )
 
 [node name="Carpet" type="TileMap" parent="."]
-position = Vector2( -3, 49 )
-scale = Vector2( 1.95812, 2.34863 )
+position = Vector2( 41, 118 )
+scale = Vector2( 1.76117, 1.96966 )
 tile_set = ExtResource( 1 )
 cell_size = Vector2( 8, 8 )
 format = 1
