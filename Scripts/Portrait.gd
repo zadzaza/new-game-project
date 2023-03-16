@@ -1,6 +1,9 @@
 extends Node2D
 
+var a = false
+
 func _process(delta):
+	print(a)
 	if GameState.visit_na_portrete:$AnimatedSprite.play("zanaveska")
 
 func _input(event):
@@ -14,4 +17,7 @@ func _input(event):
 					GameState.count_zanaveska -= 1
 
 func _on_Area2D_body_entered(body):
-	pass # Replace with function body.
+	GameState.show_but_e = true
+
+func _on_Area2D_body_exited(body):
+	GameState.show_but_e = false

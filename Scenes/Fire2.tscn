@@ -105,13 +105,14 @@ extents = Vector2( 44, 35.75 )
 scale = Vector2( 4.5, 3 )
 frames = SubResource( 18 )
 animation = "loop"
-frame = 6
+frame = 3
 playing = true
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 32
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+visible = false
 position = Vector2( 0, 26.25 )
 shape = SubResource( 19 )
 

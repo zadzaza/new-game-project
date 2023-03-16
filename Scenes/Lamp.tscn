@@ -14,6 +14,5 @@ position = Vector2( -1, 4 )
 scale = Vector2( 6.91406, 6.68164 )
 texture = ExtResource( 2 )
 color = Color( 0.745098, 0.760784, 0.219608, 1 )
-shadow_enabled = true
 shadow_filter = 5
 shadow_filter_smooth = 11.1

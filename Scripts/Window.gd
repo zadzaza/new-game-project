@@ -19,8 +19,10 @@ func _process(delta):
 	if GameState.click_window == 2:
 		GameState.okno = "oborvano2"
 		animation = "oborvano2"
+		
 func _on_Window_entered(body):
-	pass # Replace with function body.
+	GameState.show_but_e = true
+	print("dsa")
 
 func _input(event):
 	if GameState.click_window != 3:
