@@ -11,18 +11,19 @@ func _on_Area2D_body_entered(body):
 func _process(delta):
 	animated_sprite.play(animation)
 	
-	if GameState.table == "corpse":
+	if GameState.click_table == 0:
+		GameState.table = "corpse"
 		animation = "default"
-	if GameState.table == "blood":
+	if GameState.click_table == 1:
+		GameState.has_corpse = "have"
+		GameState.table = "blood"
 		animation = "blood"
+	if GameState.click_table == 2:
+		GameState.table = "table"
+		animation = "table"
 
 func _input(event):
 	if event.is_action_pressed("e"):
 		var overlapping_bodies = $Area2D.get_overlapping_bodies() #Списком тел внутри Area2D
 		if overlapping_bodies.size() > 0:
-			if GameState.table == "corpse":
-				animation = "blood"
-				GameState.table = "blood"
-				GameState.has_corpse = "have"
-			if GameState.table == "blood":
-				pass
+			GameState.click_table += 1

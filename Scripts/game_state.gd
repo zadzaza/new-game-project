@@ -21,15 +21,19 @@ var has_vc = "not have"
 		visit_na_portrete - занавеска висит на портрете
 """
 var okno = "ne oborvano"
+var count_zanaveska = 0
 var click_window = 0
 var visit_na_portrete = false
 
 #труп и стол
 var table = "corpse"
 var has_corpse = "not have"
+var click_table = 0
 
 #камин
 var flame = false
 
 func _process(delta):
-	print(table)
+	print(count_zanaveska)
+	print(click_window)
+	print(okno)

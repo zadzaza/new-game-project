@@ -19,12 +19,15 @@ func _process(delta):
 	if GameState.click_window == 2:
 		GameState.okno = "oborvano2"
 		animation = "oborvano2"
-
 func _on_Window_entered(body):
 	pass # Replace with function body.
 
 func _input(event):
-	if event.is_action_pressed("e"):
-		var overlapping_bodies = $Area2D.get_overlapping_bodies() #Списком тел внутри Area2D
-		if overlapping_bodies.size() > 0:
-			GameState.click_window += 1
+	if GameState.click_window != 3:
+		if event.is_action_pressed("e"):
+			var overlapping_bodies = $Area2D.get_overlapping_bodies() #Списком тел внутри Area2D
+			if overlapping_bodies.size() > 0:
+				GameState.click_window += 1
+				GameState.count_zanaveska += 1
+				if GameState.count_zanaveska > 2:
+					GameState.count_zanaveska = 2
