@@ -1,10 +1,9 @@
 extends CanvasLayer
 
-func _ready():
-	hide()
+var show_but_e = false
 
 func _process(delta):
-	if GameState.show_but_e == true:
+	if show_but_e == true:
 		show()
 		$AnimatedSprite.play("e")
 	else: hide()

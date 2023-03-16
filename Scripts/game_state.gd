@@ -37,7 +37,6 @@ var flame = false
 var has_rag = false
 
 #кнопки
-var show_but_e = false
 
 func _process(delta):
 	print(click_table)

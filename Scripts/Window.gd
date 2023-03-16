@@ -1,6 +1,7 @@
 extends Node2D
 
 onready var animated_sprite = $AnimatedSprite
+onready var button = get_node("Button")
 var animation = ""
 
 func _ready():
@@ -16,13 +17,17 @@ func _process(delta):
 	if GameState.click_window == 1:
 		GameState.okno = "oborvano"
 		animation = "oborvano"
+		button.show_but_e = false
 	if GameState.click_window == 2:
 		GameState.okno = "oborvano2"
 		animation = "oborvano2"
+		button.show_but_e = false
 		
 func _on_Window_entered(body):
-	GameState.show_but_e = true
-	print("dsa")
+	button.show_but_e = true
+
+func _on_Window_exited(body):
+	button.show_but_e = false
 
 func _input(event):
 	if GameState.click_window != 3:

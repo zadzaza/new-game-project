@@ -309,7 +309,7 @@ tile_data = PoolIntArray( 720922, 27, 0 )
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Player" parent="YSort" instance=ExtResource( 4 )]
-position = Vector2( 212, 516 )
+position = Vector2( 728, 168 )
 scale = Vector2( 3, 3 )
 z_index = 2
 collision_mask = 11
@@ -398,9 +398,9 @@ scale = Vector2( 1.05521, 1.0287 )
 z_index = 24
 texture = ExtResource( 11 )
 
-[node name="Node" type="Node" parent="."]
+[node name="Lights" type="Node" parent="."]
 
-[node name="Light2D" type="Light2D" parent="Node"]
+[node name="Light2D" type="Light2D" parent="Lights"]
 position = Vector2( 226, -50 )
 scale = Vector2( 23.3906, 37 )
 texture = ExtResource( 13 )
@@ -410,7 +410,7 @@ shadow_enabled = true
 shadow_filter = 5
 shadow_filter_smooth = 11.1
 
-[node name="Light2D2" type="Light2D" parent="Node"]
+[node name="Light2D2" type="Light2D" parent="Lights"]
 position = Vector2( 1081, -50 )
 scale = Vector2( 23.391, 37 )
 texture = ExtResource( 13 )
@@ -420,7 +420,7 @@ shadow_enabled = true
 shadow_filter = 5
 shadow_filter_smooth = 11.1
 
-[node name="Light2D3" type="Light2D" parent="Node"]
+[node name="Light2D3" type="Light2D" parent="Lights"]
 position = Vector2( 1505, -50 )
 scale = Vector2( 23.391, 37 )
 texture = ExtResource( 13 )

@@ -1,10 +1,13 @@
 extends Node2D
 
-var a = false
+
+onready var button = get_node("Button")
 
 func _process(delta):
-	print(a)
-	if GameState.visit_na_portrete:$AnimatedSprite.play("zanaveska")
+	if GameState.visit_na_portrete:
+		button.show_but_e = false
+		$AnimatedSprite.play("zanaveska")
+
 
 func _input(event):
 	if event.is_action_pressed("e"):
@@ -17,7 +20,7 @@ func _input(event):
 					GameState.count_zanaveska -= 1
 
 func _on_Area2D_body_entered(body):
-	GameState.show_but_e = true
+	button.show_but_e = true
 
 func _on_Area2D_body_exited(body):
-	GameState.show_but_e = false
+	button.show_but_e = false

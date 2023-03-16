@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://DOM2.tres" type="TileSet" id=1]
 [ext_resource path="res://Scripts/MainRoom.gd" type="Script" id=2]
@@ -28,7 +28,6 @@
 [ext_resource path="res://Light/16x16_FX_3.png" type="Texture" id=26]
 [ext_resource path="res://Scenes/DoorUp.tscn" type="PackedScene" id=27]
 [ext_resource path="res://Scenes/Lamp.tscn" type="PackedScene" id=28]
-[ext_resource path="res://Scenes/Button.tscn" type="PackedScene" id=29]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 13, 65.5 )
@@ -184,9 +183,9 @@ position = Vector2( -7352, -94834 )
 scale = Vector2( 96.9428, 60.4183 )
 texture = ExtResource( 24 )
 
-[node name="Node" type="Node" parent="."]
+[node name="Lights" type="Node" parent="."]
 
-[node name="Light2D" type="Light2D" parent="Node"]
+[node name="Light2D" type="Light2D" parent="Lights"]
 position = Vector2( 997, -82.2968 )
 scale = Vector2( 15.5156, 26.9629 )
 texture = ExtResource( 26 )
@@ -195,7 +194,7 @@ shadow_enabled = true
 shadow_filter = 5
 shadow_filter_smooth = 11.1
 
-[node name="Light2D2" type="Light2D" parent="Node"]
+[node name="Light2D2" type="Light2D" parent="Lights"]
 position = Vector2( 156, -49.1016 )
 scale = Vector2( 15.5156, 22.7627 )
 texture = ExtResource( 26 )
@@ -216,8 +215,6 @@ collision_layer = 8
 [node name="CollisionShape2D" type="CollisionShape2D" parent="DoorUp/Area2D2"]
 position = Vector2( -1, 6 )
 shape = SubResource( 2 )
-
-[node name="Button" parent="." instance=ExtResource( 29 )]
 
 [connection signal="body_entered" from="YSort/Door/Area2D2" to="." method="_on_Door_entered"]
 [connection signal="body_entered" from="DoorUp/Area2D2" to="." method="_on_Door2_entered"]
