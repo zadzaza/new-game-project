@@ -60,6 +60,7 @@ height = 8.44444
 extents = Vector2( 21.5, 27 )
 
 [sub_resource type="OccluderPolygon2D" id=19]
+cull_mode = 2
 polygon = PoolVector2Array( -7.77778, 21.1111, 6.66667, 21.1111, 6.66667, 24.4444, -7.77778, 24.4444 )
 
 [node name="Player" type="KinematicBody2D"]
@@ -90,7 +91,7 @@ shape = SubResource( 18 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
-zoom = Vector2( 1.7, 1.7 )
+zoom = Vector2( 1.6, 1.6 )
 smoothing_enabled = true
 
 [node name="Light2D" type="Light2D" parent="."]

@@ -74,7 +74,7 @@ shape = SubResource( 1 )
 [node name="Corpse" parent="YSort" instance=ExtResource( 5 )]
 pause_mode = 2
 light_mask = 2
-position = Vector2( 710, 132 )
+position = Vector2( 749, 135 )
 z_index = 2
 
 [node name="1920X1080-black-solid-color-background" type="Sprite" parent="."]

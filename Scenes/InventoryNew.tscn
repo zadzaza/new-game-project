@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://addons/dialogue_manager/example_balloon/font_normal.tres" type="DynamicFont" id=1]
-[ext_resource path="res://ui/dialogue_menu.png" type="Texture" id=2]
+[ext_resource path="res://ui/dialogue_menu2.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/InventoryNew.gd" type="Script" id=3]
 [ext_resource path="res://ui/Снимок экрана 2023-03-04 130018.png" type="Texture" id=4]
 
@@ -274,6 +274,6 @@ scroll_active = false
 [node name="CanvasModulate" type="CanvasModulate" parent="."]
 
 [node name="СнимокЭкрана2023-03-04130018" type="Sprite" parent="."]
-position = Vector2( 464, 300 )
-scale = Vector2( 0.375, 4.55 )
+position = Vector2( 464.25, 293.75 )
+scale = Vector2( 0.437502, 4.75833 )
 texture = ExtResource( 4 )

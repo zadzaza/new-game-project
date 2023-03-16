@@ -5,7 +5,7 @@ func _process(delta):
 
 func _input(event):
 	if event.is_action_pressed("e"):
-			if GameState.oborvano == true:
+			if GameState.okno == "oborvano" or "oborvano2":
 				var overlapping_bodies = $Area2D.get_overlapping_bodies() #Списком тел внутри Area2D
 				if overlapping_bodies.size() > 0:
 					$AnimatedSprite.play("zanaveska")

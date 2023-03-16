@@ -1,19 +1,25 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Sprites/Tiles/WIN2.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Tiles/WIN.png" type="Texture" id=2]
 [ext_resource path="res://Scripts/Window.gd" type="Script" id=3]
+[ext_resource path="res://Sprites/Tiles/WIN3.png" type="Texture" id=4]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
-"name": "default",
+"name": "ne_oborvano",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
-"name": "not_default",
+"name": "oborvano",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ) ],
+"loop": true,
+"name": "oborvano2",
 "speed": 5.0
 } ]
 
@@ -26,6 +32,7 @@ script = ExtResource( 3 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 frames = SubResource( 1 )
+animation = "ne_oborvano"
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 16

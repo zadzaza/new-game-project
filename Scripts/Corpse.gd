@@ -13,7 +13,6 @@ func _process(delta):
 	
 	if GameState.table == "corpse":
 		animation = "default"
-	print(animation)
 	if GameState.table == "blood":
 		animation = "blood"
 
@@ -25,3 +24,5 @@ func _input(event):
 				animation = "blood"
 				GameState.table = "blood"
 				GameState.has_corpse = "have"
+			if GameState.table == "blood":
+				pass

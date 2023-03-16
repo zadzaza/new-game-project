@@ -20,7 +20,8 @@ var has_vc = "not have"
 		oborvano - окно в надорванном состоянии, игрок сорвал занавеску
 		visit_na_portrete - занавеска висит на портрете
 """
-var oborvano = false
+var okno = "ne oborvano"
+var click_window = 0
 var visit_na_portrete = false
 
 #труп и стол
