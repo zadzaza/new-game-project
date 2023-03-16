@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=26 format=2]
+[gd_resource type="TileSet" load_steps=27 format=2]
 
 [ext_resource path="res://Sprites/Tilemaps/Scenes/O_o.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Tilemaps/Scenes/N-n.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://Sprites/Tiles/polka_zad.png" type="Texture" id=7]
 [ext_resource path="res://Sprites/Tilemaps/Scenes/O_o_О.png" type="Texture" id=8]
 [ext_resource path="res://Sprites/Tiles/kover_porvaniy.png" type="Texture" id=9]
+[ext_resource path="res://Sprites/Tiles/skaf_bok.png" type="Texture" id=10]
 
 [sub_resource type="ConvexPolygonShape2D" id=13]
 points = PoolVector2Array( 32, 40, 216, 40, 216.078, 42.0279, 31.7913, 42.028 )
@@ -771,3 +772,17 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 44/shape_one_way_margin = 0.0
 44/shapes = [  ]
 44/z_index = 0
+45/name = "skaf_bok.png 45"
+45/texture = ExtResource( 10 )
+45/tex_offset = Vector2( 0, 0 )
+45/modulate = Color( 1, 1, 1, 1 )
+45/region = Rect2( 58, 24, 73, 298 )
+45/tile_mode = 0
+45/occluder_offset = Vector2( 0, 0 )
+45/navigation_offset = Vector2( 0, 0 )
+45/shape_offset = Vector2( 0, 0 )
+45/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+45/shape_one_way = false
+45/shape_one_way_margin = 0.0
+45/shapes = [  ]
+45/z_index = 2

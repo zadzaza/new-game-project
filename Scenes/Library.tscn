@@ -404,17 +404,6 @@ pause_mode = 2
 position = Vector2( 852, 144 )
 scale = Vector2( 0.937261, 0.900804 )
 
-[node name="Light2D" type="Light2D" parent="Fire"]
-position = Vector2( 2.13391, 35.5236 )
-rotation = -3.14119
-scale = Vector2( 48.4069, 28.6954 )
-texture = ExtResource( 13 )
-color = Color( 1, 0.47451, 0.215686, 1 )
-energy = 0.8
-shadow_enabled = true
-shadow_filter = 5
-shadow_filter_smooth = 11.1
-
 [node name="Node" type="Node" parent="."]
 
 [node name="Light2D" type="Light2D" parent="Node"]

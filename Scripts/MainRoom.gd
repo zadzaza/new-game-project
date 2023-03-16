@@ -4,7 +4,7 @@ var start = preload("res://Dialogues/start.tres")
 
 func _ready():
 	if GlobalScript.last_location == "":
-		$YSort/Player.position = Vector2(958, 76)
+		$YSort/Player.position = Vector2(958, 70)
 		$YSort/Player.animation = "idle_down"
 		DialogueManager.show_example_dialogue_balloon("start", start)
 	if GlobalScript.last_location == "Library":
@@ -15,4 +15,3 @@ func _ready():
 func _on_Door_entered(body):
 	get_tree().change_scene("res://Scenes/Library.tscn")
 	GlobalScript.last_location = "PortraitRoom"
-

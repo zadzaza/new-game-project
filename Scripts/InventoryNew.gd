@@ -13,6 +13,8 @@ func _process(delta):
 		$Balloon/Margin2/Realization/Valise.bbcode_text = done
 	if GameState.visit_na_portrete == true:
 		$Balloon/Margin2/Realization/Portrait.bbcode_text = done
+	if GameState.has_corpse == "burned":
+		$Balloon/Margin2/Realization/Corpse.bbcode_text = done
 
 func _input(event):
 	if event.is_action_pressed("f"):
@@ -21,6 +23,7 @@ func _input(event):
 	if event.is_action_pressed("f") and GlobalScript.is_pause == false:
 		GlobalScript.is_pause = true
 		if GlobalScript.pause() == 1:
+			Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 			show()
 	elif event.is_action_pressed("f") and GlobalScript.is_pause == true:
 		GlobalScript.is_pause = false
