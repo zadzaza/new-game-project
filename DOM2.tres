@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=28 format=2]
+[gd_resource type="TileSet" load_steps=32 format=2]
 
 [ext_resource path="res://Sprites/Tilemaps/Scenes/O_o.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Tilemaps/Scenes/N-n.png" type="Texture" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://Sprites/Tilemaps/Scenes/O_o_О.png" type="Texture" id=8]
 [ext_resource path="res://Sprites/Tiles/kover_porvaniy.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/Tiles/skaf_bok.png" type="Texture" id=10]
+[ext_resource path="res://Scenes/polka_s_kniga.png" type="Texture" id=11]
 
 [sub_resource type="ConvexPolygonShape2D" id=13]
 points = PoolVector2Array( 32, 40, 216, 40, 216.078, 42.0279, 31.7913, 42.028 )
@@ -58,8 +59,17 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 216, 0, 216 )
 [sub_resource type="ConvexPolygonShape2D" id=12]
 points = PoolVector2Array( 2, 44, 58, 44, 58, 172, 2, 172 )
 
+[sub_resource type="ConvexPolygonShape2D" id=19]
+points = PoolVector2Array( 0, 114, 134, 114, 134, 178, 0, 178 )
+
+[sub_resource type="ConvexPolygonShape2D" id=20]
+points = PoolVector2Array( 136, 214, 0, 214, 0, 150, 136, 150 )
+
 [sub_resource type="ConvexPolygonShape2D" id=17]
 points = PoolVector2Array( 304, 32, 0.0915527, 32, 0.0915527, 5.01007, 304, 5.01007 )
+
+[sub_resource type="ConvexPolygonShape2D" id=18]
+points = PoolVector2Array( 133, 200, 0, 205, 0, 168, 134, 168 )
 
 [sub_resource type="OccluderPolygon2D" id=14]
 polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9375, 4.9375, 5.0625, 1.07764, 5.1109, 1.23346, 92.9669, 225, 93.0449, 225, 5.0625, 222.938, 5.0625, 223, 1.125, 195.938, 1.0625, 196, 5.0625, 192, 5, 192.063, 51.1875, 36, 51.125 )
@@ -645,9 +655,16 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 35/navigation_offset = Vector2( 0, 0 )
 35/shape_offset = Vector2( 0, 0 )
 35/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+35/shape = SubResource( 19 )
 35/shape_one_way = false
-35/shape_one_way_margin = 0.0
-35/shapes = [  ]
+35/shape_one_way_margin = 1.0
+35/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 19 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 35/z_index = 2
 36/name = "skaf_drugoi.png 36"
 36/texture = ExtResource( 6 )
@@ -673,9 +690,16 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 37/navigation_offset = Vector2( 0, 0 )
 37/shape_offset = Vector2( 0, 0 )
 37/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+37/shape = SubResource( 20 )
 37/shape_one_way = false
-37/shape_one_way_margin = 0.0
-37/shapes = [  ]
+37/shape_one_way_margin = 1.0
+37/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 20 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
 37/z_index = 2
 38/name = "O_o_О.png 38"
 38/texture = ExtResource( 8 )
@@ -796,3 +820,24 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 45/shape_one_way_margin = 0.0
 45/shapes = [  ]
 45/z_index = 2
+46/name = "polka_s_kniga.png 46"
+46/texture = ExtResource( 11 )
+46/tex_offset = Vector2( 0, -130 )
+46/modulate = Color( 1, 1, 1, 1 )
+46/region = Rect2( 77, 8, 134, 235 )
+46/tile_mode = 0
+46/occluder_offset = Vector2( 0, 0 )
+46/navigation_offset = Vector2( 0, 0 )
+46/shape_offset = Vector2( 0, 0 )
+46/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+46/shape = SubResource( 18 )
+46/shape_one_way = false
+46/shape_one_way_margin = 1.0
+46/shapes = [ {
+"autotile_coord": Vector2( 0, 0 ),
+"one_way": false,
+"one_way_margin": 1.0,
+"shape": SubResource( 18 ),
+"shape_transform": Transform2D( 1, 0, 0, 1, 0, 0 )
+} ]
+46/z_index = 2
