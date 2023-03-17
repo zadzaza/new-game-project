@@ -38,7 +38,7 @@ func _input(event):
 
 func _on_Coat_mouse_entered():
 	if $Balloon/Margin2/Realization/Coat.bbcode_text != done:
-		$Balloon/Margin2/Realization/Coat.bbcode_text = "Спрятать пальто"
+		$Balloon/Margin2/Realization/Coat.bbcode_text = "Спрятать в сундук"
 func _on_Coat_mouse_exited():
 	if $Balloon/Margin2/Realization/Coat.bbcode_text != done:
 		$Balloon/Margin2/Realization/Coat.bbcode_text = not_done
@@ -46,7 +46,7 @@ func _on_Coat_mouse_exited():
 
 func _on_Valise_mouse_entered():
 	if $Balloon/Margin2/Realization/Valise.bbcode_text != done:
-		$Balloon/Margin2/Realization/Valise.bbcode_text = "Спрятать саквояж"
+		$Balloon/Margin2/Realization/Valise.bbcode_text = "Спрятать в сундук"
 func _on_Valise_mouse_exited():
 	if $Balloon/Margin2/Realization/Valise.bbcode_text != done:
 		$Balloon/Margin2/Realization/Valise.bbcode_text = not_done
@@ -54,7 +54,7 @@ func _on_Valise_mouse_exited():
 
 func _on_Corpse_mouse_entered():
 	if $Balloon/Margin2/Realization/Corpse.bbcode_text != done:
-		$Balloon/Margin2/Realization/Corpse.bbcode_text = "Сжечь труп"
+		$Balloon/Margin2/Realization/Corpse.bbcode_text = "Сжечь в камине"
 func _on_Corpse_mouse_exited():
 	if $Balloon/Margin2/Realization/Corpse.bbcode_text != done:
 		$Balloon/Margin2/Realization/Corpse.bbcode_text = not_done
@@ -70,7 +70,7 @@ func _on_Table_mouse_exited():
 
 func _on_Lamp_mouse_entered():
 	if $Balloon/Margin2/Realization/Lamp.bbcode_text != done:
-		$Balloon/Margin2/Realization/Lamp.bbcode_text = "Вернуть на место"
+		$Balloon/Margin2/Realization/Lamp.bbcode_text = "Вернуть на стол"
 func _on_Lamp_mouse_exited():
 	if $Balloon/Margin2/Realization/Lamp.bbcode_text != done:
 		$Balloon/Margin2/Realization/Lamp.bbcode_text = not_done
@@ -78,7 +78,7 @@ func _on_Lamp_mouse_exited():
 
 func _on_Portrait_mouse_entered():
 	if $Balloon/Margin2/Realization/Portrait.bbcode_text != done:
-		$Balloon/Margin2/Realization/Portrait.bbcode_text = "Завесить портрет"
+		$Balloon/Margin2/Realization/Portrait.bbcode_text = "Завесить занавеской"
 func _on_Portrait_mouse_exited():
 	if $Balloon/Margin2/Realization/Portrait.bbcode_text != done:
 		$Balloon/Margin2/Realization/Portrait.bbcode_text = not_done
@@ -86,7 +86,7 @@ func _on_Portrait_mouse_exited():
 
 func _on_Knife_mouse_entered():
 	if $Balloon/Margin2/Realization/Knife.bbcode_text != done:
-		$Balloon/Margin2/Realization/Knife.bbcode_text = "Спрятать нож"
+		$Balloon/Margin2/Realization/Knife.bbcode_text = "Спрятать в сундук"
 func _on_Knife_mouse_exited():
 	if $Balloon/Margin2/Realization/Knife.bbcode_text != done:
 		$Balloon/Margin2/Realization/Knife.bbcode_text = not_done

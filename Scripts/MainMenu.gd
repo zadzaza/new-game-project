@@ -11,3 +11,17 @@ func _on_Exit_pressed():
 
 func _on_StartGame_pressed():
 	get_tree().change_scene("res://Scenes/Prologue.tscn")
+	
+	GameState.has_vc = "not have"
+	GameState.okno = "ne oborvano"
+	GameState.click_window = 0
+	GameState.visit_na_portrete = false
+	GameState.table = "corpse"
+	GameState.has_corpse = "not have"
+	GameState.click_table = 0
+	GameState.flame = false
+	GameState.has_rag = false
+	GameState.has_lamp = "not have"
+	GameState.has_knife = "not have"
+	GameState.END = false
+	GameState.go_street = false
