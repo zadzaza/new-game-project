@@ -1,0 +1,41 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 3
+syntax_version = 2
+raw_text = "~ end
+
+Дориан: Итак, все дела сделаны.[wait=1.0] Теперь я свободен.
+Дориан: Надо просвежиться, пойду прогуляюсь."
+errors = [  ]
+titles = {
+"end": "2"
+}
+lines = {
+"0": {
+"next_id": "2",
+"text": "end",
+"type": "title"
+},
+"2": {
+"character": "Дориан",
+"character_replacements": [  ],
+"next_id": "3",
+"replacements": [  ],
+"text": "Итак, все дела сделаны.[wait=1.0] Теперь я свободен.",
+"translation_key": "Итак, все дела сделаны.[wait=1.0] Теперь я свободен.",
+"type": "dialogue"
+},
+"3": {
+"character": "Дориан",
+"character_replacements": [  ],
+"next_id": "",
+"replacements": [  ],
+"text": "Надо просвежиться, пойду прогуляюсь.",
+"translation_key": "Надо просвежиться, пойду прогуляюсь.",
+"type": "dialogue"
+}
+}

@@ -8,6 +8,7 @@ var _velocity = Vector2()
 onready var animatedSprite = get_node("AnimatedSprite")
 export var zoom_x = 1.0 setget set_zoom_x
 export var zoom_y = 1.0 setget set_zoom_y
+var end = preload("res://Dialogues/end.tres")
 
 export var flip_h = false setget set_flip_h
 
@@ -43,6 +44,10 @@ func _input(event):
 		DialogueManager.show_example_dialogue_balloon("main_things", main_things)
 	
 	_velocity = Vector2()
+	
+	if event.is_action_pressed("e"):
+		if GameState.has_vc == "give" and GameState.visit_na_portrete == true and GameState.flame == true and GameState.table == "table" and GameState.has_lamp == "give" and GameState.has_knife == "give":
+			DialogueManager.show_example_dialogue_balloon("end", end)
 	
 	if Input.is_action_pressed("ui_right"):
 		if GameState.has_lamp == "have":

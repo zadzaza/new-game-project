@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 35
+resource_version = 36
 syntax_version = 2
 raw_text = "~ start
 
@@ -22,6 +22,7 @@ raw_text = "~ start
 Чтобы управлять героем, используй стрелки или WASD.
 Чтобы подобрать или использовать предмет, нажми клавишу E
 Для того, чтобы узнать, что осталось сделать, используй клавишу F
+Для вызова вспомогательного диалогового окна нажми TAB
 => END"
 errors = [  ]
 titles = {
@@ -84,6 +85,14 @@ lines = {
 "type": "dialogue"
 },
 "16": {
+"character": "",
+"next_id": "17",
+"replacements": [  ],
+"text": "Для вызова вспомогательного диалогового окна нажми TAB",
+"translation_key": "Для вызова вспомогательного диалогового окна нажми TAB",
+"type": "dialogue"
+},
+"17": {
 "next_id": "end",
 "type": "goto"
 },

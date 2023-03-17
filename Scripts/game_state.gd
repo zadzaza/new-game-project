@@ -42,5 +42,11 @@ var has_lamp = "not have"
 #нож
 var has_knife = "not have"
 
+var END = false
+var go_street = false
+
 func _process(delta):
-	print(click_table)
+	if GameState.has_vc == "give" and GameState.visit_na_portrete == true and GameState.flame == true and GameState.table == "table" and GameState.has_lamp == "give" and GameState.has_knife == "give":
+		END = true
+	if go_street == true:
+		get_tree().change_scene("res://Scenes/VideoPlayer.tscn")

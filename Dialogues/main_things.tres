@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 18
+resource_version = 29
 syntax_version = 2
 raw_text = "~ main_things
 
@@ -23,6 +23,12 @@ raw_text = "~ main_things
 	Дориан: Меня повесят, Боже! Меня повесят за то, что я сделал...
 	Дориан: Мне очень жаль, но другого выхода у меня нет.
 	=> main_things
+if END == true
+	- Закончить.
+		Дориан: Итак, все дела сделаны.[wait=1.0] Теперь я свободен.
+		Дориан: Надо просвежиться, пойду прогуляюсь.
+		set go_street = true
+		=> END
 - Ну, за работу. => END"
 errors = [  ]
 titles = {
@@ -100,12 +106,42 @@ lines = {
 "type": "goto"
 },
 "17": {
-"next_id": "end",
-"next_id_after": "end!",
+"condition": {
+"expression": [ {
+"type": "variable",
+"value": "END"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "bool",
+"value": true
+} ]
+},
+"next_conditional_id": "23",
+"next_id": "18",
+"next_id_after": "23",
+"type": "condition"
+},
+"18": {
+"next_id": "19",
+"next_id_after": "23",
+"parent_id": "17",
 "replacements": [  ],
-"text": "Ну, за работу.",
-"translation_key": "Ну, за работу.",
+"responses": PoolStringArray( "18" ),
+"text": "Закончить.",
+"translation_key": "Закончить.",
 "type": "response"
+},
+"19": {
+"character": "Дориан",
+"character_replacements": [  ],
+"next_id": "20",
+"parent_id": "18",
+"replacements": [  ],
+"text": "Итак, все дела сделаны.[wait=1.0] Теперь я свободен.",
+"translation_key": "Итак, все дела сделаны.[wait=1.0] Теперь я свободен.",
+"type": "dialogue"
 },
 "2": {
 "character": "Дориан",
@@ -116,11 +152,52 @@ lines = {
 "translation_key": "Я совершенно не понимаю: Что мне делать дальше?",
 "type": "dialogue"
 },
-"3": {
-"next_id": "4",
+"20": {
+"character": "Дориан",
+"character_replacements": [  ],
+"next_id": "21",
+"parent_id": "18",
+"replacements": [  ],
+"text": "Надо просвежиться, пойду прогуляюсь.",
+"translation_key": "Надо просвежиться, пойду прогуляюсь.",
+"type": "dialogue"
+},
+"21": {
+"mutation": {
+"expression": [ {
+"type": "variable",
+"value": "go_street"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": true
+} ]
+},
+"next_id": "22",
+"parent_id": "18",
+"type": "mutation"
+},
+"22": {
+"next_id": "end",
+"parent_id": "18",
+"type": "goto"
+},
+"23": {
+"next_id": "end",
 "next_id_after": "end!",
 "replacements": [  ],
-"responses": PoolStringArray( "3", "9", "17" ),
+"responses": PoolStringArray( "23" ),
+"text": "Ну, за работу.",
+"translation_key": "Ну, за работу.",
+"type": "response"
+},
+"3": {
+"next_id": "4",
+"next_id_after": "17",
+"replacements": [  ],
+"responses": PoolStringArray( "3", "9" ),
 "text": "Надо пораскинуть мозгами и подумать какие остались улики.",
 "translation_key": "Надо пораскинуть мозгами и подумать какие остались улики.",
 "type": "response"
@@ -172,7 +249,7 @@ lines = {
 },
 "9": {
 "next_id": "10",
-"next_id_after": "end!",
+"next_id_after": "17",
 "replacements": [  ],
 "text": "Мои мысли.",
 "translation_key": "Мои мысли.",

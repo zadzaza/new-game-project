@@ -1,0 +1,36 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 2
+syntax_version = 2
+raw_text = "~ dela
+
+Дориан: У меня еще остались дела
+=> END"
+errors = [  ]
+titles = {
+"dela": "2"
+}
+lines = {
+"0": {
+"next_id": "2",
+"text": "dela",
+"type": "title"
+},
+"2": {
+"character": "Дориан",
+"character_replacements": [  ],
+"next_id": "3",
+"replacements": [  ],
+"text": "У меня еще остались дела",
+"translation_key": "У меня еще остались дела",
+"type": "dialogue"
+},
+"3": {
+"next_id": "end",
+"type": "goto"
+}
+}

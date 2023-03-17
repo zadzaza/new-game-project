@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Desktop 2023.03.17 - 06.41.07.05.webm" type="VideoStream" id=1]
+
+[node name="VideoPlayer" type="VideoPlayer"]
+margin_right = 1024.0
+margin_bottom = 600.0
+stream = ExtResource( 1 )
+autoplay = true

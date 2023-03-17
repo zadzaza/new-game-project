@@ -1,8 +1,7 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=31 format=2]
 
 [ext_resource path="res://DOM2.tres" type="TileSet" id=1]
 [ext_resource path="res://Scripts/MainRoom.gd" type="Script" id=2]
-[ext_resource path="res://Планировка/Комната с портретом.png" type="Texture" id=3]
 [ext_resource path="res://Sprites/Tiles/1920x1080-black-solid-color-background.jpg" type="Texture" id=4]
 [ext_resource path="res://Scenes/Corpse.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Door.tscn" type="PackedScene" id=6]
@@ -91,10 +90,6 @@ position = Vector2( 585, 1314.75 )
 scale = Vector2( 0.609375, 1.20694 )
 z_index = 10
 texture = ExtResource( 4 )
-
-[node name="КомнатаСПортретом" type="Sprite" parent="."]
-position = Vector2( -639, 188 )
-texture = ExtResource( 3 )
 
 [node name="1920X1080-black-solid-color-background2" type="Sprite" parent="."]
 position = Vector2( 671, 187 )
