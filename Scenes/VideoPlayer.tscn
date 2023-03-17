@@ -1,9 +1,13 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=3 format=2]
 
 [ext_resource path="res://Концовка.webm" type="VideoStream" id=1]
+[ext_resource path="res://Scripts/VideoPlayer.gd" type="Script" id=2]
 
 [node name="VideoPlayer" type="VideoPlayer"]
 margin_right = 1024.0
 margin_bottom = 600.0
 stream = ExtResource( 1 )
 autoplay = true
+script = ExtResource( 2 )
+
+[connection signal="finished" from="." to="." method="_on_VideoPlayer_finished"]
