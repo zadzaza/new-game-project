@@ -8,3 +8,23 @@ D:\Новый игровой проек\.mono\temp\obj\ExportDebug\Новый и
 D:\Новый игровой проек\.mono\temp\obj\ExportDebug\Новый игровой проек.csproj.CoreCompileInputs.cache
 D:\Новый игровой проек\.mono\temp\obj\ExportDebug\Новый игровой проек.dll
 D:\Новый игровой проек\.mono\temp\obj\ExportDebug\Новый игровой проек.pdb
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\bin\ExportDebug\Новый игровой проек.deps.json
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\bin\ExportDebug\Новый игровой проек.dll
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\bin\ExportDebug\Новый игровой проек.pdb
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\ExportDebug\Новый игровой проек.csproj.AssemblyReference.cache
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\ExportDebug\Новый игровой проек.GeneratedMSBuildEditorConfig.editorconfig
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\ExportDebug\Новый игровой проек.AssemblyInfoInputs.cache
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\ExportDebug\Новый игровой проек.AssemblyInfo.cs
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\ExportDebug\Новый игровой проек.csproj.CoreCompileInputs.cache
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\ExportDebug\Новый игровой проек.dll
+E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\ExportDebug\Новый игровой проек.pdb
+E:\Doriant\.mono\temp\bin\ExportDebug\Новый игровой проек.deps.json
+E:\Doriant\.mono\temp\bin\ExportDebug\Новый игровой проек.dll
+E:\Doriant\.mono\temp\bin\ExportDebug\Новый игровой проек.pdb
+E:\Doriant\.mono\temp\obj\ExportDebug\Новый игровой проек.csproj.AssemblyReference.cache
+E:\Doriant\.mono\temp\obj\ExportDebug\Новый игровой проек.GeneratedMSBuildEditorConfig.editorconfig
+E:\Doriant\.mono\temp\obj\ExportDebug\Новый игровой проек.AssemblyInfoInputs.cache
+E:\Doriant\.mono\temp\obj\ExportDebug\Новый игровой проек.AssemblyInfo.cs
+E:\Doriant\.mono\temp\obj\ExportDebug\Новый игровой проек.csproj.CoreCompileInputs.cache
+E:\Doriant\.mono\temp\obj\ExportDebug\Новый игровой проек.dll
+E:\Doriant\.mono\temp\obj\ExportDebug\Новый игровой проек.pdb

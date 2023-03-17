@@ -10,7 +10,7 @@
 [ext_resource path="res://Sprites/Tilemaps/Scenes/O_o_О.png" type="Texture" id=8]
 [ext_resource path="res://Sprites/Tiles/kover_porvaniy.png" type="Texture" id=9]
 [ext_resource path="res://Sprites/Tiles/skaf_bok.png" type="Texture" id=10]
-[ext_resource path="res://Scenes/polka_s_kniga.png" type="Texture" id=11]
+[ext_resource path="res://Sprites/Tiles/polka_s_kniga.png" type="Texture" id=11]
 [ext_resource path="res://Sprites/Tiles/stol_i_styl.png" type="Texture" id=12]
 
 [sub_resource type="ConvexPolygonShape2D" id=13]

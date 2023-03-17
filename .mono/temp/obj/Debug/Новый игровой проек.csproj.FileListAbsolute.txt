@@ -119,3 +119,13 @@ E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\Debug\Н�
 E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\Debug\Новый игровой проек.csproj.CoreCompileInputs.cache
 E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\Debug\Новый игровой проек.dll
 E:\Github\Doriant\fff\new-game-project\new-game-project\.mono\temp\obj\Debug\Новый игровой проек.pdb
+E:\Doriant\.mono\temp\bin\Debug\Новый игровой проек.deps.json
+E:\Doriant\.mono\temp\bin\Debug\Новый игровой проек.dll
+E:\Doriant\.mono\temp\bin\Debug\Новый игровой проек.pdb
+E:\Doriant\.mono\temp\obj\Debug\Новый игровой проек.csproj.AssemblyReference.cache
+E:\Doriant\.mono\temp\obj\Debug\Новый игровой проек.GeneratedMSBuildEditorConfig.editorconfig
+E:\Doriant\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfoInputs.cache
+E:\Doriant\.mono\temp\obj\Debug\Новый игровой проек.AssemblyInfo.cs
+E:\Doriant\.mono\temp\obj\Debug\Новый игровой проек.csproj.CoreCompileInputs.cache
+E:\Doriant\.mono\temp\obj\Debug\Новый игровой проек.dll
+E:\Doriant\.mono\temp\obj\Debug\Новый игровой проек.pdb
