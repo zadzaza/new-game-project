@@ -4,7 +4,7 @@ var start = preload("res://Dialogues/start.tres")
 
 func _ready():
 	if GlobalScript.last_location == "":
-		$YSort/Player.position = Vector2(767, 126)
+		$YSort/Player.position = Vector2(748, 129)
 		$YSort/Player.animation = "idle_down"
 		DialogueManager.show_example_dialogue_balloon("start", start)
 	if GlobalScript.last_location == "Library":
