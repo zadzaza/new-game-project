@@ -125,7 +125,7 @@ shape = SubResource( 18 )
 
 [node name="Camera2D" type="Camera2D" parent="."]
 current = true
-zoom = Vector2( 1.6, 1.6 )
+zoom = Vector2( 2, 2 )
 smoothing_enabled = true
 
 [node name="LightOccluder2D" type="LightOccluder2D" parent="."]
