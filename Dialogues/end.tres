@@ -4,12 +4,14 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 3
+resource_version = 8
 syntax_version = 2
 raw_text = "~ end
 
 Дориан: Итак, все дела сделаны.[wait=1.0] Теперь я свободен.
-Дориан: Надо просвежиться, пойду прогуляюсь."
+- Надо просвежиться, пойду прогуляюсь.
+	set go_street = true
+	=> END"
 errors = [  ]
 titles = {
 "end": "2"
@@ -30,12 +32,34 @@ lines = {
 "type": "dialogue"
 },
 "3": {
-"character": "Дориан",
-"character_replacements": [  ],
-"next_id": "",
+"next_id": "4",
+"next_id_after": "end!",
 "replacements": [  ],
+"responses": PoolStringArray( "3" ),
 "text": "Надо просвежиться, пойду прогуляюсь.",
 "translation_key": "Надо просвежиться, пойду прогуляюсь.",
-"type": "dialogue"
+"type": "response"
+},
+"4": {
+"mutation": {
+"expression": [ {
+"type": "variable",
+"value": "go_street"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": true
+} ]
+},
+"next_id": "5",
+"parent_id": "3",
+"type": "mutation"
+},
+"5": {
+"next_id": "end",
+"parent_id": "3",
+"type": "goto"
 }
 }

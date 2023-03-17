@@ -12,7 +12,8 @@ func _ready():
 		$YSort/Player.animation = "idle_side"
 
 func _on_Door_entered(body):
-	pass
+	get_tree().change_scene("res://Scenes/PortraitRoom.tscn")
+	GlobalScript.last_location = "Library"
 
 func _on_ToStreet_body_entered(body):
 	pass
