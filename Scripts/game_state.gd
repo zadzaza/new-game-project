@@ -37,7 +37,10 @@ var flame = false
 var has_rag = false
 
 #лампа
-var has_lamp = false
+var has_lamp = "not have"
+
+#нож
+var has_knife = "not have"
 
 func _process(delta):
 	print(click_table)

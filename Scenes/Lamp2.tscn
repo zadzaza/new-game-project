@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Scenes/Button.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Sprites/Tiles/lamp.png" type="Texture" id=2]
+[ext_resource path="res://Light/32x32_Arcane_5.png" type="Texture" id=3]
+[ext_resource path="res://Scripts/Lamp2.gd" type="Script" id=4]
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 16, 24 )
+
+[node name="Lamp2" type="Node2D"]
+visible = false
+script = ExtResource( 4 )
+
+[node name="Lamp" type="Sprite" parent="."]
+scale = Vector2( 0.05, 0.05 )
+texture = ExtResource( 2 )
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( -1, 4 )
+scale = Vector2( 6.91406, 6.68164 )
+texture = ExtResource( 3 )
+color = Color( 0.745098, 0.760784, 0.219608, 1 )
+shadow_filter = 5
+shadow_filter_smooth = 11.1
+
+[node name="Area2D" type="Area2D" parent="."]
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( -1, -3 )
+shape = SubResource( 1 )
+
+[node name="Button" parent="." instance=ExtResource( 1 )]
+
+[connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="." method="_on_Area2D_body_exited"]

@@ -17,6 +17,10 @@ func _process(delta):
 		$Balloon/Margin2/Realization/Corpse.bbcode_text = done
 	if GameState.table == "table":
 		$Balloon/Margin2/Realization/Table.bbcode_text = done
+	if GameState.has_lamp == "give":
+		$Balloon/Margin2/Realization/Lamp.bbcode_text = done
+	if GameState.has_knife == "give":
+		$Balloon/Margin2/Realization/Knife.bbcode_text = done
 
 func _input(event):
 	if event.is_action_pressed("f"):

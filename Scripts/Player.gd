@@ -26,7 +26,10 @@ func _physics_process(delta):
 	animatedSprite.play(animation);
 	stop_cam()
 	
-	
+	if GameState.has_lamp == "have": 
+		$Light2D.enabled = true
+	if GameState.has_lamp == "not have" or GameState.has_lamp == "give":
+		$Light2D.enabled = false
 	
 func _input(event):
 	if event.is_action_pressed("pickup"):
@@ -42,23 +45,39 @@ func _input(event):
 	_velocity = Vector2()
 	
 	if Input.is_action_pressed("ui_right"):
-		animation = "move_side"
+		if GameState.has_lamp == "have":
+			animation = "move_side_lamp"
+			last_input = "move_side_lamp"
+		if GameState.has_lamp == "not have" or GameState.has_lamp =="give":
+			animation = "move_side"
+			last_input = "move_side"
 		_velocity.x += 1
-		last_input = "move_side"
 		$AnimatedSprite.flip_h = false
 	if Input.is_action_pressed("ui_left"):
-		animation = "move_side"
+		if GameState.has_lamp == "have":
+			animation = "move_side_lamp"
+			last_input = "move_side_lamp"
+		if GameState.has_lamp == "not have" or GameState.has_lamp =="give":
+			animation = "move_side"
+			last_input = "move_side"
 		_velocity.x -= 1
-		last_input = "move_side"
 		$AnimatedSprite.flip_h = true
 	if Input.is_action_pressed("ui_down"):
-		animation = "move_down"
+		if GameState.has_lamp == "have":
+			animation = "move_down_lamp"
+			last_input = "move_down_lamp"
+		if GameState.has_lamp == "not have" or GameState.has_lamp =="give":
+			animation = "move_down"
+			last_input = "move_down"
 		_velocity.y += 1
-		last_input = "move_down"
 	if Input.is_action_pressed("ui_up"):
-		animation = "move_up"
+		if GameState.has_lamp == "have":
+			animation = "move_up_lamp"
+			last_input = "move_up_lamp"
+		if GameState.has_lamp == "not have" or GameState.has_lamp =="give":
+			animation = "move_up"
+			last_input = "move_up"
 		_velocity.y -= 1
-		last_input = "move_up"
 	
 	if last_input == "move_side" && (Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right")):
 		animation = "idle_side"
@@ -66,6 +85,13 @@ func _input(event):
 		animation = "idle_up"
 	if last_input == "move_down" && Input.is_action_just_released("ui_down"):
 		animation = "idle_down"
+	
+	if last_input == "move_side_lamp" && (Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right")):
+		animation = "idle_side_lamp"
+	if last_input == "move_up_lamp" && Input.is_action_just_released("ui_up"):
+		animation = "idle_up_lamp"
+	if last_input == "move_down_lamp" && Input.is_action_just_released("ui_down"):
+		animation = "idle_down_lamp"
 
 
 func stop_cam():

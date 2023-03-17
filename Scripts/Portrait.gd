@@ -9,6 +9,10 @@ func _on_Area2D_body_entered(body):
 func _on_Area2D_body_exited(body):
 	button.show_but_e = false
 
+func _ready():
+	if GameState.visit_na_portrete == true:
+		$AnimatedSprite.play("zanaveska")
+
 func _process(delta):
 	overlapping_bodies = $Area2D.get_overlapping_bodies()
 	

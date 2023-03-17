@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Scripts/Player.gd" type="Script" id=1]
 [ext_resource path="res://Sprites/Player/idle_side.png" type="Texture" id=2]
@@ -20,6 +20,7 @@
 [ext_resource path="res://Sprites/Player/move_up_lamp.png" type="Texture" id=18]
 [ext_resource path="res://Sprites/Player/move_down2_lamp.png" type="Texture" id=19]
 [ext_resource path="res://Sprites/Player/move_up2_lamp.png" type="Texture" id=20]
+[ext_resource path="res://Light/32x32_Arcane_5.png" type="Texture" id=21]
 
 [sub_resource type="SpriteFrames" id=11]
 animations = [ {
@@ -71,7 +72,7 @@ animations = [ {
 "frames": [ ExtResource( 16 ), ExtResource( 12 ), ExtResource( 17 ), ExtResource( 12 ) ],
 "loop": true,
 "name": "move_side_lamp",
-"speed": 5.0
+"speed": 6.0
 }, {
 "frames": [ ExtResource( 8 ), ExtResource( 9 ), ExtResource( 7 ), ExtResource( 9 ) ],
 "loop": true,
@@ -131,6 +132,13 @@ smoothing_enabled = true
 position = Vector2( -0.2, 7 )
 scale = Vector2( 0.7, 0.7 )
 occluder = SubResource( 19 )
+
+[node name="Light2D" type="Light2D" parent="."]
+position = Vector2( 0, 12.2222 )
+scale = Vector2( 2.70833, 2.36111 )
+enabled = false
+texture = ExtResource( 21 )
+color = Color( 0.745098, 0.760784, 0.219608, 1 )
 
 [connection signal="body_entered" from="PickupZone" to="PickupZone" method="_on_PickupZone_body_entered"]
 [connection signal="body_exited" from="PickupZone" to="PickupZone" method="_on_PickupZone_body_exited"]
