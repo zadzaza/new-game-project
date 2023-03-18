@@ -25,3 +25,4 @@ func _on_StartGame_pressed():
 	GameState.has_knife = "not have"
 	GameState.END = false
 	GameState.go_street = false
+	GlobalScript.last_location = ""
