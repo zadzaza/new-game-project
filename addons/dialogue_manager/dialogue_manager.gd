@@ -137,6 +137,14 @@ func show_example_dialogue_balloon(title: String, local_resource: DialogueResour
 		balloon.dialogue_line = dialogue_line
 		get_tree().current_scene.add_child(balloon)
 		show_example_dialogue_balloon(yield(balloon, "actioned"), local_resource, extra_game_states)
+		
+func show_example_dialogue_balloon_new(title: String, local_resource: DialogueResource = null, extra_game_states: Array = []) -> void:
+	var dialogue_line = yield(get_next_dialogue_line(title, local_resource, extra_game_states), "completed")
+	if dialogue_line != null:
+		var balloon_new = preload("res://new_balloon/new_balloon.tscn").instance()
+		balloon_new.dialogue_line = dialogue_line
+		get_tree().current_scene.add_child(balloon_new)
+		show_example_dialogue_balloon(yield(balloon_new, "actioned"), local_resource, extra_game_states)
 	
 
 ### Helpers
