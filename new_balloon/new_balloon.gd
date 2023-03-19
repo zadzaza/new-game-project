@@ -41,6 +41,8 @@ func _ready() -> void:
 				item.name += "Disallowed"
 			item.bbcode_text = response.text
 			item.connect("mouse_entered", self, "_on_response_mouse_entered", [item])
+			item.connect("gui_input", self, "_on_response_gui_input", [item])
+			item.show()
 			responses_menu.add_child(item)
 	
 	# Make sure our responses get included in the height reset
@@ -140,6 +142,7 @@ func _on_response_gui_input(event, item):
 func _on_Balloon_gui_input(event):
 	if not is_waiting_for_input: return
 	
+	get_tree().set_input_as_handled()
 	
 	if event is InputEventMouseButton and event.is_pressed() and event.button_index == 1:
 		next(dialogue_line.next_id)

@@ -24,7 +24,6 @@ func _process(delta):
 		if overlapping_bodies.size() > 0:
 			button.show_but_e = true
 	if GameState.click_table == 1:
-		GameState.has_corpse = "have"
 		GameState.table = "blood"
 		animation = "blood"
 		if overlapping_bodies.size() > 0 and GameState.has_rag == true:
@@ -50,11 +49,12 @@ func _process(delta):
 	if GameState.table == "table":
 		animation = "table"
 		button.show_but_e = false
-
+		
 func _input(event):
 	if event.is_action_pressed("e"):
 		if GameState.click_table <= 1:
 			var overlapping_bodies = $Area2D.get_overlapping_bodies() #Списком тел внутри Area2D
 			if overlapping_bodies.size() > 0:
+				GameState.has_corpse = "have"
 				GameState.click_table += 1
 

@@ -1,14 +1,15 @@
-[gd_scene load_steps=31 format=2]
+[gd_scene load_steps=32 format=2]
 
 [ext_resource path="res://DOM2.tres" type="TileSet" id=1]
 [ext_resource path="res://Scripts/MainRoom.gd" type="Script" id=2]
+[ext_resource path="res://Scenes/InventoryNew.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Sprites/Tiles/1920x1080-black-solid-color-background.jpg" type="Texture" id=4]
 [ext_resource path="res://Scenes/Corpse.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Scenes/Door.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=7]
 [ext_resource path="res://Scenes/MainMenuEscape.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/Portrait.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Scenes/InventoryNew.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Scenes/ToDoList.tscn" type="PackedScene" id=10]
 [ext_resource path="res://Scenes/Fire.tscn" type="PackedScene" id=11]
 [ext_resource path="res://мемы/BTTjmMqBnnc.jpg" type="Texture" id=12]
 [ext_resource path="res://мемы/0W78utpe-ls.jpg" type="Texture" id=13]
@@ -109,7 +110,10 @@ texture = ExtResource( 4 )
 [node name="MainMenuEscape" parent="CanvasLayer" instance=ExtResource( 8 )]
 visible = false
 
-[node name="InventoryNew" parent="CanvasLayer" instance=ExtResource( 10 )]
+[node name="ToDoList" parent="CanvasLayer" instance=ExtResource( 10 )]
+visible = false
+
+[node name="InventoryNew2" parent="CanvasLayer" instance=ExtResource( 3 )]
 visible = false
 
 [node name="Fire" parent="." instance=ExtResource( 11 )]

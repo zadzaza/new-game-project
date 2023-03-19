@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Sprites/Tiles/YTMOti.jpg" type="Texture" id=2]
@@ -7,8 +7,9 @@
 [ext_resource path="res://Scenes/Rag.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Light/16x16_FX_3.png" type="Texture" id=6]
 [ext_resource path="res://Sprites/Tiles/1920x1080-black-solid-color-background.jpg" type="Texture" id=7]
-[ext_resource path="res://Scenes/InventoryNew.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Scenes/ToDoList.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Scenes/MainMenuEscape.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Scenes/InventoryNew.tscn" type="PackedScene" id=10]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 150, 42.5 )
@@ -126,7 +127,10 @@ texture = ExtResource( 7 )
 [node name="MainMenuEscape" parent="CanvasLayer" instance=ExtResource( 9 )]
 visible = false
 
-[node name="InventoryNew" parent="CanvasLayer" instance=ExtResource( 8 )]
+[node name="ToDoList" parent="CanvasLayer" instance=ExtResource( 8 )]
+visible = false
+
+[node name="InventoryNew" parent="CanvasLayer" instance=ExtResource( 10 )]
 visible = false
 
 [connection signal="body_entered" from="TileMap/Area2D" to="." method="_on_Area2D_body_entered"]

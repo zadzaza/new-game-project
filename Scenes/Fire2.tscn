@@ -105,7 +105,6 @@ extents = Vector2( 44, 35.75 )
 scale = Vector2( 4.5, 3 )
 frames = SubResource( 18 )
 animation = "loop"
-frame = 4
 playing = true
 
 [node name="Area2D" type="Area2D" parent="."]

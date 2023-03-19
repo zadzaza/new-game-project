@@ -32,6 +32,20 @@ func _physics_process(delta):
 	if GameState.has_lamp == "not have" or GameState.has_lamp == "give":
 		$Light2D.enabled = false
 	
+	if last_input == "move_side" && (Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right")):
+		animation = "idle_side"
+	if last_input == "move_up" && Input.is_action_just_released("ui_up"):
+		animation = "idle_up"
+	if last_input == "move_down" && Input.is_action_just_released("ui_down"):
+		animation = "idle_down"
+	
+	if last_input == "move_side_lamp" && (Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right")):
+		animation = "idle_side_lamp"
+	if last_input == "move_up_lamp" && Input.is_action_just_released("ui_up"):
+		animation = "idle_up_lamp"
+	if last_input == "move_down_lamp" && Input.is_action_just_released("ui_down"):
+		animation = "idle_down_lamp"
+	
 func _input(event):
 	if event.is_action_pressed("pickup"):
 		if $PickupZone.items_in_range.size() > 0:
@@ -84,19 +98,7 @@ func _input(event):
 			last_input = "move_up"
 		_velocity.y -= 1
 	
-	if last_input == "move_side" && (Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right")):
-		animation = "idle_side"
-	if last_input == "move_up" && Input.is_action_just_released("ui_up"):
-		animation = "idle_up"
-	if last_input == "move_down" && Input.is_action_just_released("ui_down"):
-		animation = "idle_down"
-	
-	if last_input == "move_side_lamp" && (Input.is_action_just_released("ui_left") || Input.is_action_just_released("ui_right")):
-		animation = "idle_side_lamp"
-	if last_input == "move_up_lamp" && Input.is_action_just_released("ui_up"):
-		animation = "idle_up_lamp"
-	if last_input == "move_down_lamp" && Input.is_action_just_released("ui_down"):
-		animation = "idle_down_lamp"
+
 
 
 func stop_cam():
