@@ -14,7 +14,7 @@ pause_mode = 2
 margin_left = 415.0
 margin_top = 139.0
 margin_right = 609.0
-margin_bottom = 522.0
+margin_bottom = 256.0
 focus_mode = 2
 mouse_filter = 0
 size_flags_horizontal = 3
@@ -32,7 +32,7 @@ anchor_bottom = 1.0
 margin_left = -19.0
 margin_top = 47.0
 margin_right = 24.0
-margin_bottom = 24.0
+margin_bottom = 252.0
 mouse_filter = 1
 size_flags_horizontal = 3
 size_flags_vertical = 3
@@ -45,12 +45,12 @@ custom_constants/margin_bottom = 20
 margin_left = 30.0
 margin_top = 20.0
 margin_right = 207.0
-margin_bottom = 340.0
+margin_bottom = 302.0
 size_flags_horizontal = 3
 size_flags_vertical = 3
 custom_constants/separation = 5
 
-[node name="Coat" type="RichTextLabel" parent="Balloon/Margin/Inventory"]
+[node name="Coat" type="RichTextLabel" parent="Balloon/Margin/Inventory" groups=["Inventory"]]
 pause_mode = 2
 visible = false
 modulate = Color( 1, 1, 1, 0.470588 )
@@ -68,7 +68,7 @@ text = "Пальто"
 fit_content_height = true
 scroll_active = false
 
-[node name="Valise" type="RichTextLabel" parent="Balloon/Margin/Inventory"]
+[node name="Valise" type="RichTextLabel" parent="Balloon/Margin/Inventory" groups=["Inventory"]]
 pause_mode = 2
 visible = false
 modulate = Color( 1, 1, 1, 0.470588 )
@@ -87,7 +87,7 @@ text = "Саквояж"
 fit_content_height = true
 scroll_active = false
 
-[node name="Corpse" type="RichTextLabel" parent="Balloon/Margin/Inventory"]
+[node name="Corpse" type="RichTextLabel" parent="Balloon/Margin/Inventory" groups=["Inventory"]]
 pause_mode = 2
 visible = false
 modulate = Color( 1, 1, 1, 0.470588 )
@@ -106,7 +106,7 @@ text = "Труп"
 fit_content_height = true
 scroll_active = false
 
-[node name="Lamp" type="RichTextLabel" parent="Balloon/Margin/Inventory"]
+[node name="Lamp" type="RichTextLabel" parent="Balloon/Margin/Inventory" groups=["Inventory"]]
 pause_mode = 2
 visible = false
 modulate = Color( 1, 1, 1, 0.470588 )
@@ -125,7 +125,7 @@ text = "Лампа"
 fit_content_height = true
 scroll_active = false
 
-[node name="Curtain" type="RichTextLabel" parent="Balloon/Margin/Inventory"]
+[node name="Curtain" type="RichTextLabel" parent="Balloon/Margin/Inventory" groups=["Inventory"]]
 pause_mode = 2
 visible = false
 modulate = Color( 1, 1, 1, 0.470588 )
@@ -144,7 +144,7 @@ text = "Занавеска"
 fit_content_height = true
 scroll_active = false
 
-[node name="Knife" type="RichTextLabel" parent="Balloon/Margin/Inventory"]
+[node name="Knife" type="RichTextLabel" parent="Balloon/Margin/Inventory" groups=["Inventory"]]
 pause_mode = 2
 visible = false
 modulate = Color( 1, 1, 1, 0.470588 )
@@ -163,7 +163,7 @@ text = "Нож"
 fit_content_height = true
 scroll_active = false
 
-[node name="Rag" type="RichTextLabel" parent="Balloon/Margin/Inventory"]
+[node name="Rag" type="RichTextLabel" parent="Balloon/Margin/Inventory" groups=["Inventory"]]
 pause_mode = 2
 visible = false
 modulate = Color( 1, 1, 1, 0.470588 )
