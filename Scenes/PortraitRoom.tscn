@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://DOM2.tres" type="TileSet" id=1]
 [ext_resource path="res://Scripts/MainRoom.gd" type="Script" id=2]
@@ -29,6 +29,7 @@
 [ext_resource path="res://Scenes/DoorUp.tscn" type="PackedScene" id=27]
 [ext_resource path="res://Scenes/Lamp.tscn" type="PackedScene" id=28]
 [ext_resource path="res://Scenes/Knife.tscn" type="PackedScene" id=29]
+[ext_resource path="res://Scenes/AnimationText.tscn" type="PackedScene" id=30]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 13, 65.5 )
@@ -61,6 +62,10 @@ position = Vector2( 748, 129 )
 scale = Vector2( 3, 3 )
 z_index = 2
 speed = 250
+
+[node name="AnimationText" parent="YSort/Player" instance=ExtResource( 30 )]
+position = Vector2( 7.33334, -112.667 )
+scale = Vector2( 0.333333, 0.333333 )
 
 [node name="Window" parent="YSort" instance=ExtResource( 20 )]
 position = Vector2( 995, -154 )

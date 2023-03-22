@@ -107,7 +107,7 @@ visible = false
 visible = false
 
 [node name="1920X1080-black-solid-color-background2" type="Sprite" parent="."]
-position = Vector2( 2653, 244 )
+position = Vector2( 2668, 240 )
 scale = Vector2( 6.49323, 7.31806 )
 z_index = -9
 texture = ExtResource( 11 )
