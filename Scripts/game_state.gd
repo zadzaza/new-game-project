@@ -2,6 +2,8 @@ extends Node
 
 var has_coat = false
 
+var play_txt = false
+
 var Coat = "Coat"
 var GoldenKey = "GoldenKey"
 

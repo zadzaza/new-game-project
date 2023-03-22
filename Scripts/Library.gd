@@ -3,6 +3,9 @@ extends Node2D
 var hanger = preload("res://Dialogues/hanger.tres")
 var _body
 
+func _process(delta):
+	print(GameState.play_txt)
+
 func _ready():
 	if GlobalScript.last_location == "MainScene":
 		$YSort/Player.position = Vector2(815, 815)
@@ -17,3 +20,7 @@ func _on_Door_entered(body):
 
 func _on_ToStreet_body_entered(body):
 	pass
+
+
+func _on_Skaf_body_entered(body):
+	GameState.play_txt = true

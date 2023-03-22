@@ -64,7 +64,7 @@ z_index = 2
 speed = 250
 
 [node name="AnimationText" parent="YSort/Player" instance=ExtResource( 30 )]
-position = Vector2( 7.33334, -112.667 )
+position = Vector2( 9, -112.667 )
 scale = Vector2( 0.333333, 0.333333 )
 
 [node name="Window" parent="YSort" instance=ExtResource( 20 )]

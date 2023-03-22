@@ -4,7 +4,7 @@
 
 [resource]
 script = ExtResource( 1 )
-resource_version = 8
+resource_version = 9
 syntax_version = 2
 raw_text = "~ end
 

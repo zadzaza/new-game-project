@@ -43,3 +43,5 @@ fit_content_height = true
 scroll_active = false
 
 [node name="Tween" type="Tween" parent="Balloon/RichTextLabel"]
+
+[connection signal="tween_completed" from="Balloon/RichTextLabel/Tween" to="." method="_on_Tween_tween_completed"]
