@@ -1,4 +1,4 @@
-[gd_resource type="TileSet" load_steps=42 format=2]
+[gd_resource type="TileSet" load_steps=49 format=2]
 
 [ext_resource path="res://Sprites/Tilemaps/Scenes/O_o.png" type="Texture" id=1]
 [ext_resource path="res://Sprites/Tilemaps/Scenes/N-n.png" type="Texture" id=2]
@@ -15,6 +15,12 @@
 [ext_resource path="res://Sprites/Tilemaps/stolik.png" type="Texture" id=13]
 [ext_resource path="res://Sprites/Tilemaps/gorshok.png" type="Texture" id=14]
 [ext_resource path="res://Sprites/Tilemaps/mysor.png" type="Texture" id=15]
+[ext_resource path="res://Sprites/Tiles/polka2.png" type="Texture" id=16]
+[ext_resource path="res://Sprites/Tiles/polka4.png" type="Texture" id=17]
+[ext_resource path="res://Sprites/Tiles/polka3.png" type="Texture" id=18]
+[ext_resource path="res://Sprites/Tiles/polka5.png" type="Texture" id=19]
+[ext_resource path="res://Sprites/Tiles/polka_prosto.png" type="Texture" id=20]
+[ext_resource path="res://Sprites/Tiles/polka_prosto_kniga.png" type="Texture" id=21]
 
 [sub_resource type="ConvexPolygonShape2D" id=13]
 points = PoolVector2Array( 32, 40, 216, 40, 216.078, 42.0279, 31.7913, 42.028 )
@@ -62,6 +68,10 @@ points = PoolVector2Array( 0, 0, 192, 0, 192, 240, 0, 240 )
 
 [sub_resource type="ConvexPolygonShape2D" id=12]
 points = PoolVector2Array( 2, 44, 58, 44, 58, 172, 2, 172 )
+
+[sub_resource type="OccluderPolygon2D" id=27]
+cull_mode = 2
+polygon = PoolVector2Array( 23.9564, 4.94788, 24.0499, 1.11584, 5, 1.0625, 5, 5, 1, 5, 1.0625, 92.9375, 122.875, 92.9375, 123, 5.0625, 120.063, 5.0625, 120.063, 1.0625, 101.063, 1.0625, 101.125, 4.9375, 101.188, 7.9375, 101.426, 50.9191, 24.1584, 50.8672 )
 
 [sub_resource type="ConvexPolygonShape2D" id=23]
 points = PoolVector2Array( 98, 36, 24, 36, 24, 34, 98, 34 )
@@ -187,7 +197,7 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 5/shape_one_way = false
 5/shape_one_way_margin = 0.0
 5/shapes = [  ]
-5/z_index = 1
+5/z_index = 3
 6/name = "O_o.png 6"
 6/texture = ExtResource( 1 )
 6/tex_offset = Vector2( 0, 0 )
@@ -201,7 +211,7 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 6/shape_one_way = false
 6/shape_one_way_margin = 0.0
 6/shapes = [  ]
-6/z_index = 1
+6/z_index = 3
 7/name = "O_o.png 7"
 7/texture = ExtResource( 1 )
 7/tex_offset = Vector2( 0, 0 )
@@ -520,7 +530,7 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 24/z_index = 3
 25/name = "O_o.png 25"
 25/texture = ExtResource( 1 )
-25/tex_offset = Vector2( 0, 0 )
+25/tex_offset = Vector2( 0, -130 )
 25/modulate = Color( 1, 1, 1, 1 )
 25/region = Rect2( 145, 460, 20, 245 )
 25/tile_mode = 0
@@ -531,7 +541,7 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 25/shape_one_way = false
 25/shape_one_way_margin = 0.0
 25/shapes = [  ]
-25/z_index = 4
+25/z_index = 2
 26/name = "N-n.png 26"
 26/texture = ExtResource( 2 )
 26/tex_offset = Vector2( 0, 0 )
@@ -618,6 +628,7 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 30/region = Rect2( 164, 196, 124, 94 )
 30/tile_mode = 0
 30/occluder_offset = Vector2( 0, 0 )
+30/occluder = SubResource( 27 )
 30/navigation_offset = Vector2( 0, 0 )
 30/shape_offset = Vector2( 0, 0 )
 30/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -974,7 +985,7 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 51/shape_one_way = false
 51/shape_one_way_margin = 0.0
 51/shapes = [  ]
-51/z_index = 0
+51/z_index = 3
 52/name = "mysor.png 52"
 52/texture = ExtResource( 15 )
 52/tex_offset = Vector2( 0, 0 )
@@ -988,7 +999,7 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 52/shape_one_way = false
 52/shape_one_way_margin = 0.0
 52/shapes = [  ]
-52/z_index = 0
+52/z_index = 2
 53/name = "mysor.png 53"
 53/texture = ExtResource( 15 )
 53/tex_offset = Vector2( 0, 0 )
@@ -1002,7 +1013,7 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 53/shape_one_way = false
 53/shape_one_way_margin = 0.0
 53/shapes = [  ]
-53/z_index = 0
+53/z_index = 2
 54/name = "mysor.png 54"
 54/texture = ExtResource( 15 )
 54/tex_offset = Vector2( 0, 0 )
@@ -1016,7 +1027,7 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 54/shape_one_way = false
 54/shape_one_way_margin = 0.0
 54/shapes = [  ]
-54/z_index = 0
+54/z_index = 2
 55/name = "mysor.png 55"
 55/texture = ExtResource( 15 )
 55/tex_offset = Vector2( 0, 0 )
@@ -1030,7 +1041,7 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 55/shape_one_way = false
 55/shape_one_way_margin = 0.0
 55/shapes = [  ]
-55/z_index = 0
+55/z_index = 3
 56/name = "mysor.png 56"
 56/texture = ExtResource( 15 )
 56/tex_offset = Vector2( 0, 0 )
@@ -1072,7 +1083,7 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 58/shape_one_way = false
 58/shape_one_way_margin = 0.0
 58/shapes = [  ]
-58/z_index = 0
+58/z_index = 2
 59/name = "mysor.png 59"
 59/texture = ExtResource( 15 )
 59/tex_offset = Vector2( 0, 0 )
@@ -1086,4 +1097,102 @@ polygon = PoolVector2Array( 35.9375, 5, 32.0625, 4.9375, 32, 0.9375, 4.9375, 0.9
 59/shape_one_way = false
 59/shape_one_way_margin = 0.0
 59/shapes = [  ]
-59/z_index = 0
+59/z_index = 2
+60/name = "polka2.png 60"
+60/texture = ExtResource( 16 )
+60/tex_offset = Vector2( 0, -130 )
+60/modulate = Color( 1, 1, 1, 1 )
+60/region = Rect2( 78, 14, 128, 228 )
+60/tile_mode = 0
+60/occluder_offset = Vector2( 0, 0 )
+60/navigation_offset = Vector2( 0, 0 )
+60/shape_offset = Vector2( 0, 0 )
+60/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+60/shape_one_way = false
+60/shape_one_way_margin = 0.0
+60/shapes = [  ]
+60/z_index = 2
+61/name = "polka3.png 61"
+61/texture = ExtResource( 18 )
+61/tex_offset = Vector2( 0, -130 )
+61/modulate = Color( 1, 1, 1, 1 )
+61/region = Rect2( 78, 14, 132, 226 )
+61/tile_mode = 0
+61/occluder_offset = Vector2( 0, 0 )
+61/navigation_offset = Vector2( 0, 0 )
+61/shape_offset = Vector2( 0, 0 )
+61/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+61/shape_one_way = false
+61/shape_one_way_margin = 0.0
+61/shapes = [  ]
+61/z_index = 2
+62/name = "polka4.png 62"
+62/texture = ExtResource( 17 )
+62/tex_offset = Vector2( 0, -130 )
+62/modulate = Color( 1, 1, 1, 1 )
+62/region = Rect2( 80, 12, 126, 232 )
+62/tile_mode = 0
+62/occluder_offset = Vector2( 0, 0 )
+62/navigation_offset = Vector2( 0, 0 )
+62/shape_offset = Vector2( 0, 0 )
+62/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+62/shape_one_way = false
+62/shape_one_way_margin = 0.0
+62/shapes = [  ]
+62/z_index = 2
+63/name = "polka5.png 63"
+63/texture = ExtResource( 19 )
+63/tex_offset = Vector2( 0, -130 )
+63/modulate = Color( 1, 1, 1, 1 )
+63/region = Rect2( 78, 12, 130, 232 )
+63/tile_mode = 0
+63/occluder_offset = Vector2( 0, 0 )
+63/navigation_offset = Vector2( 0, 0 )
+63/shape_offset = Vector2( 0, 0 )
+63/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+63/shape_one_way = false
+63/shape_one_way_margin = 0.0
+63/shapes = [  ]
+63/z_index = 2
+64/name = "polka_prosto.png 64"
+64/texture = ExtResource( 20 )
+64/tex_offset = Vector2( 0, 0 )
+64/modulate = Color( 1, 1, 1, 1 )
+64/region = Rect2( 9, 8, 114, 41 )
+64/tile_mode = 0
+64/occluder_offset = Vector2( 0, 0 )
+64/navigation_offset = Vector2( 0, 0 )
+64/shape_offset = Vector2( 0, 0 )
+64/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+64/shape_one_way = false
+64/shape_one_way_margin = 0.0
+64/shapes = [  ]
+64/z_index = 3
+65/name = "polka_prosto_kniga.png 65"
+65/texture = ExtResource( 21 )
+65/tex_offset = Vector2( 0, 0 )
+65/modulate = Color( 1, 1, 1, 1 )
+65/region = Rect2( 16, -3, 104, 50 )
+65/tile_mode = 0
+65/occluder_offset = Vector2( 0, 0 )
+65/navigation_offset = Vector2( 0, 0 )
+65/shape_offset = Vector2( 0, 0 )
+65/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+65/shape_one_way = false
+65/shape_one_way_margin = 0.0
+65/shapes = [  ]
+65/z_index = 0
+66/name = "O_o_О.png 66"
+66/texture = ExtResource( 8 )
+66/tex_offset = Vector2( 0, 0 )
+66/modulate = Color( 1, 1, 1, 1 )
+66/region = Rect2( 93, 460, 28, 251 )
+66/tile_mode = 0
+66/occluder_offset = Vector2( 0, 0 )
+66/navigation_offset = Vector2( 0, 0 )
+66/shape_offset = Vector2( 0, 0 )
+66/shape_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+66/shape_one_way = false
+66/shape_one_way_margin = 0.0
+66/shapes = [  ]
+66/z_index = 0

@@ -32,8 +32,6 @@ func _process(delta):
 	if GameState.has_rag == true:
 		$Balloon/Margin/Inventory/Rag.visible = true
 	else: $Balloon/Margin/Inventory/Rag.visible = false
-	
-	inventory_resize()
 
 func _input(event):
 	if event.is_action_pressed("i"):
@@ -48,15 +46,3 @@ func _input(event):
 		GlobalScript.pause(0)
 		hide()
 
-func inventory_resize():
-	var visible_count = 0
-	var vbox = get_node("Balloon/Margin/Inventory")
-	var np_rect = get_node("Balloon")
-	np_rect.rect_size.y = 117  # установка начальной высоты
-	vbox.rect_min_size.y = 0
-	for child in vbox.get_children():
-		if child is RichTextLabel and child.visible == true:
-			visible_count += 1
-			vbox.rect_min_size.y += child.rect_size.y
-
-	np_rect.rect_min_size.y = vbox.rect_min_size.y + np_rect.margin_top + np_rect.margin_bottom
