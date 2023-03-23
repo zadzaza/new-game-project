@@ -57,7 +57,6 @@ z_index = 2
 speed = 200
 
 [node name="AnimationText" parent="YtmOti/Player" instance=ExtResource( 11 )]
-visible = true
 position = Vector2( -52.8, -71.6 )
 scale = Vector2( 0.333, 0.333 )
 
@@ -99,6 +98,7 @@ shape = SubResource( 8 )
 [node name="TileMap" type="TileMap" parent="."]
 tile_set = ExtResource( 3 )
 cell_size = Vector2( 1, 1 )
+collision_layer = 8
 format = 1
 tile_data = PoolIntArray( 34472409, 1, 0 )
 
@@ -143,10 +143,13 @@ visible = false
 visible = false
 
 [node name="RagArea" type="Area2D" parent="."]
+z_index = 11
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RagArea"]
 position = Vector2( 570, 163.75 )
+z_index = 8
 shape = SubResource( 10 )
 
 [connection signal="body_entered" from="TileMap/Area2D" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="RagArea" to="." method="_on_RagArea_body_entered"]
+[connection signal="body_exited" from="RagArea" to="." method="_on_RagArea_body_exited"]

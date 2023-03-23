@@ -4,6 +4,9 @@ var has_coat = false
 
 var skaf_entered = false
 var rag_entered = false
+var sofas_entered = false
+var corps_entered = false
+var fire_entered = false
 
 var play_txt = false
 

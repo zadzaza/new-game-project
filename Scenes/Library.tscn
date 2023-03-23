@@ -23,7 +23,7 @@ extents = Vector2( 9, 65.5 )
 extents = Vector2( 88.125, 91.25 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 59, 92.75 )
+extents = Vector2( 72.5, 124.75 )
 
 [node name="Library" type="Node2D"]
 script = ExtResource( 6 )
@@ -169,10 +169,11 @@ position = Vector2( 849, 139 )
 collision_layer = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Skaf"]
-position = Vector2( 1079, 53.25 )
+position = Vector2( 1080.5, 85.25 )
 z_index = 4
 shape = SubResource( 3 )
 
 [connection signal="body_entered" from="YSort/Door/Area2D2" to="." method="_on_Door_entered"]
 [connection signal="body_entered" from="ToStreet" to="." method="_on_ToStreet_body_entered"]
 [connection signal="body_entered" from="Skaf" to="." method="_on_Skaf_body_entered"]
+[connection signal="body_exited" from="Skaf" to="." method="_on_Skaf_body_exited"]

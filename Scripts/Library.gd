@@ -26,3 +26,7 @@ func _on_Skaf_body_entered(body):
 		GameState.play_txt = true
 		$YSort/Player/AnimationText.label.bbcode_text = "[center]\"Эмали и камеи\" Готье в роскошном издании Шарпантье на японской бумаге с гравюрами Жакмара. Книгу эту подарил мне Адриан Синглтон, хотя кому я это рассказываю? В любом случае, нужно будет прочесть на досуге.[/center]"
 		GameState.skaf_entered = true
+
+
+func _on_Skaf_body_exited(body):
+	GameState.play_txt = false

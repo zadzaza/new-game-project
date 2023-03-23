@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://DOM2.tres" type="TileSet" id=1]
 [ext_resource path="res://Scripts/MainRoom.gd" type="Script" id=2]
@@ -38,7 +38,13 @@ extents = Vector2( 13, 65.5 )
 extents = Vector2( 58, 16 )
 
 [sub_resource type="RectangleShape2D" id=3]
-extents = Vector2( 195, 27.5 )
+extents = Vector2( 221, 33.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 56.5, 67 )
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 69, 55.5 )
 
 [node name="PortraitRoom" type="Node2D"]
 script = ExtResource( 2 )
@@ -61,12 +67,13 @@ format = 1
 tile_data = PoolIntArray( -24379417, 23, 0, -24379392, 3, 0, -24379197, 3, 0, -24379002, 3, 0, -24378807, 3, 0, -24378612, 3, 0, -24378417, 3, 0, -24312686, 22, 0, -18742626, 28, 0, -15335348, 9, 0, -14155672, 14, 0, -13565977, 24, 0, -13303808, 2, 0, -13303613, 2, 0, -13303418, 2, 0, -13303223, 2, 0, -13303028, 2, 0, -13302833, 2, 0, -13171566, 21, 0, -10026312, 6, 0, -10026311, 6, 0, -8978192, 536870951, 0, -8191220, 50, 0, -7339789, 536870952, 0, -5569441, 536870948, 0, -2358126, 21, 0, -458777, 24, 0, 65535, 0, 0, 224, 0, 0, 449, 0, 0, 674, 0, 0, 899, 0, 0, 944, 0, 0, 459108, -1610612729, 0, 2097882, 19, 0, 2950228, 45, 0, 3145727, 29, 0, 5112505, 10, 0, 8455314, 21, 0, 9371647, 29, 0, 10551295, 0, 0, 10485984, 0, 0, 10486209, 0, 0, 10486434, 0, 0, 10486659, 0, 0, 10486704, 0, 0, 12648423, 24, 0, 19268754, 21, 0, 21037055, 0, 0, 20971744, 0, 0, 20971969, 0, 0, 20972194, 0, 0, 20972419, 0, 0, 20972464, 0, 0, 25165826, 47, 0, 25755623, 24, 0, 27722185, 13, 0, 28049966, 536870943, 0, 29818855, 536870932, 0, 29754511, 536870932, 0, 31522815, 0, 0, 31457504, 0, 0, 31457729, 0, 0, 31457954, 0, 0, 31458179, 0, 0, 31458224, 0, 0, 32243701, 536870955, 0, 42008575, 16, 0, 41943087, 16, 0, 41943228, 16, 0, 41943369, 16, 0, 41943370, 16, 0, 41943509, 16, 0, 41943649, 16, 0, 41943790, 16, 0, 41943931, 16, 0, 41944068, 16, 0 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 7 )]
-position = Vector2( 748, 129 )
+position = Vector2( 694, 88 )
 scale = Vector2( 3, 3 )
 z_index = 2
 speed = 250
 
 [node name="AnimationText" parent="YSort/Player" instance=ExtResource( 30 )]
+visible = false
 position = Vector2( -48.3333, -123.667 )
 scale = Vector2( 0.333333, 0.333333 )
 
@@ -241,10 +248,31 @@ z_index = 1
 collision_layer = 8
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AreasText/Sofas"]
-position = Vector2( 545, 455.5 )
+position = Vector2( 548, 457.5 )
 z_index = 7
 shape = SubResource( 3 )
+
+[node name="Corps" type="Area2D" parent="AreasText"]
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreasText/Corps"]
+position = Vector2( 700.5, 233 )
+z_index = 7
+shape = SubResource( 4 )
+
+[node name="Fire" type="Area2D" parent="AreasText"]
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreasText/Fire"]
+position = Vector2( 775, -12.5 )
+z_index = 7
+shape = SubResource( 5 )
 
 [connection signal="body_entered" from="YSort/Door/Area2D2" to="." method="_on_Door_entered"]
 [connection signal="body_entered" from="DoorUp/Area2D2" to="." method="_on_Door2_entered"]
 [connection signal="body_entered" from="AreasText/Sofas" to="." method="_on_Sofas_body_entered"]
+[connection signal="body_exited" from="AreasText/Sofas" to="." method="_on_Sofas_body_exited"]
+[connection signal="body_entered" from="AreasText/Corps" to="." method="_on_Corps_body_entered"]
+[connection signal="body_exited" from="AreasText/Corps" to="." method="_on_Corps_body_exited"]
+[connection signal="body_entered" from="AreasText/Fire" to="." method="_on_Fire_body_entered"]
+[connection signal="body_exited" from="AreasText/Fire" to="." method="_on_Fire_body_exited"]

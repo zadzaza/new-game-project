@@ -5,13 +5,21 @@ onready var tween = $Balloon/RichTextLabel/Tween
 onready var ballon = $Balloon
 
 var indent_x = 10
-var indent_y = 50
+var indent_y = 55
 
 export var complete_speed = 5.0
 export var start_in = 0.0
 export var start_out = 1.0
 
 export(NodePath) var label_path: NodePath
+
+func restart_animation():
+	tween.stop(label, "percent_visible")
+	label.percent_visible = start_in
+	tween.interpolate_property(
+		label, "percent_visible",
+		start_in, start_out, complete_speed, Tween.EASE_IN, Tween.EASE_OUT)
+	tween.start()
 
 func _ready():
 	
@@ -32,7 +40,6 @@ func _process(delta):
 		tween.start()
 	if GameState.play_txt == false:
 		hide()
-
 
 func _on_Tween_tween_completed(object, key):
 	yield(get_tree().create_timer(2.0), "timeout") # ожидание 2 секунд, после чего play_txt принимает false и форма закрывается
