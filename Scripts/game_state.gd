@@ -9,6 +9,7 @@ var corps_entered = false
 var fire_entered = false
 var lamp_entered = false
 var knife_entered = false
+var window_entered = false
 
 var play_txt = false
 

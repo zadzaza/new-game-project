@@ -8,7 +8,7 @@ func _ready():
 	if GlobalScript.last_location == "":
 		#$YSort/Player.position = Vector2(748, 129)
 		$YSort/Player.animation = "idle_down"
-		#DialogueManager.show_example_dialogue_balloon_new("start", start)
+		#DialogueManager.show_example_dialogue_balloon("start", start)
 	if GlobalScript.last_location == "Library":
 		$YSort/Player.position = Vector2(1126, 349)
 		$YSort/Player.animation = "idle_side"
@@ -68,7 +68,7 @@ func _input(event):
 		var overlapping_bodies_lamp = $AreasText/Lamp.get_overlapping_bodies()
 		var overlapping_bodies_knife = $AreasText/Knife.get_overlapping_bodies()
 		var overlapping_bodies_corpse = $AreasText/Corps.get_overlapping_bodies()
-		var overlapping_bodies_fire = $AreasText/Corps.get_overlapping_bodies()
+		var overlapping_bodies_fire = $AreasText/Fire.get_overlapping_bodies()
 		if overlapping_bodies_lamp.size() > 0:
 			if GameState.lamp_entered == false:
 				$YSort/Player/AnimationText.restart_animation()
@@ -88,11 +88,8 @@ func _input(event):
 				$YSort/Player/AnimationText.label.bbcode_text = "[center]Ух, тяжелый. Итак, мертвый человек, сидевший у стола, исчез. Но убрать тело мало, нужно чем-то вытереть кровь. Кажется, в соседней комнате была тряпка.[/center]"
 				GameState.corps_entered = true
 		if overlapping_bodies_fire.size() > 0:
-			print("adda")
 			if GameState.fire_entered == false:
-				print("ad")
-				if GameState.has_corpse == "have" or GameState.has_corpse == "burned":
-					print("da")
+				if GameState.flame == true:
 					$YSort/Player/AnimationText.restart_animation()
 					GameState.play_txt = true
 					$YSort/Player/AnimationText.label.bbcode_text = "[center]Прощай, мой друг. Мне нужно было спасти себя.[/center]"
@@ -101,4 +98,14 @@ func _input(event):
 func _on_Knife_body_entered(body):
 	pass # Replace with function body.
 func _on_Knife_body_exited(body):
+	GameState.play_txt = false
+
+
+func _on_Window_body_entered(body):
+	if GameState.window_entered == false:
+		$YSort/Player/AnimationText.restart_animation()
+		GameState.play_txt = true
+		$YSort/Player/AnimationText.label.bbcode_text = "[center]Старая штора. Это может мне пригодиться.[/center]"
+		GameState.window_entered = true
+func _on_Window_body_exited(body):
 	GameState.play_txt = false

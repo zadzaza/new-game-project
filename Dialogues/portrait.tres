@@ -1,0 +1,86 @@
+[gd_resource type="Resource" load_steps=2 format=2]
+
+[ext_resource path="res://addons/dialogue_manager/dialogue_resource.gd" type="Script" id=1]
+
+[resource]
+script = ExtResource( 1 )
+resource_version = 6
+syntax_version = 2
+raw_text = "~ portrait
+
+Дориан: Я забыл укрыть портрет. Поблизости может быть что-то, что поможет мне с этим.
+- Закрыть шторой. [if okno == \"oborvano\"]
+	=> END
+	set visit_na_portrete = true 
+- Пойду искать => END"
+errors = [  ]
+titles = {
+"portrait": "2"
+}
+lines = {
+"0": {
+"next_id": "2",
+"text": "portrait",
+"type": "title"
+},
+"2": {
+"character": "Дориан",
+"character_replacements": [  ],
+"next_id": "3",
+"replacements": [  ],
+"text": "Я забыл укрыть портрет. Поблизости может быть что-то, что поможет мне с этим.",
+"translation_key": "Я забыл укрыть портрет. Поблизости может быть что-то, что поможет мне с этим.",
+"type": "dialogue"
+},
+"3": {
+"condition": {
+"expression": [ {
+"type": "variable",
+"value": "okno"
+}, {
+"type": "comparison",
+"value": "=="
+}, {
+"type": "string",
+"value": "oborvano"
+} ]
+},
+"next_id": "4",
+"next_id_after": "end!",
+"replacements": [  ],
+"responses": PoolStringArray( "3", "6" ),
+"text": "Закрыть шторой.",
+"translation_key": "Закрыть шторой.",
+"type": "response"
+},
+"4": {
+"next_id": "end",
+"parent_id": "3",
+"type": "goto"
+},
+"5": {
+"mutation": {
+"expression": [ {
+"type": "variable",
+"value": "visit_na_portrete"
+}, {
+"type": "assignment",
+"value": "="
+}, {
+"type": "bool",
+"value": true
+} ]
+},
+"next_id": "end!",
+"parent_id": "3",
+"type": "mutation"
+},
+"6": {
+"next_id": "end",
+"next_id_after": "end!",
+"replacements": [  ],
+"text": "Пойду искать",
+"translation_key": "Пойду искать",
+"type": "response"
+}
+}

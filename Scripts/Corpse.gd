@@ -45,7 +45,6 @@ func _process(delta):
 	if GameState.table == "corpse":
 		animation = "default"
 	if GameState.table == "blood":
-		GameState.fire_entered = false
 		animation = "blood"
 	if GameState.table == "table":
 		animation = "table"

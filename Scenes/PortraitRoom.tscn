@@ -1,4 +1,4 @@
-[gd_scene load_steps=38 format=2]
+[gd_scene load_steps=39 format=2]
 
 [ext_resource path="res://DOM2.tres" type="TileSet" id=1]
 [ext_resource path="res://Scripts/MainRoom.gd" type="Script" id=2]
@@ -51,6 +51,9 @@ extents = Vector2( 36.75, 32.75 )
 
 [sub_resource type="RectangleShape2D" id=7]
 extents = Vector2( 34, 33.5 )
+
+[sub_resource type="RectangleShape2D" id=8]
+extents = Vector2( 88, 82.75 )
 
 [node name="PortraitRoom" type="Node2D"]
 script = ExtResource( 2 )
@@ -289,6 +292,14 @@ position = Vector2( 852, 310.5 )
 z_index = 8
 shape = SubResource( 7 )
 
+[node name="Window" type="Area2D" parent="AreasText"]
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreasText/Window"]
+position = Vector2( 995, -126.25 )
+z_index = 8
+shape = SubResource( 8 )
+
 [connection signal="body_entered" from="YSort/Door/Area2D2" to="." method="_on_Door_entered"]
 [connection signal="body_entered" from="DoorUp/Area2D2" to="." method="_on_Door2_entered"]
 [connection signal="body_entered" from="AreasText/Sofas" to="." method="_on_Sofas_body_entered"]
@@ -301,3 +312,5 @@ shape = SubResource( 7 )
 [connection signal="body_exited" from="AreasText/Lamp" to="." method="_on_Lamp_body_exited"]
 [connection signal="body_entered" from="AreasText/Knife" to="." method="_on_Knife_body_entered"]
 [connection signal="body_exited" from="AreasText/Knife" to="." method="_on_Knife_body_exited"]
+[connection signal="body_entered" from="AreasText/Window" to="." method="_on_Window_body_entered"]
+[connection signal="body_exited" from="AreasText/Window" to="." method="_on_Window_body_exited"]
