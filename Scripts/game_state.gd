@@ -7,6 +7,7 @@ var rag_entered = false
 var sofas_entered = false
 var corps_entered = false
 var fire_entered = false
+var lamp_entered
 
 var play_txt = false
 

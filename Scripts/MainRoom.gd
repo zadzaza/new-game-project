@@ -43,8 +43,6 @@ func _on_Corps_body_entered(body):
 			GameState.play_txt = true
 			$YSort/Player/AnimationText.label.bbcode_text = "[center]Бедный Бэзил! Какая ужасная смерть! Я должен превратить его в [u]горсточку пепла[/u].[/center]"
 			GameState.corps_entered = true
-		if GameState.has_corpse == "have":
-			GameState.play_txt = false
 func _on_Corps_body_exited(body):
 	GameState.play_txt = false
 
@@ -57,4 +55,14 @@ func _on_Fire_body_entered(body):
 			$YSort/Player/AnimationText.label.bbcode_text = "[center]Газовый камин с асбестом, он может мне пригодиться...[/center]"
 			GameState.fire_entered = true
 func _on_Fire_body_exited(body):
+	GameState.play_txt = false
+
+
+func _on_Lamp_body_entered(body):
+	if GameState.lamp_entered == false:
+		$YSort/Player/AnimationText.restart_animation()
+		GameState.play_txt = true
+		$YSort/Player/AnimationText.label.bbcode_text = "[center]Это старая комната, в которую никто не заходил уже лет 15. Идеальное место для портрета, который никто не должен видеть.[/center]"
+		GameState.lamp_entered = true
+func _on_Lamp_body_exited(body):
 	GameState.play_txt = false
