@@ -42,6 +42,7 @@ func _input(event):
 					animation = "start"
 					$Light2D.enabled = true
 					GameState.flame = true
+					GameState.fire_entered = false
 
 func _on_AnimatedSprite_animation_finished():
 	if animation == "start":

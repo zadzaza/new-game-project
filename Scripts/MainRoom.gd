@@ -59,10 +59,46 @@ func _on_Fire_body_exited(body):
 
 
 func _on_Lamp_body_entered(body):
-	if GameState.lamp_entered == false:
-		$YSort/Player/AnimationText.restart_animation()
-		GameState.play_txt = true
-		$YSort/Player/AnimationText.label.bbcode_text = "[center]Это старая комната, в которую никто не заходил уже лет 15. Идеальное место для портрета, который никто не должен видеть.[/center]"
-		GameState.lamp_entered = true
+	pass
 func _on_Lamp_body_exited(body):
+	GameState.play_txt = false
+
+func _input(event):
+	if event.is_action_pressed("e"):
+		var overlapping_bodies_lamp = $AreasText/Lamp.get_overlapping_bodies()
+		var overlapping_bodies_knife = $AreasText/Knife.get_overlapping_bodies()
+		var overlapping_bodies_corpse = $AreasText/Corps.get_overlapping_bodies()
+		var overlapping_bodies_fire = $AreasText/Corps.get_overlapping_bodies()
+		if overlapping_bodies_lamp.size() > 0:
+			if GameState.lamp_entered == false:
+				$YSort/Player/AnimationText.restart_animation()
+				GameState.play_txt = true
+				$YSort/Player/AnimationText.label.bbcode_text = "[center]Керосиновая лампа. Это семейная реликвия. Ее нужно отнести в [u]библиотеку[/u], чтобы прислуга не заметила пропажи.[/center]"
+				GameState.lamp_entered = true
+		if overlapping_bodies_knife.size() > 0:
+			if GameState.knife_entered == false:
+				$YSort/Player/AnimationText.restart_animation()
+				GameState.play_txt = true
+				$YSort/Player/AnimationText.label.bbcode_text = "[center]Окровавленый нож. Его нужно спрятать.[/center]"
+				GameState.knife_entered = true
+		if overlapping_bodies_corpse.size() > 0:
+			if GameState.corps_entered == false:
+				$YSort/Player/AnimationText.restart_animation()
+				GameState.play_txt = true
+				$YSort/Player/AnimationText.label.bbcode_text = "[center]Ух, тяжелый. Итак, мертвый человек, сидевший у стола, исчез. Но убрать тело мало, нужно чем-то вытереть кровь. Кажется, в соседней комнате была тряпка.[/center]"
+				GameState.corps_entered = true
+		if overlapping_bodies_fire.size() > 0:
+			print("adda")
+			if GameState.fire_entered == false:
+				print("ad")
+				if GameState.has_corpse == "have" or GameState.has_corpse == "burned":
+					print("da")
+					$YSort/Player/AnimationText.restart_animation()
+					GameState.play_txt = true
+					$YSort/Player/AnimationText.label.bbcode_text = "[center]Прощай, мой друг. Мне нужно было спасти себя.[/center]"
+					GameState.fire_entered = true
+
+func _on_Knife_body_entered(body):
+	pass # Replace with function body.
+func _on_Knife_body_exited(body):
 	GameState.play_txt = false

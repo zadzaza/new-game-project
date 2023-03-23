@@ -45,6 +45,7 @@ func _process(delta):
 	if GameState.table == "corpse":
 		animation = "default"
 	if GameState.table == "blood":
+		GameState.fire_entered = false
 		animation = "blood"
 	if GameState.table == "table":
 		animation = "table"
@@ -57,4 +58,5 @@ func _input(event):
 			if overlapping_bodies.size() > 0:
 				GameState.has_corpse = "have"
 				GameState.click_table += 1
-
+		if GameState.click_table == 1:
+			GameState.corps_entered = false
