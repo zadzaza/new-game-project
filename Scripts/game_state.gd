@@ -2,6 +2,9 @@ extends Node
 
 var has_coat = false
 
+var skaf_entered = false
+var rag_entered = false
+
 var play_txt = false
 
 var Coat = "Coat"

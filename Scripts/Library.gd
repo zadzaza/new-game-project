@@ -1,7 +1,6 @@
 extends Node2D
 
 var hanger = preload("res://Dialogues/hanger.tres")
-var _body
 
 func _process(delta):
 	print(GameState.play_txt)
@@ -23,4 +22,7 @@ func _on_ToStreet_body_entered(body):
 
 
 func _on_Skaf_body_entered(body):
-	GameState.play_txt = true
+	if GameState.skaf_entered == false:
+		GameState.play_txt = true
+		$YSort/Player/AnimationText.label.bbcode_text = "[center]\"Эмали и камеи\" Готье в роскошном издании Шарпантье на японской бумаге с гравюрами Жакмара. Книгу эту подарил мне Адриан Синглтон, хотя кому я это рассказываю? В любом случае, нужно будет прочесть на досуге.[/center]"
+		GameState.skaf_entered = true

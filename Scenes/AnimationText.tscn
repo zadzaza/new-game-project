@@ -11,8 +11,8 @@ script = ExtResource( 2 )
 [node name="Balloon" type="NinePatchRect" parent="."]
 pause_mode = 2
 margin_top = -1.0
-margin_right = 285.0
-margin_bottom = 270.0
+margin_right = 307.0
+margin_bottom = 269.0
 focus_mode = 2
 mouse_filter = 0
 size_flags_horizontal = 3
@@ -28,8 +28,8 @@ pause_mode = 2
 modulate = Color( 1, 1, 1, 0.470588 )
 margin_left = 5.0
 margin_top = 23.0
-margin_right = 339.0
-margin_bottom = 213.0
+margin_right = 306.0
+margin_bottom = 239.0
 rect_min_size = Vector2( 0, 30 )
 mouse_filter = 1
 size_flags_horizontal = 3
@@ -45,3 +45,4 @@ scroll_active = false
 [node name="Tween" type="Tween" parent="Balloon/RichTextLabel"]
 
 [connection signal="tween_completed" from="Balloon/RichTextLabel/Tween" to="." method="_on_Tween_tween_completed"]
+[connection signal="tween_started" from="Balloon/RichTextLabel/Tween" to="." method="_on_Tween_tween_started"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://DOM2.tres" type="TileSet" id=1]
 [ext_resource path="res://Scripts/MainRoom.gd" type="Script" id=2]
@@ -37,6 +37,9 @@ extents = Vector2( 13, 65.5 )
 [sub_resource type="RectangleShape2D" id=2]
 extents = Vector2( 58, 16 )
 
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 195, 27.5 )
+
 [node name="PortraitRoom" type="Node2D"]
 script = ExtResource( 2 )
 
@@ -64,7 +67,7 @@ z_index = 2
 speed = 250
 
 [node name="AnimationText" parent="YSort/Player" instance=ExtResource( 30 )]
-position = Vector2( 9, -112.667 )
+position = Vector2( -48.3333, -123.667 )
 scale = Vector2( 0.333333, 0.333333 )
 
 [node name="Window" parent="YSort" instance=ExtResource( 20 )]
@@ -229,8 +232,19 @@ position = Vector2( -1, 6 )
 shape = SubResource( 2 )
 
 [node name="Knife" parent="." instance=ExtResource( 29 )]
-position = Vector2( 829, 306 )
+position = Vector2( 837, 312 )
 z_index = 1
+
+[node name="AreasText" type="Node" parent="."]
+
+[node name="Sofas" type="Area2D" parent="AreasText"]
+collision_layer = 8
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AreasText/Sofas"]
+position = Vector2( 545, 455.5 )
+z_index = 7
+shape = SubResource( 3 )
 
 [connection signal="body_entered" from="YSort/Door/Area2D2" to="." method="_on_Door_entered"]
 [connection signal="body_entered" from="DoorUp/Area2D2" to="." method="_on_Door2_entered"]
+[connection signal="body_entered" from="AreasText/Sofas" to="." method="_on_Sofas_body_entered"]

@@ -3,6 +3,8 @@ extends Node2D
 var start = preload("res://Dialogues/start.tres")
 
 func _ready():
+	$YSort/Player/AnimationText.hide()
+	
 	if GlobalScript.last_location == "":
 		$YSort/Player.position = Vector2(748, 129)
 		$YSort/Player.animation = "idle_down"
@@ -24,3 +26,10 @@ func _on_Door_entered(body):
 func _on_Door2_entered(body):
 	get_tree().change_scene("res://Scenes/Toilet.tscn")
 	GlobalScript.last_location = "PortraitRoom"
+
+
+func _on_Sofas_body_entered(body):
+	GameState.play_txt = true
+	$YSort/Player/AnimationText.label.bbcode_text = "[center]Это старая комната, в которую никто не заходил уже лет 15. Идеальное место для портрета, который никто не должен видеть.[/center]"
+
+

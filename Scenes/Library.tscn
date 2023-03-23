@@ -47,9 +47,9 @@ speed = 250
 animation = "idle_side"
 
 [node name="AnimationText" parent="YSort/Player" instance=ExtResource( 15 )]
-visible = false
-position = Vector2( 9, -111 )
+position = Vector2( -46.6667, -124.333 )
 scale = Vector2( 0.333, 0.333 )
+complete_speed = 10.0
 
 [node name="TileMap" type="TileMap" parent="YSort"]
 tile_set = ExtResource( 1 )
